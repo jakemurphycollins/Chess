@@ -59,7 +59,7 @@ Call these tools in order to build a picture of the game before committing to wh
 
 1. `get_game_phases(pgn)` — note where the opening ends and endgame begins
 2. `get_material_curve(pgn)` — scan for half-moves with a ≥2 point single-move balance swing; note the biggest swing and its move number
-3. `get_clock_data(pgn)` — note any moves where `time_spent_seconds > 60` (long think) or where `clock_remaining_seconds < 120` (time pressure); flag which color they belong to
+3. `get_time_analysis(pgn)` — returns pre-computed time stats: per-player averages, long thinks, time pressure moments, and a `notable_moments` list with plain-language notes. Read the summary directly — do not do arithmetic on clock data yourself.
 4. `get_move_history(pgn, 1, 10)` — skim the opening
 5. `get_move_history(pgn, 11, <midpoint>)` — skim the middlegame
 6. `get_move_history(pgn, <midpoint+1>, <total>)` — skim the endgame
@@ -100,7 +100,7 @@ If you want to include more than 6 moments, stop yourself — pick the 6 that ma
 For each committed moment, in order:
 
 1. Call `get_position(pgn, half_move=N)` with the correct half_move integer
-2. Look up the clock data for that half_move from `get_clock_data` results (already loaded in Step 3) — note time spent and time remaining
+2. Check if this moment appears in `notable_moments` from `get_time_analysis` (already loaded in Step 3) — if so, use the pre-computed `note` field directly; do not recalculate time values yourself
 3. Coach from the actual data: piece positions, material balance, what was on the board
 4. Weave clock context in naturally where relevant — e.g. "You had about 6 minutes left here and spent 2 minutes on this move, which tells me you sensed something was up." Don't force it if the time data isn't interesting.
 5. After each moment, pause: "Want to dig deeper into this, or move on?"

@@ -223,6 +223,121 @@ def get_clock_data(pgn: str) -> list:
 
 
 @mcp.tool()
+def get_time_analysis(pgn: str) -> dict:
+    """Pre-compute all time-usage statistics from [%clk] annotations.
+
+    Returns a ready-to-read summary — no arithmetic needed from the caller.
+    Includes per-player stats, long thinks, time pressure moments, and a
+    ranked list of notable time moments with plain-language notes.
+
+    Thresholds:
+      long think  : time_spent > max(45s, time_control * 0.025)
+      time pressure: clock_remaining < max(60s, time_control * 0.07)
+    """
+    game = chess.pgn.read_game(io.StringIO(pgn))
+    if game is None:
+        return {"error": "Could not parse PGN"}
+    tc_seconds = _parse_tc_seconds(game.headers.get("TimeControl"))
+    long_think_threshold = max(45.0, (tc_seconds or 600) * 0.025)
+    pressure_threshold = max(60.0, (tc_seconds or 600) * 0.07)
+
+    # Collect raw clock entries with SANs
+    board = game.board()
+    node = game
+    half_move = 0
+    last_clk = {chess.WHITE: tc_seconds, chess.BLACK: tc_seconds}
+    raw = []
+    while node.variations:
+        node = node.variations[0]
+        half_move += 1
+        color = chess.WHITE if half_move % 2 == 1 else chess.BLACK
+        clk = _parse_clk(node.comment)
+        time_spent = None
+        if clk is not None and last_clk[color] is not None:
+            time_spent = round(last_clk[color] - clk, 1)
+        if clk is not None:
+            last_clk[color] = clk
+        # Get SAN for this half-move
+        san = None
+        try:
+            mv = node.move
+            san = board.san(mv)
+            board.push(mv)
+        except Exception:
+            pass
+        raw.append({
+            "half_move": half_move,
+            "full_move_number": (half_move + 1) // 2,
+            "color": chess.WHITE if half_move % 2 == 1 else chess.BLACK,
+            "color_str": "white" if half_move % 2 == 1 else "black",
+            "san": san,
+            "clock_remaining": clk,
+            "time_spent": time_spent,
+        })
+
+    if not raw or all(e["clock_remaining"] is None for e in raw):
+        return {"error": "No clock annotations found in PGN"}
+
+    # Per-player aggregation
+    stats = {}
+    for color_str in ("white", "black"):
+        moves = [e for e in raw if e["color_str"] == color_str and e["time_spent"] is not None]
+        if not moves:
+            stats[color_str] = None
+            continue
+        times = [e["time_spent"] for e in moves]
+        max_entry = max(moves, key=lambda e: e["time_spent"])
+        stats[color_str] = {
+            "total_time_used_seconds": round(sum(times), 1),
+            "avg_time_per_move_seconds": round(sum(times) / len(times), 1),
+            "move_count": len(moves),
+            "longest_think": {
+                "full_move_number": max_entry["full_move_number"],
+                "san": max_entry["san"],
+                "seconds": max_entry["time_spent"],
+            },
+            "long_thinks": [
+                {"full_move_number": e["full_move_number"], "san": e["san"], "seconds": e["time_spent"]}
+                for e in moves if e["time_spent"] >= long_think_threshold
+            ],
+            "time_pressure_moments": [
+                {"full_move_number": e["full_move_number"], "san": e["san"],
+                 "clock_remaining_seconds": e["clock_remaining"], "time_spent_seconds": e["time_spent"]}
+                for e in moves if e["clock_remaining"] is not None and e["clock_remaining"] < pressure_threshold
+            ],
+        }
+
+    # Notable moments: long thinks + time pressure, with plain-language notes, sorted by move
+    notable = []
+    for e in raw:
+        if e["time_spent"] is None and e["clock_remaining"] is None:
+            continue
+        notes = []
+        if e["time_spent"] is not None and e["time_spent"] >= long_think_threshold:
+            notes.append(f"spent {e['time_spent']}s (long think)")
+        if e["clock_remaining"] is not None and e["clock_remaining"] < pressure_threshold:
+            notes.append(f"only {round(e['clock_remaining'])}s remaining (time pressure)")
+        if notes:
+            notable.append({
+                "full_move_number": e["full_move_number"],
+                "color": e["color_str"],
+                "san": e["san"],
+                "time_spent_seconds": e["time_spent"],
+                "clock_remaining_seconds": e["clock_remaining"],
+                "note": "; ".join(notes),
+            })
+
+    return {
+        "time_control_seconds": tc_seconds,
+        "long_think_threshold_seconds": round(long_think_threshold, 1),
+        "time_pressure_threshold_seconds": round(pressure_threshold, 1),
+        "white": stats.get("white"),
+        "black": stats.get("black"),
+        "notable_moments": notable,
+    }
+
+
+@mcp.tool()
 def get_game_phases(pgn: str) -> dict:
     """Detect opening/middlegame/endgame boundaries heuristically.
 
