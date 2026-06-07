@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "chess-tools": {
+      "command": "uv",
+      "args": ["run", "mcp_server/chess_tools.py"],
+      "env": {
+        "PATH": "/root/.local/bin:/usr/local/bin:/usr/bin:/bin"
+      }
+    }
+  }
+}
