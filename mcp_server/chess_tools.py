@@ -6,10 +6,12 @@
 # ]
 # ///
 
+import datetime
 import io
 import json
 import os
 import re
+from collections import defaultdict
 from typing import Optional
 
 import chess
@@ -407,6 +409,31 @@ def get_player_history() -> dict:
 
 
 @mcp.tool()
+def get_player_profile() -> dict:
+    """Return the pre-computed player_profile block from .chess/history.json.
+
+    Returns a synthesized profile with top weaknesses, category trends, and
+    high-confidence recurring patterns. Profile is pre-computed at save time —
+    this read is instant. Returns an empty profile if no history exists.
+    """
+    path = os.path.join(os.getcwd(), ".chess", "history.json")
+    empty: dict = {
+        "total_games": 0,
+        "weakness_summary": [],
+        "category_trends": {},
+        "high_confidence_patterns": [],
+    }
+    if not os.path.exists(path):
+        return empty
+    try:
+        with open(path) as f:
+            history = json.load(f)
+        return history.get("player_profile", empty)
+    except Exception as e:
+        return {**empty, "error": str(e)}
+
+
+@mcp.tool()
 def save_game_summary(
     patterns: list,
     result: str,
@@ -416,12 +443,14 @@ def save_game_summary(
 ) -> dict:
     """Append a game summary to .chess/history.json for multi-game tracking.
 
-    patterns: list of strings describing recurring themes, e.g.
-              ["blunder under time pressure", "missed back-rank weakness"]
+    patterns: list of structured dicts, each with keys:
+      category (str), phase (str), specific_type (str), severity (str),
+      and optional pattern_tag (str).
+    After saving, recomputes and caches the player_profile block in history.json.
     """
     path = os.path.join(os.getcwd(), ".chess", "history.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    history = {"games": []}
+    history: dict = {"games": []}
     if os.path.exists(path):
         try:
             with open(path) as f:
@@ -435,9 +464,109 @@ def save_game_summary(
         "user_elo": user_elo,
         "patterns": patterns,
     })
+    history["player_profile"] = _compute_player_profile(history["games"])
     with open(path, "w") as f:
         json.dump(history, f, indent=2)
-    return {"saved": True, "total_games": len(history["games"])}
+    return {"saved": True, "total_games": len(history["games"]), "profile_updated": True}
+
+
+def _compute_player_profile(games: list) -> dict:
+    total_games = len(games)
+    n_recent = min(5, total_games)
+    n_prior = total_games - n_recent
+
+    def _trend(recent_cnt: int, prior_cnt: int) -> str:
+        if n_prior == 0:
+            return "stable" if recent_cnt == 0 else "worsening"
+        prior_rate = prior_cnt / n_prior
+        recent_rate = recent_cnt / n_recent if n_recent > 0 else 0
+        if prior_rate == 0:
+            return "stable" if recent_cnt == 0 else "worsening"
+        if recent_rate > prior_rate * 1.2:
+            return "worsening"
+        if recent_rate < prior_rate * 0.8:
+            return "improving"
+        return "stable"
+
+    ws_total: dict = defaultdict(int)
+    ws_recent: dict = defaultdict(int)
+    ws_prior: dict = defaultdict(int)
+    ct_total: dict = defaultdict(int)
+    ct_recent: dict = defaultdict(int)
+    ct_prior: dict = defaultdict(int)
+    tag_games: dict = defaultdict(set)
+    tag_meta: dict = {}
+
+    for i, game in enumerate(games):
+        in_recent = i >= (total_games - n_recent)
+        for p in game.get("patterns", []):
+            if not isinstance(p, dict):
+                continue
+            cat = p.get("category", "unknown")
+            stype = p.get("specific_type", "unknown")
+            sev = p.get("severity", "minor")
+            tag = p.get("pattern_tag")
+            key = (cat, stype)
+            ws_total[key] += 1
+            ct_total[cat] += 1
+            if in_recent:
+                ws_recent[key] += 1
+                ct_recent[cat] += 1
+            else:
+                ws_prior[key] += 1
+                ct_prior[cat] += 1
+            if tag:
+                tag_games[tag].add(i)
+                if tag not in tag_meta:
+                    tag_meta[tag] = {"category": cat, "severity": sev}
+
+    weakness_summary = sorted(
+        [
+            {
+                "category": k[0],
+                "specific_type": k[1],
+                "total_count": ws_total[k],
+                "recent_count": ws_recent[k],
+                "prior_count": ws_prior[k],
+                "trend": _trend(ws_recent[k], ws_prior[k]),
+            }
+            for k in ws_total
+        ],
+        key=lambda x: x["total_count"],
+        reverse=True,
+    )
+
+    category_trends = {
+        cat: {
+            "total": ct_total[cat],
+            "recent": ct_recent[cat],
+            "prior": ct_prior[cat],
+            "trend": _trend(ct_recent[cat], ct_prior[cat]),
+        }
+        for cat in ct_total
+    }
+
+    high_confidence = []
+    for tag, game_indices in tag_games.items():
+        count = len(game_indices)
+        meta = tag_meta[tag]
+        threshold = 3 if meta["severity"] == "blunder" else 5
+        if count >= threshold:
+            high_confidence.append({
+                "pattern_tag": tag,
+                "category": meta["category"],
+                "severity": meta["severity"],
+                "count": count,
+                "threshold": threshold,
+            })
+
+    return {
+        "computed_at": datetime.datetime.utcnow().isoformat(),
+        "total_games": total_games,
+        "weakness_summary": weakness_summary,
+        "category_trends": category_trends,
+        "high_confidence_patterns": high_confidence,
+    }
 
 
 if __name__ == "__main__":
