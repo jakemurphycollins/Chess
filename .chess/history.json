@@ -1,0 +1,83 @@
+{
+  "games": [
+    {
+      "date": "2026-06-07",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "699",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "bad_development_order",
+          "severity": "minor"
+        },
+        {
+          "category": "time",
+          "phase": "middlegame",
+          "specific_type": "long_think_easy_move",
+          "severity": "minor"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "692",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "minor"
+        }
+      ]
+    }
+  ],
+  "player_profile": {
+    "computed_at": "2026-06-08T03:19:52.796497",
+    "total_games": 2,
+    "weakness_summary": [
+      {
+        "category": "opening",
+        "specific_type": "bad_development_order",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "time",
+        "specific_type": "long_think_easy_move",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "opening",
+        "specific_type": "wrong_opening_plan",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      }
+    ],
+    "category_trends": {
+      "opening": {
+        "total": 2,
+        "recent": 2,
+        "prior": 0,
+        "trend": "worsening"
+      },
+      "time": {
+        "total": 1,
+        "recent": 1,
+        "prior": 0,
+        "trend": "worsening"
+      }
+    },
+    "high_confidence_patterns": []
+  }
+}
