@@ -39,6 +39,37 @@ PIECE_NAMES = {
 CLK_RE = re.compile(r"\[%clk\s+(\d+):(\d+):(\d+(?:\.\d+)?)\]")
 
 
+def _load_opening_db() -> dict:
+    """Load ECO opening TSV into {epd: {eco, name}} at import time."""
+    db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "openings.tsv")
+    if not os.path.exists(db_path):
+        return {}
+    result: dict = {}
+    with open(db_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("eco\t"):
+                continue
+            parts = line.split("\t")
+            if len(parts) < 3:
+                continue
+            eco, name, pgn_text = parts[0], parts[1], parts[2]
+            try:
+                g = chess.pgn.read_game(io.StringIO(pgn_text))
+                if g is None:
+                    continue
+                b = g.board()
+                for mv in g.mainline_moves():
+                    b.push(mv)
+                result[b.epd()] = {"eco": eco, "name": name}
+            except Exception:
+                pass
+    return result
+
+
+_OPENING_DB: dict = _load_opening_db()
+
+
 def _material(board: chess.Board, color: chess.Color) -> int:
     return sum(PIECE_VALUES[pt] * len(board.pieces(pt, color)) for pt in PIECE_VALUES)
 
@@ -393,6 +424,77 @@ def get_game_phases(pgn: str) -> dict:
 
 
 @mcp.tool()
+def get_opening_info(pgn: str) -> dict:
+    """Identify the opening played, last book move, and who first deviated from theory.
+
+    Matches each game position against a local ECO opening database
+    (lichess-org/chess-openings) by board EPD. Returns the deepest recognised
+    opening line, the last in-theory move, and which colour played the first
+    out-of-book move. Checks at most 30 half-moves (≈ 15 full moves).
+    """
+    game = chess.pgn.read_game(io.StringIO(pgn))
+    if game is None:
+        return {"error": "Could not parse PGN"}
+
+    moves, sans = _walk_moves(game)
+    board = game.board()
+
+    last_name: Optional[str] = None
+    last_eco: Optional[str] = None
+    last_hm: int = 0
+
+    for i, mv in enumerate(moves[:30]):
+        board.push(mv)
+        match = _OPENING_DB.get(board.epd())
+        if match:
+            last_name = match["name"]
+            last_eco = match["eco"]
+            last_hm = i + 1
+
+    if last_hm == 0:
+        return {
+            "opening_name": None,
+            "eco_code": None,
+            "last_book_move_number": None,
+            "last_book_color": None,
+            "last_book_san": None,
+            "deviated_by": "white",
+            "deviation_move_number": 1,
+            "deviation_san": sans[0] if sans else None,
+        }
+
+    last_full = (last_hm + 1) // 2
+    last_color = "white" if last_hm % 2 == 1 else "black"
+    dev_hm = last_hm + 1
+
+    if dev_hm > len(moves):
+        return {
+            "opening_name": last_name,
+            "eco_code": last_eco,
+            "last_book_move_number": last_full,
+            "last_book_color": last_color,
+            "last_book_san": sans[last_hm - 1],
+            "deviated_by": None,
+            "deviation_move_number": None,
+            "deviation_san": None,
+        }
+
+    dev_full = (dev_hm + 1) // 2
+    dev_color = "white" if dev_hm % 2 == 1 else "black"
+
+    return {
+        "opening_name": last_name,
+        "eco_code": last_eco,
+        "last_book_move_number": last_full,
+        "last_book_color": last_color,
+        "last_book_san": sans[last_hm - 1],
+        "deviated_by": dev_color,
+        "deviation_move_number": dev_full,
+        "deviation_san": sans[dev_hm - 1],
+    }
+
+
+@mcp.tool()
 def get_player_history() -> dict:
     """Read persisted game patterns from .chess/history.json.
 
@@ -440,12 +542,15 @@ def save_game_summary(
     date: str,
     user_color: str,
     user_elo: str,
+    opening_info: Optional[dict] = None,
 ) -> dict:
     """Append a game summary to .chess/history.json for multi-game tracking.
 
     patterns: list of structured dicts, each with keys:
       category (str), phase (str), specific_type (str), severity (str),
       and optional pattern_tag (str).
+    opening_info: dict returned by get_opening_info — stored as-is for
+      long-term opening knowledge tracking. Pass None if not available.
     After saving, recomputes and caches the player_profile block in history.json.
     """
     path = os.path.join(os.getcwd(), ".chess", "history.json")
@@ -463,6 +568,7 @@ def save_game_summary(
         "user_color": user_color,
         "user_elo": user_elo,
         "patterns": patterns,
+        "opening_info": opening_info,
     })
     history["player_profile"] = _compute_player_profile(history["games"])
     with open(path, "w") as f:
@@ -560,12 +666,45 @@ def _compute_player_profile(games: list) -> dict:
                 "threshold": threshold,
             })
 
+    # Opening knowledge stats
+    opening_name_counts: dict = defaultdict(int)
+    theory_depths: list = []
+    user_deviated_first = 0
+    games_with_opening = 0
+    for game in games:
+        oi = game.get("opening_info")
+        if not oi or not oi.get("opening_name"):
+            continue
+        games_with_opening += 1
+        opening_name_counts[oi["opening_name"]] += 1
+        if oi.get("last_book_move_number"):
+            theory_depths.append(oi["last_book_move_number"])
+        if oi.get("deviated_by") == game.get("user_color"):
+            user_deviated_first += 1
+
+    opening_stats: Optional[dict] = None
+    if games_with_opening > 0:
+        opening_stats = {
+            "games_tracked": games_with_opening,
+            "most_common_openings": sorted(
+                opening_name_counts.items(), key=lambda x: -x[1]
+            )[:3],
+            "avg_theory_depth_moves": (
+                round(sum(theory_depths) / len(theory_depths), 1)
+                if theory_depths else None
+            ),
+            "user_deviated_first_pct": round(
+                user_deviated_first / games_with_opening * 100
+            ),
+        }
+
     return {
         "computed_at": datetime.datetime.utcnow().isoformat(),
         "total_games": total_games,
         "weakness_summary": weakness_summary,
         "category_trends": category_trends,
         "high_confidence_patterns": high_confidence,
+        "opening_stats": opening_stats,
     }
 
 
