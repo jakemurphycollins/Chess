@@ -69,7 +69,7 @@
         "deviation_move_number": 6,
         "deviation_san": "d4"
       },
-      "opening_notes": "Evans Gambit (C51): After accepting with 4...Bxb4, the correct retreat on move 5 is Ba5 not Bc5. Ba5 is stable — out of the way of d4 — and does not need to move again. Bc5 gets hit by d4 and forces a second retreat (Bd6 or similar), wasting two tempos on the same piece. General rule: accept the gambit pawn but then develop other pieces rather than keep moving the same bishop."
+      "opening_notes": "Evans Gambit (C51): After accepting with 4...Bxb4, the correct retreat on move 5 is Ba5 not Bc5. Ba5 is stable \u2014 out of the way of d4 \u2014 and does not need to move again. Bc5 gets hit by d4 and forces a second retreat (Bd6 or similar), wasting two tempos on the same piece. General rule: accept the gambit pawn but then develop other pieces rather than keep moving the same bishop."
     },
     {
       "date": "2026.06.08",
@@ -100,12 +100,21 @@
         "deviation_move_number": 2,
         "deviation_san": "cxd4"
       },
-      "opening_notes": "White queen development concept: Qa4 deployed as a 'white Scandinavian' — queen out early with a planned retreat diagonal (a4-b3-c2-d1). Queen on a4 eyes the Bd7 diagonal (a4-b5-c6-d7), so when Black's Nd4 uncovered a discovered attack (Bd7 pointing at Qa4 via open c6 square), the retreat to d1 was already prepared. Key lesson: when developing the queen early, always have a concrete retreat square in mind before the opponent can attack it."
+      "opening_notes": "White queen development concept: Qa4 deployed as a 'white Scandinavian' \u2014 queen out early with a planned retreat diagonal (a4-b3-c2-d1). Queen on a4 eyes the Bd7 diagonal (a4-b5-c6-d7), so when Black's Nd4 uncovered a discovered attack (Bd7 pointing at Qa4 via open c6 square), the retreat to d1 was already prepared. Key lesson: when developing the queen early, always have a concrete retreat square in mind before the opponent can attack it."
+    },
+    {
+      "date": "2026.06.09",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "693",
+      "patterns": [],
+      "opening_info": null,
+      "opening_notes": "Test entry to verify auto-commit works."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-09T02:24:49.983833",
-    "total_games": 3,
+    "computed_at": "2026-06-09T02:53:34.747060",
+    "total_games": 4,
     "weakness_summary": [
       {
         "category": "tactical",
