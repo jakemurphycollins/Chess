@@ -1,4 +1,5 @@
 __pycache__/
 *.py[cod]
 *.pyo
-.chess/
+.chess/*
+!.chess/history.json
