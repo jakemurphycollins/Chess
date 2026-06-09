@@ -126,11 +126,36 @@
         "deviation_san": "c6"
       },
       "opening_notes": "Philidor Defense (C41): White played Bg5 against Black's Qf6 then retreated Be3 after ...h6 \u2014 two bishop moves without progress. Allowing Qxg2/Qxf3 in exchange for O-O-O and rook mobilisation was dynamic and worked, but the Bg5-Be3 sequence cost two tempos. After Black grabs the g-pawn, the correct follow-up is immediate queenside castling and rook pressure on the g-file, which White executed correctly."
+    },
+    {
+      "date": "2026.06.07",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "699",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Rousseau Gambit",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "f5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "d3"
+      },
+      "opening_notes": "Italian Game: Rousseau Gambit (C50): 4.d3 was the correct solid response to Black's 3...f5, declining the gambit dynamic. On move 5, responding to 4...a6 with 5.a4 was unnecessary \u2014 a6 is not an immediate threat, and 5.Nc3 or 5.O-O would better prioritise development. Prophylactic pawn moves in the opening should only be played when there is a concrete threat to prevent."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-09T02:56:42.147178",
-    "total_games": 4,
+    "computed_at": "2026-06-09T02:56:43.274044",
+    "total_games": 5,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -179,6 +204,14 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "opening",
+        "specific_type": "wrong_opening_plan",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
@@ -195,8 +228,8 @@
         "trend": "worsening"
       },
       "opening": {
-        "total": 3,
-        "recent": 3,
+        "total": 4,
+        "recent": 4,
         "prior": 0,
         "trend": "worsening"
       },
@@ -209,7 +242,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 3,
+      "games_tracked": 4,
       "most_common_openings": [
         [
           "Italian Game: Evans Gambit, McDonnell Defense",
@@ -224,8 +257,8 @@
           1
         ]
       ],
-      "avg_theory_depth_moves": 3.3,
-      "user_deviated_first_pct": 0
+      "avg_theory_depth_moves": 3.2,
+      "user_deviated_first_pct": 25
     }
   }
 }
