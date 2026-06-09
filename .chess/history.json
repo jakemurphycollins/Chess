@@ -101,10 +101,35 @@
         "deviation_san": "cxd4"
       },
       "opening_notes": "White queen development concept: Qa4 deployed as a 'white Scandinavian' \u2014 queen out early with a planned retreat diagonal (a4-b3-c2-d1). Queen on a4 eyes the Bd7 diagonal (a4-b5-c6-d7), so when Black's Nd4 uncovered a discovered attack (Bd7 pointing at Qa4 via open c6 square), the retreat to d1 was already prepared. Key lesson: when developing the queen early, always have a concrete retreat square in mind before the opponent can attack it."
+    },
+    {
+      "date": "2026.06.07",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "692",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "bad_development_order",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Philidor Defense",
+        "eco_code": "C41",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "c6"
+      },
+      "opening_notes": "Philidor Defense (C41): White played Bg5 against Black's Qf6 then retreated Be3 after ...h6 \u2014 two bishop moves without progress. Allowing Qxg2/Qxf3 in exchange for O-O-O and rook mobilisation was dynamic and worked, but the Bg5-Be3 sequence cost two tempos. After Black grabs the g-pawn, the correct follow-up is immediate queenside castling and rook pressure on the g-file, which White executed correctly."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-09T02:53:34.747060",
+    "computed_at": "2026-06-09T02:56:42.147178",
     "total_games": 4,
     "weakness_summary": [
       {
@@ -118,8 +143,8 @@
       {
         "category": "opening",
         "specific_type": "bad_development_order",
-        "total_count": 2,
-        "recent_count": 2,
+        "total_count": 3,
+        "recent_count": 3,
         "prior_count": 0,
         "trend": "worsening"
       },
@@ -170,8 +195,8 @@
         "trend": "worsening"
       },
       "opening": {
-        "total": 2,
-        "recent": 2,
+        "total": 3,
+        "recent": 3,
         "prior": 0,
         "trend": "worsening"
       },
@@ -184,7 +209,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 2,
+      "games_tracked": 3,
       "most_common_openings": [
         [
           "Italian Game: Evans Gambit, McDonnell Defense",
@@ -193,9 +218,13 @@
         [
           "Sicilian Defense: Smith-Morra Gambit",
           1
+        ],
+        [
+          "Philidor Defense",
+          1
         ]
       ],
-      "avg_theory_depth_moves": 3.5,
+      "avg_theory_depth_moves": 3.3,
       "user_deviated_first_pct": 0
     }
   }
