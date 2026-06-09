@@ -101,15 +101,6 @@
         "deviation_san": "cxd4"
       },
       "opening_notes": "White queen development concept: Qa4 deployed as a 'white Scandinavian' \u2014 queen out early with a planned retreat diagonal (a4-b3-c2-d1). Queen on a4 eyes the Bd7 diagonal (a4-b5-c6-d7), so when Black's Nd4 uncovered a discovered attack (Bd7 pointing at Qa4 via open c6 square), the retreat to d1 was already prepared. Key lesson: when developing the queen early, always have a concrete retreat square in mind before the opponent can attack it."
-    },
-    {
-      "date": "2026.06.09",
-      "result": "1-0",
-      "user_color": "white",
-      "user_elo": "693",
-      "patterns": [],
-      "opening_info": null,
-      "opening_notes": "Test entry to verify auto-commit works."
     }
   ],
   "player_profile": {

@@ -580,7 +580,46 @@ def save_game_summary(
     history["player_profile"] = _compute_player_profile(history["games"])
     with open(path, "w") as f:
         json.dump(history, f, indent=2)
-    return {"saved": True, "total_games": len(history["games"]), "profile_updated": True}
+
+    total = len(history["games"])
+    git_status = _git_commit_and_push_history(path, date, total)
+
+    return {"saved": True, "total_games": total, "profile_updated": True, "git": git_status}
+
+
+def _git_commit_and_push_history(history_path: str, date: str, total_games: int) -> dict:
+    """Stage, commit, and push history.json after every save."""
+    import subprocess
+    repo_root = os.path.dirname(os.path.dirname(history_path))  # .chess/ -> project root
+    rel_path = os.path.relpath(history_path, repo_root)
+
+    def run(cmd: list) -> tuple[int, str]:
+        r = subprocess.run(cmd, cwd=repo_root, capture_output=True, text=True)
+        return r.returncode, (r.stdout + r.stderr).strip()
+
+    code, _ = run(["git", "add", rel_path])
+    if code != 0:
+        return {"committed": False, "pushed": False, "error": "git add failed"}
+
+    msg = f"Update player history — {date} ({total_games} games total)"
+    code, out = run(["git", "commit", "-m", msg])
+    if code != 0:
+        if "nothing to commit" in out:
+            return {"committed": False, "pushed": False, "note": "nothing to commit"}
+        return {"committed": False, "pushed": False, "error": out}
+
+    # Determine current branch for push
+    _, branch = run(["git", "rev-parse", "--abbrev-ref", "HEAD"])
+    for attempt, wait in enumerate([0, 2, 4, 8, 16]):
+        if wait:
+            import time
+            time.sleep(wait)
+        code, out = run(["git", "push", "-u", "origin", branch])
+        if code == 0:
+            return {"committed": True, "pushed": True, "branch": branch}
+        if attempt == 4:
+            return {"committed": True, "pushed": False, "error": out}
+    return {"committed": True, "pushed": False, "error": "push failed after retries"}
 
 
 def _compute_player_profile(games: list) -> dict:
