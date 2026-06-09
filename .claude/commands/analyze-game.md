@@ -133,6 +133,8 @@ If the user agrees, identify 1–5 patterns from this session using the taxonomy
 
 Always pass `opening_info=<the dict returned by get_opening_info in Step 1>` — this is required for opening knowledge tracking across games. Never pass None unless get_opening_info failed entirely.
 
+Always pass `opening_notes=<string>` if any opening theory was discussed during the session — specific moves, correct retreats, opening plan corrections, or positional ideas in the opening. Write it as a concise reference note in plain English (2–4 sentences max). Omit only if the opening was never discussed.
+
 Each pattern dict must have:
 - `category`: one of `tactical` / `positional` / `time` / `opening` / `endgame` / `defense` / `exchange`
 - `phase`: one of `opening` / `middlegame` / `endgame` / `unknown`

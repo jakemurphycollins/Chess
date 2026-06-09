@@ -543,6 +543,7 @@ def save_game_summary(
     user_color: str,
     user_elo: str,
     opening_info: Optional[dict] = None,
+    opening_notes: Optional[str] = None,
 ) -> dict:
     """Append a game summary to .chess/history.json for multi-game tracking.
 
@@ -551,6 +552,9 @@ def save_game_summary(
       and optional pattern_tag (str).
     opening_info: dict returned by get_opening_info — stored as-is for
       long-term opening knowledge tracking. Pass None if not available.
+    opening_notes: freeform string capturing opening-specific coaching insights
+      discussed during the session (e.g. correct retreats, opening plan corrections).
+      Always pass this if any opening theory was discussed.
     After saving, recomputes and caches the player_profile block in history.json.
     """
     path = os.path.join(os.getcwd(), ".chess", "history.json")
@@ -562,14 +566,17 @@ def save_game_summary(
                 history = json.load(f)
         except Exception:
             pass
-    history["games"].append({
+    entry: dict = {
         "date": date,
         "result": result,
         "user_color": user_color,
         "user_elo": user_elo,
         "patterns": patterns,
         "opening_info": opening_info,
-    })
+    }
+    if opening_notes:
+        entry["opening_notes"] = opening_notes
+    history["games"].append(entry)
     history["player_profile"] = _compute_player_profile(history["games"])
     with open(path, "w") as f:
         json.dump(history, f, indent=2)
