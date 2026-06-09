@@ -151,19 +151,50 @@
         "deviation_san": "d3"
       },
       "opening_notes": "Italian Game: Rousseau Gambit (C50): 4.d3 was the correct solid response to Black's 3...f5, declining the gambit dynamic. On move 5, responding to 4...a6 with 5.a4 was unnecessary \u2014 a6 is not an immediate threat, and 5.Nc3 or 5.O-O would better prioritise development. Prophylactic pawn moves in the opening should only be played when there is a concrete threat to prevent."
+    },
+    {
+      "date": "2026.06.08",
+      "result": "0-1",
+      "user_color": "black",
+      "user_elo": "701",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "minor"
+        },
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "missed_zwischenzug",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Trompowsky Attack",
+        "eco_code": "A45",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Bg5",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "opening_notes": "Trompowsky Attack (A45): Standard responses to 2.Bg5 are 2...Ne4 (directly challenging the bishop), 2...e6, or 2...d5. Playing 2...Nc6 allows White to execute the Trompowsky plan immediately with 3.Bxf6. After 3.Bxf6, recapturing with gxf6 (rather than exf6) was a coherent positional choice \u2014 it opens the g-file and enables the Bg7 fianchetto, trading structural weakness for active piece play. The bishop pair advantage gained after White voluntarily traded both bishops for knights (Bxf6 and Bxc6+) was the foundation of the win."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-09T02:56:43.274044",
-    "total_games": 5,
+    "computed_at": "2026-06-09T03:24:50.386648",
+    "total_games": 6,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 3,
-        "recent_count": 3,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 1,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -174,12 +205,20 @@
         "trend": "worsening"
       },
       {
+        "category": "opening",
+        "specific_type": "wrong_opening_plan",
+        "total_count": 2,
+        "recent_count": 2,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
         "category": "positional",
         "specific_type": "weak_pawn_structure",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -206,8 +245,8 @@
         "trend": "worsening"
       },
       {
-        "category": "opening",
-        "specific_type": "wrong_opening_plan",
+        "category": "tactical",
+        "specific_type": "missed_zwischenzug",
         "total_count": 1,
         "recent_count": 1,
         "prior_count": 0,
@@ -216,20 +255,20 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 3,
-        "recent": 3,
-        "prior": 0,
-        "trend": "worsening"
+        "total": 4,
+        "recent": 2,
+        "prior": 2,
+        "trend": "improving"
       },
       "positional": {
         "total": 3,
-        "recent": 3,
-        "prior": 0,
-        "trend": "worsening"
+        "recent": 2,
+        "prior": 1,
+        "trend": "improving"
       },
       "opening": {
-        "total": 4,
-        "recent": 4,
+        "total": 5,
+        "recent": 5,
         "prior": 0,
         "trend": "worsening"
       },
@@ -242,7 +281,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 4,
+      "games_tracked": 5,
       "most_common_openings": [
         [
           "Italian Game: Evans Gambit, McDonnell Defense",
@@ -257,8 +296,8 @@
           1
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 25
+      "avg_theory_depth_moves": 3.0,
+      "user_deviated_first_pct": 40
     }
   }
 }
