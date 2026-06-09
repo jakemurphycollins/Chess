@@ -23,22 +23,24 @@ Examples: White move 15 = half_move 29. Black move 15 = half_move 30. Black move
 
 ## Step 1 — Ingest
 
-Immediately call `parse_game(pgn=<the pasted PGN>)`.
+Call `parse_game(pgn=<the pasted PGN>)`, `get_opening_info(pgn=<the pasted PGN>)`, and `get_player_profile()` together.
 
 Display concisely:
 - Players and ELOs (e.g. "White: jake202301 (692) vs Black: Mamanina61 (683)")
 - Result and how the game ended (from `termination`)
 - Total moves and time control
-- Opening name if tagged
+- Opening: use `get_opening_info` — never the PGN header. Format as:
+  - If recognised: "[name] ([eco]) — theory followed until move [N] ([last_book_san]), then [deviated_by] deviated with [deviation_san]"
+  - If user deviated first AND move ≤ 8: flag it: "Note: you left theory on move [N] — worth looking at during the review."
+  - If not recognised: "No standard opening recognised — game left theory immediately."
 
 If `variant_warning` is non-null, flag it: "Note: this looks like a [variant] game — analysis may be less reliable."
-
-Call `get_player_profile()` now (before the orientation questions).
 
 If `total_games` is 0 or the result is empty, skip the history section entirely.
 
 If history exists:
 - Surface the top 1–2 weaknesses from `weakness_summary` (prefer trend `"worsening"` or high `total_count`): "Looking at your history, your most common issue has been [specific_type] in the [category] category — let's keep an eye out for it."
+- If `opening_stats` exists, note avg theory depth in one sentence: "You've been averaging book through move [N] across your games."
 - Internally note any `high_confidence_patterns` — you will reference these in Step 5 if they appear.
 - Keep the history mention to one casual sentence. Do not read out the full list.
 
@@ -67,7 +69,7 @@ Call these tools in order to build a picture of the game before committing to wh
 1. `get_game_phases(pgn)` — note where the opening ends and endgame begins
 2. `get_material_curve(pgn)` — scan for half-moves with a ≥2 point single-move balance swing; note the biggest swing and its move number
 3. `get_time_analysis(pgn)` — returns pre-computed time stats: per-player averages, long thinks, time pressure moments, and a `notable_moments` list with plain-language notes. Read the summary directly — do not do arithmetic on clock data yourself.
-4. `get_move_history(pgn, 1, 10)` — skim the opening
+4. `get_move_history(pgn, 1, 10)` — skim the opening (cross-reference with `get_opening_info` results from Step 1 to see where theory ended within this range)
 5. `get_move_history(pgn, 11, <midpoint>)` — skim the middlegame
 6. `get_move_history(pgn, <midpoint+1>, <total>)` — skim the endgame
 
@@ -128,6 +130,10 @@ Handle follow-up questions by calling `get_position` or `get_move_history` as ne
 At a natural close, offer: "Would you like me to save the key themes from this game to your history so I can reference them next time?"
 
 If the user agrees, identify 1–5 patterns from this session using the taxonomy below and call `save_game_summary` with structured dicts — NOT freeform strings.
+
+Always pass `opening_info=<the dict returned by get_opening_info in Step 1>` — this is required for opening knowledge tracking across games. Never pass None unless get_opening_info failed entirely.
+
+Always pass `opening_notes=<string>` if any opening theory was discussed during the session — specific moves, correct retreats, opening plan corrections, or positional ideas in the opening. Write it as a concise reference note in plain English (2–4 sentences max). Omit only if the opening was never discussed.
 
 Each pattern dict must have:
 - `category`: one of `tactical` / `positional` / `time` / `opening` / `endgame` / `defense` / `exchange`

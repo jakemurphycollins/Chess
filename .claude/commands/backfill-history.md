@@ -63,6 +63,8 @@ For each game, call `save_game_summary` with:
 - `date`: from `parse_game` date field, formatted as YYYY-MM-DD; use `"unknown"` if absent
 - `user_color`: `"white"` or `"black"`
 - `user_elo`: the user's ELO string from the game headers; use `"?"` if absent
+- `opening_info`: dict returned by `get_opening_info` — always pass this; never omit
+- `opening_notes`: a concise plain-English string (2–4 sentences) summarising the key opening observation for this game — correct deviation, theory depth issue, plan error, etc. Always include this; omit only if the opening was completely standard with nothing worth noting
 
 **Pattern dict schema:**
 ```
