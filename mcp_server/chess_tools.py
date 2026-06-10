@@ -495,6 +495,188 @@ def get_opening_info(pgn: str) -> dict:
 
 
 @mcp.tool()
+def validate_move(pgn: str, half_move: int, move_san: str, user_elo: int) -> dict:
+    """Validate a move's legality and check for tactical problems in the resulting position.
+
+    Returns {"legal": bool, "tactical_issues": [{"type": str, "description": str}]}.
+    When legal is False, tactical_issues is always empty.
+
+    Tactical checks are ELO-gated:
+      0 / unknown / < 1000 : hanging_piece, allows_mate, allows_fork
+      1000-1499            : + creates_pin, allows_skewer
+      >= 1500              : + missed_discovered_attack (deferred)
+
+    half_move is the move being validated. Board is reconstructed from
+    moves[:half_move-1], i.e. the position immediately before that move.
+    """
+    game = chess.pgn.read_game(io.StringIO(pgn))
+    if game is None:
+        return {"error": "Could not parse PGN"}
+
+    moves, _ = _walk_moves(game)
+    if half_move < 1:
+        return {"error": "half_move must be >= 1"}
+
+    pre_board = game.board()
+    for mv in moves[:min(half_move - 1, len(moves))]:
+        pre_board.push(mv)
+
+    try:
+        parsed_move = pre_board.parse_san(move_san)
+    except (ValueError, chess.IllegalMoveError, chess.AmbiguousMoveError):
+        return {"legal": False, "tactical_issues": []}
+
+    post_board = pre_board.copy()
+    post_board.push(parsed_move)
+
+    mover = not post_board.turn
+    opponent = post_board.turn
+
+    issues = []
+
+    def pval(pt: chess.PieceType) -> int:
+        return 100 if pt == chess.KING else PIECE_VALUES.get(pt, 0)
+
+    # ── TIER 1: all ELO ─────────────────────────────────────────────────────
+
+    # A: Hanging piece — attacked and undefended after the move
+    for sq in chess.SQUARES:
+        piece = post_board.piece_at(sq)
+        if not piece or piece.color != mover or piece.piece_type == chess.KING:
+            continue
+        if (post_board.is_attacked_by(opponent, sq)
+                and not post_board.is_attacked_by(mover, sq)):
+            name = PIECE_NAMES[piece.piece_type]
+            sq_name = chess.square_name(sq)
+            if parsed_move.to_square == sq:
+                desc = f"the moved {name} lands undefended on {sq_name}"
+            else:
+                desc = f"{name} on {sq_name} is left undefended and attacked"
+            issues.append({"type": "hanging_piece", "description": desc})
+
+    # B: Allows mate in one
+    for opp_move in post_board.legal_moves:
+        mating_san = post_board.san(opp_move)
+        post_board.push(opp_move)
+        if post_board.is_checkmate():
+            post_board.pop()
+            issues.append({
+                "type": "allows_mate",
+                "description": f"opponent can play {mating_san} and deliver checkmate",
+            })
+            break
+        post_board.pop()
+
+    # C: Allows fork — opponent attacks 2+ mover pieces each worth more than forking piece
+    for opp_move in post_board.legal_moves:
+        forking_piece = post_board.piece_at(opp_move.from_square)
+        if not forking_piece:
+            continue
+        fork_val = pval(forking_piece.piece_type)
+        dest_sq = opp_move.to_square
+        post_board.push(opp_move)
+        forked = [
+            (sq, p)
+            for sq in post_board.attacks(dest_sq)
+            if (p := post_board.piece_at(sq))
+            and p.color == mover
+            and pval(p.piece_type) > fork_val
+        ]
+        post_board.pop()
+        if len(forked) >= 2:
+            forking_san = post_board.san(opp_move)
+            targets = " and ".join(
+                f"{PIECE_NAMES[p.piece_type]} on {chess.square_name(sq)}"
+                for sq, p in forked[:2]
+            )
+            issues.append({
+                "type": "allows_fork",
+                "description": f"opponent can fork {targets} with {forking_san}",
+            })
+            break
+
+    # ── TIER 2: ELO >= 1000 ─────────────────────────────────────────────────
+
+    if user_elo >= 1000:
+
+        # D: Creates pin — mover piece newly pinned to king after the move
+        pre_pinned = {
+            sq for sq in chess.SQUARES
+            if (p := pre_board.piece_at(sq))
+            and p.color == mover
+            and p.piece_type != chess.KING
+            and pre_board.is_pinned(mover, sq)
+        }
+        for sq in chess.SQUARES:
+            p = post_board.piece_at(sq)
+            if not p or p.color != mover or p.piece_type == chess.KING:
+                continue
+            if post_board.is_pinned(mover, sq) and sq not in pre_pinned:
+                issues.append({
+                    "type": "creates_pin",
+                    "description": (
+                        f"{PIECE_NAMES[p.piece_type]} on {chess.square_name(sq)} "
+                        f"is now pinned against the king"
+                    ),
+                })
+
+        # E: Allows skewer — opponent ray piece attacks mover's high-value piece with a
+        #    lower-value mover piece on the same ray behind it
+        skewer_found = False
+        for opp_sq in chess.SQUARES:
+            if skewer_found:
+                break
+            opp_piece = post_board.piece_at(opp_sq)
+            if not opp_piece or opp_piece.color != opponent:
+                continue
+            if opp_piece.piece_type not in (chess.BISHOP, chess.ROOK, chess.QUEEN):
+                continue
+            opp_val = pval(opp_piece.piece_type)
+
+            for attacked_sq in post_board.attacks(opp_sq):
+                front = post_board.piece_at(attacked_sq)
+                if not front or front.color != mover or front.piece_type == chess.KING:
+                    continue
+                front_val = pval(front.piece_type)
+                if front_val <= opp_val:
+                    continue
+
+                # Walk the ray past the front piece
+                df = chess.square_file(attacked_sq) - chess.square_file(opp_sq)
+                dr = chess.square_rank(attacked_sq) - chess.square_rank(opp_sq)
+                if df:
+                    df //= abs(df)
+                if dr:
+                    dr //= abs(dr)
+                cf = chess.square_file(attacked_sq) + df
+                cr = chess.square_rank(attacked_sq) + dr
+                while 0 <= cf <= 7 and 0 <= cr <= 7:
+                    behind_sq = chess.square(cf, cr)
+                    behind = post_board.piece_at(behind_sq)
+                    if behind is not None:
+                        if behind.color == mover and pval(behind.piece_type) < front_val:
+                            issues.append({
+                                "type": "allows_skewer",
+                                "description": (
+                                    f"opponent {PIECE_NAMES[opp_piece.piece_type]} on "
+                                    f"{chess.square_name(opp_sq)} can skewer "
+                                    f"{PIECE_NAMES[front.piece_type]} on "
+                                    f"{chess.square_name(attacked_sq)} through "
+                                    f"{PIECE_NAMES[behind.piece_type]} on "
+                                    f"{chess.square_name(behind_sq)}"
+                                ),
+                            })
+                            skewer_found = True
+                        break
+                    cf += df
+                    cr += dr
+
+    # Tier 3 (missed_discovered_attack): deferred
+
+    return {"legal": True, "tactical_issues": issues}
+
+
+@mcp.tool()
 def get_player_history() -> dict:
     """Read persisted game patterns from .chess/history.json.
 
@@ -580,7 +762,46 @@ def save_game_summary(
     history["player_profile"] = _compute_player_profile(history["games"])
     with open(path, "w") as f:
         json.dump(history, f, indent=2)
-    return {"saved": True, "total_games": len(history["games"]), "profile_updated": True}
+
+    total = len(history["games"])
+    git_status = _git_commit_and_push_history(path, date, total)
+
+    return {"saved": True, "total_games": total, "profile_updated": True, "git": git_status}
+
+
+def _git_commit_and_push_history(history_path: str, date: str, total_games: int) -> dict:
+    """Stage, commit, and push history.json after every save."""
+    import subprocess
+    repo_root = os.path.dirname(os.path.dirname(history_path))  # .chess/ -> project root
+    rel_path = os.path.relpath(history_path, repo_root)
+
+    def run(cmd: list) -> tuple[int, str]:
+        r = subprocess.run(cmd, cwd=repo_root, capture_output=True, text=True)
+        return r.returncode, (r.stdout + r.stderr).strip()
+
+    code, _ = run(["git", "add", rel_path])
+    if code != 0:
+        return {"committed": False, "pushed": False, "error": "git add failed"}
+
+    msg = f"Update player history — {date} ({total_games} games total)"
+    code, out = run(["git", "commit", "-m", msg])
+    if code != 0:
+        if "nothing to commit" in out:
+            return {"committed": False, "pushed": False, "note": "nothing to commit"}
+        return {"committed": False, "pushed": False, "error": out}
+
+    # Determine current branch for push
+    _, branch = run(["git", "rev-parse", "--abbrev-ref", "HEAD"])
+    for attempt, wait in enumerate([0, 2, 4, 8, 16]):
+        if wait:
+            import time
+            time.sleep(wait)
+        code, out = run(["git", "push", "-u", "origin", branch])
+        if code == 0:
+            return {"committed": True, "pushed": True, "branch": branch}
+        if attempt == 4:
+            return {"committed": True, "pushed": False, "error": out}
+    return {"committed": True, "pushed": False, "error": "push failed after retries"}
 
 
 def _compute_player_profile(games: list) -> dict:

@@ -1,0 +1,400 @@
+{
+  "games": [
+    {
+      "date": "2026.06.08",
+      "result": "1-0",
+      "user_color": "black",
+      "user_elo": "692",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "major",
+          "pattern_tag": "piece_placed_on_attacked_square"
+        },
+        {
+          "category": "positional",
+          "phase": "opening",
+          "specific_type": "weak_pawn_structure",
+          "severity": "minor"
+        },
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder",
+          "pattern_tag": "piece_placed_on_attacked_square"
+        }
+      ]
+    },
+    {
+      "date": "2026.06.08",
+      "result": "1-0",
+      "user_color": "black",
+      "user_elo": "683",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "bad_development_order",
+          "severity": "major"
+        },
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "piece_coordination_failure",
+          "severity": "major"
+        },
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Evans Gambit, McDonnell Defense",
+        "eco_code": "C51",
+        "last_book_move_number": 5,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 6,
+        "deviation_san": "d4"
+      },
+      "opening_notes": "Evans Gambit (C51): After accepting with 4...Bxb4, the correct retreat on move 5 is Ba5 not Bc5. Ba5 is stable \u2014 out of the way of d4 \u2014 and does not need to move again. Bc5 gets hit by d4 and forces a second retreat (Bd6 or similar), wasting two tempos on the same piece. General rule: accept the gambit pawn but then develop other pieces rather than keep moving the same bishop."
+    },
+    {
+      "date": "2026.06.08",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "693",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "bad_development_order",
+          "severity": "minor"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "overextension",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Sicilian Defense: Smith-Morra Gambit",
+        "eco_code": "B21",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "cxd4"
+      },
+      "opening_notes": "White queen development concept: Qa4 deployed as a 'white Scandinavian' \u2014 queen out early with a planned retreat diagonal (a4-b3-c2-d1). Queen on a4 eyes the Bd7 diagonal (a4-b5-c6-d7), so when Black's Nd4 uncovered a discovered attack (Bd7 pointing at Qa4 via open c6 square), the retreat to d1 was already prepared. Key lesson: when developing the queen early, always have a concrete retreat square in mind before the opponent can attack it."
+    },
+    {
+      "date": "2026.06.07",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "692",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "bad_development_order",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Philidor Defense",
+        "eco_code": "C41",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "c6"
+      },
+      "opening_notes": "Philidor Defense (C41): White played Bg5 against Black's Qf6 then retreated Be3 after ...h6 \u2014 two bishop moves without progress. Allowing Qxg2/Qxf3 in exchange for O-O-O and rook mobilisation was dynamic and worked, but the Bg5-Be3 sequence cost two tempos. After Black grabs the g-pawn, the correct follow-up is immediate queenside castling and rook pressure on the g-file, which White executed correctly."
+    },
+    {
+      "date": "2026.06.07",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "699",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Rousseau Gambit",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "f5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "d3"
+      },
+      "opening_notes": "Italian Game: Rousseau Gambit (C50): 4.d3 was the correct solid response to Black's 3...f5, declining the gambit dynamic. On move 5, responding to 4...a6 with 5.a4 was unnecessary \u2014 a6 is not an immediate threat, and 5.Nc3 or 5.O-O would better prioritise development. Prophylactic pawn moves in the opening should only be played when there is a concrete threat to prevent."
+    },
+    {
+      "date": "2026.06.08",
+      "result": "0-1",
+      "user_color": "black",
+      "user_elo": "701",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "minor"
+        },
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "missed_zwischenzug",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Trompowsky Attack",
+        "eco_code": "A45",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Bg5",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "opening_notes": "Trompowsky Attack (A45): Standard responses to 2.Bg5 are 2...Ne4 (directly challenging the bishop), 2...e6, or 2...d5. Playing 2...Nc6 allows White to execute the Trompowsky plan immediately with 3.Bxf6. After 3.Bxf6, recapturing with gxf6 (rather than exf6) was a coherent positional choice \u2014 it opens the g-file and enables the Bg7 fianchetto, trading structural weakness for active piece play. The bishop pair advantage gained after White voluntarily traded both bishops for knights (Bxf6 and Bxc6+) was the foundation of the win."
+    },
+    {
+      "date": "2026-06-08",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "705",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "English Opening: The Whale",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "c4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nf6"
+      },
+      "opening_notes": "English Opening / King Pawn irregular (C20): White played a completely unsound setup \u2014 f3, Ne2, g4, b3, Bb2 \u2014 pushing kingside pawns without development and creating serious weaknesses. Black responded correctly with standard piece development (Bc5, O-O, d6, Nc6) and centralisation (Nd4), then exploited the open kingside to deliver Qh4# in 11 moves. No specific deviation to study; this was a case of White self-destructing, and Black correctly capitalised with active, developing moves."
+    },
+    {
+      "date": "2026-06-09",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "713",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Alekhine Defense: Mokele Mbembe, Vavra Defense",
+        "eco_code": "B02",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Ne4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Bd3"
+      },
+      "opening_notes": "Alekhine Defense: Mokele Mbembe (B02): After 3...Ne4, White played 4.Bd3 which allowed 4...Nxf2 \u2014 a triple fork on the bishop (d3), queen (d1), and rook (h1). White was forced to recapture with Kxf2, exposing the king and losing castling rights. Correct was 4.Nf3, developing normally without creating fork targets. General rule: when the opponent has a knight centralised on e4, do not develop pieces to squares it can fork \u2014 handle it with Nf3 or f3 instead."
+    },
+    {
+      "date": "2026-06-09",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "721",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Fried Liver Attack",
+        "eco_code": "C57",
+        "last_book_move_number": 6,
+        "last_book_color": "white",
+        "last_book_san": "Nxf7",
+        "deviated_by": "black",
+        "deviation_move_number": 6,
+        "deviation_san": "Kxf7"
+      },
+      "opening_notes": "Fried Liver Attack (C57): After 6.Nxf7 Kxf7 7.Qf3+ Ke8 8.Bxd5, Black played the defensive resource 8...Qf6 \u2014 both queens land on the f-file and Black directly attacks the White queen on f3. White cannot trade queens with Qxf6 because the attack collapses without the queen; correct response is 9.Qe4, keeping the queen active and declining the trade. After 17.Nd5, the threat is Qe7# \u2014 Black should have defended with 17...Qe6 or 17...Rc7 to block; 17...Bh3 was a blunder that ignored the mate threat. Key principle: when your opponent has a forced mate in one, their threats do not matter."
+    },
+    {
+      "date": "2026.06.09",
+      "result": "0-1",
+      "user_color": "black",
+      "user_elo": "729",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Four Knights Game: Italian Variation",
+        "eco_code": "C50",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "Nd5"
+      },
+      "opening_notes": "Four Knights: Italian Variation (C50): White deviated with 5.Nd5, a knight leap that attacks Nf6 and tries to unbalance the position early. Black correctly responded with 5...Nxe4, accepting the pawn and maintaining material equality. After White followed up with 6.d4 and Qe2, Black kept the material and developed solidly. Key principle: when White plays an early Nd5 in this structure, taking the offered pawn (Nxe4) is generally correct \u2014 returning the material is unnecessary, and Black can consolidate with active piece play."
+    },
+    {
+      "date": "2026.06.10",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "736",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Knight Opening",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Nf3",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Bd6"
+      },
+      "opening_notes": "Black played 2...Bd6 blocking their own bishop and restricting development \u2014 a clear violation of opening principles at this level. The d6 square became a persistent weakness: White eventually planted a knight there with Nxd6+, executing a royal fork (knight on d6 attacked both the king on e8 and queen on f7 simultaneously). With Bg5 covering key escape squares and blocking king flight, the fork was immediately decisive. Key recognition: when your opponent blocks their own pieces in the opening, look for the square they just weakened \u2014 it often becomes the outpost that wins the game."
+    }
+  ],
+  "player_profile": {
+    "computed_at": "2026-06-10T14:43:12.533833",
+    "total_games": 11,
+    "weakness_summary": [
+      {
+        "category": "tactical",
+        "specific_type": "hanging_piece",
+        "total_count": 3,
+        "recent_count": 0,
+        "prior_count": 3,
+        "trend": "improving"
+      },
+      {
+        "category": "opening",
+        "specific_type": "bad_development_order",
+        "total_count": 3,
+        "recent_count": 0,
+        "prior_count": 3,
+        "trend": "improving"
+      },
+      {
+        "category": "opening",
+        "specific_type": "wrong_opening_plan",
+        "total_count": 3,
+        "recent_count": 1,
+        "prior_count": 2,
+        "trend": "improving"
+      },
+      {
+        "category": "positional",
+        "specific_type": "weak_pawn_structure",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "positional",
+        "specific_type": "piece_coordination_failure",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "defense",
+        "specific_type": "failed_to_spot_threat",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "positional",
+        "specific_type": "overextension",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "missed_zwischenzug",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      }
+    ],
+    "category_trends": {
+      "tactical": {
+        "total": 4,
+        "recent": 0,
+        "prior": 4,
+        "trend": "improving"
+      },
+      "positional": {
+        "total": 3,
+        "recent": 0,
+        "prior": 3,
+        "trend": "improving"
+      },
+      "opening": {
+        "total": 6,
+        "recent": 1,
+        "prior": 5,
+        "trend": "improving"
+      },
+      "defense": {
+        "total": 1,
+        "recent": 0,
+        "prior": 1,
+        "trend": "improving"
+      }
+    },
+    "high_confidence_patterns": [],
+    "opening_stats": {
+      "games_tracked": 10,
+      "most_common_openings": [
+        [
+          "Italian Game: Evans Gambit, McDonnell Defense",
+          1
+        ],
+        [
+          "Sicilian Defense: Smith-Morra Gambit",
+          1
+        ],
+        [
+          "Philidor Defense",
+          1
+        ]
+      ],
+      "avg_theory_depth_moves": 3.2,
+      "user_deviated_first_pct": 40
+    }
+  }
+}
