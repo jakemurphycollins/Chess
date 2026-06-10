@@ -243,11 +243,29 @@
         "deviation_san": "Kxf7"
       },
       "opening_notes": "Fried Liver Attack (C57): After 6.Nxf7 Kxf7 7.Qf3+ Ke8 8.Bxd5, Black played the defensive resource 8...Qf6 \u2014 both queens land on the f-file and Black directly attacks the White queen on f3. White cannot trade queens with Qxf6 because the attack collapses without the queen; correct response is 9.Qe4, keeping the queen active and declining the trade. After 17.Nd5, the threat is Qe7# \u2014 Black should have defended with 17...Qe6 or 17...Rc7 to block; 17...Bh3 was a blunder that ignored the mate threat. Key principle: when your opponent has a forced mate in one, their threats do not matter."
+    },
+    {
+      "date": "2026.06.09",
+      "result": "0-1",
+      "user_color": "black",
+      "user_elo": "729",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Four Knights Game: Italian Variation",
+        "eco_code": "C50",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "Nd5"
+      },
+      "opening_notes": "Four Knights: Italian Variation (C50): White deviated with 5.Nd5, a knight leap that attacks Nf6 and tries to unbalance the position early. Black correctly responded with 5...Nxe4, accepting the pawn and maintaining material equality. After White followed up with 6.d4 and Qe2, Black kept the material and developed solidly. Key principle: when White plays an early Nd5 in this structure, taking the offered pawn (Nxe4) is generally correct \u2014 returning the material is unnecessary, and Black can consolidate with active piece play."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-10T01:56:28.976632",
-    "total_games": 9,
+    "computed_at": "2026-06-10T03:18:32.219722",
+    "total_games": 10,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -269,8 +287,8 @@
         "category": "opening",
         "specific_type": "wrong_opening_plan",
         "total_count": 3,
-        "recent_count": 3,
-        "prior_count": 0,
+        "recent_count": 2,
+        "prior_count": 1,
         "trend": "worsening"
       },
       {
@@ -329,8 +347,8 @@
       },
       "opening": {
         "total": 6,
-        "recent": 3,
-        "prior": 3,
+        "recent": 2,
+        "prior": 4,
         "trend": "improving"
       },
       "defense": {
@@ -342,7 +360,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 8,
+      "games_tracked": 9,
       "most_common_openings": [
         [
           "Italian Game: Evans Gambit, McDonnell Defense",
@@ -357,8 +375,8 @@
           1
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 50
+      "avg_theory_depth_moves": 3.3,
+      "user_deviated_first_pct": 44
     }
   }
 }
