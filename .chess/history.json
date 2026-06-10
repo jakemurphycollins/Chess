@@ -261,11 +261,29 @@
         "deviation_san": "Nd5"
       },
       "opening_notes": "Four Knights: Italian Variation (C50): White deviated with 5.Nd5, a knight leap that attacks Nf6 and tries to unbalance the position early. Black correctly responded with 5...Nxe4, accepting the pawn and maintaining material equality. After White followed up with 6.d4 and Qe2, Black kept the material and developed solidly. Key principle: when White plays an early Nd5 in this structure, taking the offered pawn (Nxe4) is generally correct \u2014 returning the material is unnecessary, and Black can consolidate with active piece play."
+    },
+    {
+      "date": "2026.06.10",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "736",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Knight Opening",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Nf3",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Bd6"
+      },
+      "opening_notes": "Black played 2...Bd6 blocking their own bishop and restricting development \u2014 a clear violation of opening principles at this level. The d6 square became a persistent weakness: White eventually planted a knight there with Nxd6+, executing a royal fork (knight on d6 attacked both the king on e8 and queen on f7 simultaneously). With Bg5 covering key escape squares and blocking king flight, the fork was immediately decisive. Key recognition: when your opponent blocks their own pieces in the opening, look for the square they just weakened \u2014 it often becomes the outpost that wins the game."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-10T03:18:32.219722",
-    "total_games": 10,
+    "computed_at": "2026-06-10T14:43:12.533833",
+    "total_games": 11,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -287,9 +305,9 @@
         "category": "opening",
         "specific_type": "wrong_opening_plan",
         "total_count": 3,
-        "recent_count": 2,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 1,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -327,16 +345,16 @@
         "category": "tactical",
         "specific_type": "missed_zwischenzug",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
       "tactical": {
         "total": 4,
-        "recent": 1,
-        "prior": 3,
+        "recent": 0,
+        "prior": 4,
         "trend": "improving"
       },
       "positional": {
@@ -347,8 +365,8 @@
       },
       "opening": {
         "total": 6,
-        "recent": 2,
-        "prior": 4,
+        "recent": 1,
+        "prior": 5,
         "trend": "improving"
       },
       "defense": {
@@ -360,7 +378,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 9,
+      "games_tracked": 10,
       "most_common_openings": [
         [
           "Italian Game: Evans Gambit, McDonnell Defense",
@@ -375,8 +393,8 @@
           1
         ]
       ],
-      "avg_theory_depth_moves": 3.3,
-      "user_deviated_first_pct": 44
+      "avg_theory_depth_moves": 3.2,
+      "user_deviated_first_pct": 40
     }
   }
 }
