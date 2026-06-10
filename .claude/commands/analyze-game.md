@@ -119,6 +119,30 @@ Do not move to the next moment until the user says so.
 
 ---
 
+## GM Review Contract
+
+Before delivering any coaching message that contains SAN move references, apply this contract:
+
+1. **Scan** your draft for SAN tokens: piece moves (`Nf3`, `Bxe5`, `Qd1+`), pawn moves (`e4`, `d5`), pawn captures (`exd5`), promotions (`e8=Q`), castling (`O-O`, `O-O-O`).
+
+2. **If zero SANs found**: deliver the draft directly. Do not spawn a GM agent.
+
+3. **If SANs are present**: spawn a GM reviewer via the Agent tool with these exact inputs:
+   ```
+   draft: <full coaching message text>
+   pgn: <full PGN string from Step 1>
+   half_move: <integer half_move of the position being analyzed>
+   user_elo: <integer ELO identified for the user in Step 2>
+   ```
+
+4. **Deliver** the text returned by the GM agent exactly as returned. Do not modify it. Do not wrap it in additional commentary.
+
+5. **If the Agent call fails or times out**: deliver your original draft and continue. Do not disclose the failure to the user.
+
+This contract applies to Step 5 analytical messages and Step 6 follow-up answers. It does not apply to Steps 1–4 output (no board analysis occurs there).
+
+---
+
 ## Step 6 — Follow-Up Loop
 
 After all committed moments are covered:
