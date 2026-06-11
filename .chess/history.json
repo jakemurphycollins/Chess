@@ -584,19 +584,37 @@
         "deviation_san": "Nf6"
       },
       "opening_notes": "Jake played 3...Nxe4 grabbing the e-pawn but did not calculate White's response: 4.Nxe5 Bd6 5.Qe2 pinning the knight on e4. After 5...Nc5, White played 6.Nc6+ \u2014 a fork checking the king and attacking the queen on d8. Jake resigned immediately. This is a known opening trap: grabbing the e-pawn with ...Nxe4 without first playing ...d5 or ...d6 to support it leads to this pin-and-fork sequence."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "747",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Giuoco Piano",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Nc3"
+      },
+      "opening_notes": "Jake reached the Giuoco Piano and followed theory through move 3 (Bc5). White deviated with Nc3. Jake chose an aggressive plan: castling queenside and launching a kingside pawn storm (g5, g4). This created a decisive attack before any endgame was reached. The queenside castle + kingside storm is a plan worth returning to in similar Italian positions."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-11T02:04:01.272120",
-    "total_games": 21,
+    "computed_at": "2026-06-11T02:39:13.102626",
+    "total_games": 22,
     "weakness_summary": [
       {
         "category": "opening",
         "specific_type": "wrong_opening_plan",
         "total_count": 7,
-        "recent_count": 2,
-        "prior_count": 5,
-        "trend": "worsening"
+        "recent_count": 1,
+        "prior_count": 6,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -634,9 +652,9 @@
         "category": "defense",
         "specific_type": "missing_defensive_resource",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -734,14 +752,14 @@
       },
       "opening": {
         "total": 12,
-        "recent": 2,
-        "prior": 10,
+        "recent": 1,
+        "prior": 11,
         "trend": "improving"
       },
       "defense": {
         "total": 6,
-        "recent": 1,
-        "prior": 5,
+        "recent": 0,
+        "prior": 6,
         "trend": "improving"
       },
       "exchange": {
@@ -759,7 +777,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 20,
+      "games_tracked": 21,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -775,7 +793,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.3,
-      "user_deviated_first_pct": 35
+      "user_deviated_first_pct": 33
     }
   }
 }
