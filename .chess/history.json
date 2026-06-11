@@ -535,11 +535,29 @@
         "deviation_san": "Nc3"
       },
       "opening_notes": "Jake deviated from the Scandinavian main line at move 3 with Nc3 instead of the standard responses. The opening led to a complex middlegame where Black (rated 881) outplayed Jake materially. The draw resulted from a stalemate blunder by the opponent in a queen endgame."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "748",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line",
+        "eco_code": "C58",
+        "last_book_move_number": 6,
+        "last_book_color": "white",
+        "last_book_san": "Bb5+",
+        "deviated_by": "black",
+        "deviation_move_number": 6,
+        "deviation_san": "c6"
+      },
+      "opening_notes": "Jake played the Two Knights and followed the Polerio Bishop Check line through move 6 (Bb5+). Black deviated with c6 and the position opened up sharply. Jake built a large material advantage from move 14 onward and converted cleanly with checkmate on move 31."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-11T02:03:59.115967",
-    "total_games": 19,
+    "computed_at": "2026-06-11T02:04:00.235283",
+    "total_games": 20,
     "weakness_summary": [
       {
         "category": "opening",
@@ -577,9 +595,9 @@
         "category": "positional",
         "specific_type": "piece_coordination_failure",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "defense",
@@ -671,9 +689,9 @@
       },
       "positional": {
         "total": 5,
-        "recent": 2,
-        "prior": 3,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 4,
+        "trend": "improving"
       },
       "opening": {
         "total": 11,
@@ -702,7 +720,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 18,
+      "games_tracked": 19,
       "most_common_openings": [
         [
           "Four Knights Game: Italian Variation",
@@ -717,8 +735,8 @@
           1
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 33
+      "avg_theory_depth_moves": 3.4,
+      "user_deviated_first_pct": 32
     }
   }
 }
