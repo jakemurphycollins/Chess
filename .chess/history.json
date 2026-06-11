@@ -454,12 +454,51 @@
         "deviation_move_number": 3,
         "deviation_san": "d4"
       }
+    },
+    {
+      "date": "2026-06-10",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "727",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major"
+        },
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "missing_defensive_resource",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
+        "eco_code": "C57",
+        "last_book_move_number": 5,
+        "last_book_color": "white",
+        "last_book_san": "Nxf7",
+        "deviated_by": "black",
+        "deviation_move_number": 5,
+        "deviation_san": "Bxf2+"
+      },
+      "opening_notes": "Jake played the Fried Liver Attack (Ng5/Nxf7) but walked into the Traxler Counterattack when Black responded with Bxf2+. The Traxler is a known trap against this line \u2014 Black sacrifices material for dangerous piece activity. Jake was not prepared for the defensive challenges after Kf1, and the counterplay gradually overwhelmed his material advantage."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-11T00:33:15.569086",
-    "total_games": 16,
+    "computed_at": "2026-06-11T00:36:23.994481",
+    "total_games": 17,
     "weakness_summary": [
+      {
+        "category": "opening",
+        "specific_type": "wrong_opening_plan",
+        "total_count": 6,
+        "recent_count": 2,
+        "prior_count": 4,
+        "trend": "worsening"
+      },
       {
         "category": "opening",
         "specific_type": "bad_development_order",
@@ -469,19 +508,11 @@
         "trend": "worsening"
       },
       {
-        "category": "opening",
-        "specific_type": "wrong_opening_plan",
-        "total_count": 5,
-        "recent_count": 2,
-        "prior_count": 3,
-        "trend": "worsening"
-      },
-      {
         "category": "defense",
         "specific_type": "failed_to_spot_threat",
         "total_count": 4,
-        "recent_count": 3,
-        "prior_count": 1,
+        "recent_count": 2,
+        "prior_count": 2,
         "trend": "worsening"
       },
       {
@@ -498,6 +529,14 @@
         "total_count": 2,
         "recent_count": 1,
         "prior_count": 1,
+        "trend": "worsening"
+      },
+      {
+        "category": "defense",
+        "specific_type": "missing_defensive_resource",
+        "total_count": 2,
+        "recent_count": 2,
+        "prior_count": 0,
         "trend": "worsening"
       },
       {
@@ -528,21 +567,13 @@
         "category": "exchange",
         "specific_type": "poor_piece_trade",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "endgame",
         "specific_type": "failed_king_activation",
-        "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
-      },
-      {
-        "category": "defense",
-        "specific_type": "missing_defensive_resource",
         "total_count": 1,
         "recent_count": 1,
         "prior_count": 0,
@@ -579,22 +610,22 @@
         "trend": "worsening"
       },
       "opening": {
-        "total": 10,
+        "total": 11,
         "recent": 4,
-        "prior": 6,
+        "prior": 7,
         "trend": "worsening"
       },
       "defense": {
-        "total": 5,
+        "total": 6,
         "recent": 4,
-        "prior": 1,
+        "prior": 2,
         "trend": "worsening"
       },
       "exchange": {
         "total": 1,
-        "recent": 1,
-        "prior": 0,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 1,
+        "trend": "improving"
       },
       "endgame": {
         "total": 1,
@@ -605,7 +636,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 15,
+      "games_tracked": 16,
       "most_common_openings": [
         [
           "Four Knights Game: Italian Variation",
@@ -620,8 +651,8 @@
           1
         ]
       ],
-      "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 33
+      "avg_theory_depth_moves": 3.2,
+      "user_deviated_first_pct": 31
     }
   }
 }
