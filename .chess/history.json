@@ -424,11 +424,41 @@
         "deviation_san": "h3"
       },
       "opening_notes": "Jake played the Italian Giuoco Pianissimo (C50), staying in theory through move 4 (Bc5). White deviated with h3, a slow prophylactic move. Jake responded well: castled early, pushed d5 to challenge the center, and recaptured with the knight (Nxd5). Key middlegame idea: Nf4 jumped into f4 to attack g2 and d3 simultaneously, setting up a bishop combination that won a full bishop. Jake also correctly counted 3 attackers vs 2 defenders on d3 before committing to Bxd3 \u2014 good exchange calculation."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "735",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "fork_execution",
+          "severity": "minor"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "simplification_when_ahead",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: McConnell Defense",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qf6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "d4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-10T21:21:16.670862",
-    "total_games": 15,
+    "computed_at": "2026-06-11T00:33:15.569086",
+    "total_games": 16,
     "weakness_summary": [
       {
         "category": "opening",
@@ -517,20 +547,36 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "fork_execution",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "positional",
+        "specific_type": "simplification_when_ahead",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 4,
-        "recent": 0,
+        "total": 5,
+        "recent": 1,
         "prior": 4,
         "trend": "improving"
       },
       "positional": {
-        "total": 4,
-        "recent": 1,
+        "total": 5,
+        "recent": 2,
         "prior": 3,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "opening": {
         "total": 10,
@@ -559,7 +605,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 14,
+      "games_tracked": 15,
       "most_common_openings": [
         [
           "Four Knights Game: Italian Variation",
@@ -574,8 +620,8 @@
           1
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 29
+      "avg_theory_depth_moves": 3.1,
+      "user_deviated_first_pct": 33
     }
   }
 }
