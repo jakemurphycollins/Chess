@@ -491,7 +491,14 @@
       "result": "win",
       "user_color": "black",
       "user_elo": "737",
-      "patterns": [],
+      "patterns": [
+        {
+          "category": "endgame",
+          "phase": "endgame",
+          "specific_type": "slow_rook_vs_knight_conversion",
+          "severity": "minor"
+        }
+      ],
       "opening_info": {
         "opening_name": "Ponziani Opening: Jaenisch Counterattack",
         "eco_code": "C44",
