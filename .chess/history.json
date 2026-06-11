@@ -553,19 +553,50 @@
         "deviation_san": "c6"
       },
       "opening_notes": "Jake played the Two Knights and followed the Polerio Bishop Check line through move 6 (Bb5+). Black deviated with c6 and the position opened up sharply. Jake built a large material advantage from move 14 onward and converted cleanly with checkmate on move 31."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "739",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "missed_fork",
+          "severity": "blunder"
+        },
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "English Opening: The Whale",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "c4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nf6"
+      },
+      "opening_notes": "Jake played 3...Nxe4 grabbing the e-pawn but did not calculate White's response: 4.Nxe5 Bd6 5.Qe2 pinning the knight on e4. After 5...Nc5, White played 6.Nc6+ \u2014 a fork checking the king and attacking the queen on d8. Jake resigned immediately. This is a known opening trap: grabbing the e-pawn with ...Nxe4 without first playing ...d5 or ...d6 to support it leads to this pin-and-fork sequence."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-11T02:04:00.235283",
-    "total_games": 20,
+    "computed_at": "2026-06-11T02:04:01.272120",
+    "total_games": 21,
     "weakness_summary": [
       {
         "category": "opening",
         "specific_type": "wrong_opening_plan",
-        "total_count": 6,
-        "recent_count": 1,
+        "total_count": 7,
+        "recent_count": 2,
         "prior_count": 5,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -651,17 +682,17 @@
         "category": "tactical",
         "specific_type": "fork_execution",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "positional",
         "specific_type": "simplification_when_ahead",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "endgame",
@@ -678,24 +709,32 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "missed_fork",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 5,
+        "total": 6,
         "recent": 1,
-        "prior": 4,
+        "prior": 5,
         "trend": "improving"
       },
       "positional": {
         "total": 5,
-        "recent": 1,
-        "prior": 4,
+        "recent": 0,
+        "prior": 5,
         "trend": "improving"
       },
       "opening": {
-        "total": 11,
-        "recent": 1,
+        "total": 12,
+        "recent": 2,
         "prior": 10,
         "trend": "improving"
       },
@@ -720,8 +759,12 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 19,
+      "games_tracked": 20,
       "most_common_openings": [
+        [
+          "English Opening: The Whale",
+          2
+        ],
         [
           "Four Knights Game: Italian Variation",
           2
@@ -729,14 +772,10 @@
         [
           "Italian Game: Evans Gambit, McDonnell Defense",
           1
-        ],
-        [
-          "Sicilian Defense: Smith-Morra Gambit",
-          1
         ]
       ],
-      "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 32
+      "avg_theory_depth_moves": 3.3,
+      "user_deviated_first_pct": 35
     }
   }
 }
