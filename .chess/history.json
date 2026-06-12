@@ -602,11 +602,42 @@
         "deviation_san": "Nc3"
       },
       "opening_notes": "Jake reached the Giuoco Piano and followed theory through move 3 (Bc5). White deviated with Nc3. Jake chose an aggressive plan: castling queenside and launching a kingside pawn storm (g5, g4). This created a decisive attack before any endgame was reached. The queenside castle + kingside storm is a plan worth returning to in similar Italian positions."
+    },
+    {
+      "date": "2026-06-11",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "753",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "discovered_check_fork",
+          "severity": "minor"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "correct_king_hunt_execution",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Petrov's Defense: Damiano Variation",
+        "eco_code": "C42",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nxe4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Qe2"
+      },
+      "opening_notes": "Jake deviated at move 4 with Qe2, setting up the Qe2/Nc6+ discovered check and queen fork trap in the Petrov Defense. This is the same pattern used against him in the fidelarnub game earlier the same day \u2014 he recognized it and applied it immediately from the White side. After Nc6+ Qe7 Nxe7 Bxe7 Bxg5, White won a queen and knight for two minor pieces, reaching +9 by move 8."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-11T02:39:13.102626",
-    "total_games": 22,
+    "computed_at": "2026-06-12T01:16:20.318812",
+    "total_games": 23,
     "weakness_summary": [
       {
         "category": "opening",
@@ -716,9 +747,9 @@
         "category": "endgame",
         "specific_type": "slow_rook_vs_knight_conversion",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "endgame",
@@ -735,18 +766,34 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "discovered_check_fork",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "positional",
+        "specific_type": "correct_king_hunt_execution",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 6,
-        "recent": 1,
+        "total": 7,
+        "recent": 2,
         "prior": 5,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "positional": {
-        "total": 5,
-        "recent": 0,
+        "total": 6,
+        "recent": 1,
         "prior": 5,
         "trend": "improving"
       },
@@ -770,14 +817,14 @@
       },
       "endgame": {
         "total": 3,
-        "recent": 2,
-        "prior": 1,
+        "recent": 1,
+        "prior": 2,
         "trend": "worsening"
       }
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 21,
+      "games_tracked": 22,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -793,7 +840,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.3,
-      "user_deviated_first_pct": 33
+      "user_deviated_first_pct": 36
     }
   }
 }
