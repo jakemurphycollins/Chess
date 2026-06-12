@@ -766,19 +766,34 @@
         "deviated_by": "white",
         "deviation_san": "d3"
       }
+    },
+    {
+      "date": "2026-06-12",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "757",
+      "patterns": [],
+      "opening_info": {
+        "eco": "B01",
+        "name": "Scandinavian Defense: Valencian Variation",
+        "last_book_move": 3,
+        "last_book_san": "Qd8",
+        "deviated_by": "white",
+        "deviation_san": "d4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-12T19:27:51.981884",
-    "total_games": 28,
+    "computed_at": "2026-06-12T19:28:00.558320",
+    "total_games": 29,
     "weakness_summary": [
       {
         "category": "opening",
         "specific_type": "wrong_opening_plan",
         "total_count": 9,
-        "recent_count": 2,
-        "prior_count": 7,
-        "trend": "worsening"
+        "recent_count": 1,
+        "prior_count": 8,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -920,9 +935,9 @@
         "category": "exchange",
         "specific_type": "bad_trade",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "exchange",
@@ -952,24 +967,24 @@
         "total": 7,
         "recent": 1,
         "prior": 6,
-        "trend": "improving"
+        "trend": "stable"
       },
       "opening": {
         "total": 14,
-        "recent": 2,
-        "prior": 12,
+        "recent": 1,
+        "prior": 13,
         "trend": "improving"
       },
       "defense": {
         "total": 7,
         "recent": 1,
         "prior": 6,
-        "trend": "improving"
+        "trend": "stable"
       },
       "exchange": {
         "total": 3,
-        "recent": 2,
-        "prior": 1,
+        "recent": 1,
+        "prior": 2,
         "trend": "worsening"
       },
       "endgame": {
