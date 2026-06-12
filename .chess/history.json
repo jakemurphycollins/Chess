@@ -713,19 +713,50 @@
         "deviation_san": "Kxf7"
       },
       "opening_notes": "Jake played the Fried Liver Attack (C57) through theory to move 6 (Nxf7). Black played the incorrect Kxf7 and Jake delivered the standard mating sequence Qf3+ Ke8 Bxd5 Qf7# on move 9."
+    },
+    {
+      "date": "2026-06-12",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "756",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "minor"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "back_rank_pin_execution",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Pirc Defense: Classical Variation",
+        "eco_code": "B08",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Bg7",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "Bc4"
+      },
+      "opening_notes": "Jake deviated from Pirc theory at move 5 with Bc4 \u2014 standard responses are Be2 or the Austrian Attack (f4). Despite this, the d5 space-gaining push and Ba4-Nd7-Re8 pin (active from move 12 through move 19) became the backbone of the winning plan. The bishop on a4 pinned the knight on d7 against the rook on e8 for 6 moves, setting up Bxe8 and the eventual Rb8 back-rank pin that forced resignation."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-12T10:32:28.506238",
-    "total_games": 26,
+    "computed_at": "2026-06-12T19:22:01.899565",
+    "total_games": 27,
     "weakness_summary": [
       {
         "category": "opening",
         "specific_type": "wrong_opening_plan",
-        "total_count": 8,
-        "recent_count": 1,
+        "total_count": 9,
+        "recent_count": 2,
         "prior_count": 7,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -878,6 +909,14 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "positional",
+        "specific_type": "back_rank_pin_execution",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
@@ -888,14 +927,14 @@
         "trend": "worsening"
       },
       "positional": {
-        "total": 6,
-        "recent": 1,
+        "total": 7,
+        "recent": 2,
         "prior": 5,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "opening": {
-        "total": 13,
-        "recent": 1,
+        "total": 14,
+        "recent": 2,
         "prior": 12,
         "trend": "improving"
       },
@@ -920,7 +959,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 25,
+      "games_tracked": 26,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -936,7 +975,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 32
+      "user_deviated_first_pct": 35
     }
   }
 }
