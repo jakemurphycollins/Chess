@@ -781,11 +781,26 @@
         "deviated_by": "white",
         "deviation_san": "d4"
       }
+    },
+    {
+      "date": "2026-06-12",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "764",
+      "patterns": [],
+      "opening_info": {
+        "eco": "C65",
+        "name": "Ruy Lopez: Berlin Defense",
+        "last_book_move": 3,
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_san": "Bxc6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-12T19:28:00.558320",
-    "total_games": 29,
+    "computed_at": "2026-06-12T19:28:08.989287",
+    "total_games": 30,
     "weakness_summary": [
       {
         "category": "opening",
@@ -839,9 +854,9 @@
         "category": "tactical",
         "specific_type": "missed_fork",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -943,9 +958,9 @@
         "category": "exchange",
         "specific_type": "wrong_recapture",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -959,8 +974,8 @@
     "category_trends": {
       "tactical": {
         "total": 8,
-        "recent": 1,
-        "prior": 7,
+        "recent": 0,
+        "prior": 8,
         "trend": "improving"
       },
       "positional": {
@@ -983,9 +998,9 @@
       },
       "exchange": {
         "total": 3,
-        "recent": 1,
-        "prior": 2,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 3,
+        "trend": "improving"
       },
       "endgame": {
         "total": 3,
