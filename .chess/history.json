@@ -279,12 +279,390 @@
         "deviation_san": "Bd6"
       },
       "opening_notes": "Black played 2...Bd6 blocking their own bishop and restricting development \u2014 a clear violation of opening principles at this level. The d6 square became a persistent weakness: White eventually planted a knight there with Nxd6+, executing a royal fork (knight on d6 attacked both the king on e8 and queen on f7 simultaneously). With Bg5 covering key escape squares and blocking king flight, the fork was immediately decisive. Key recognition: when your opponent blocks their own pieces in the opening, look for the square they just weakened \u2014 it often becomes the outpost that wins the game."
+    },
+    {
+      "date": "2026.06.10",
+      "result": "1-0",
+      "user_color": "black",
+      "user_elo": "730",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major",
+          "pattern_tag": "early_queen_sidelined"
+        },
+        {
+          "category": "exchange",
+          "phase": "middlegame",
+          "specific_type": "poor_piece_trade",
+          "severity": "minor"
+        },
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "English Opening: Anglo-Scandinavian Defense, Malvinas Variation",
+        "eco_code": "A10",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Qa5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Nf3"
+      },
+      "opening_notes": "Anglo-Scandinavian Malvinas (A10): 2...Qxd5 followed by 3...Qa5 parks the queen on the flank for the whole game. After Nc3 chased the queen to a5, every subsequent developing move was constrained by queen safety \u2014 including Bd6 (keeping c6 as a queen escape) and Bxc3+ (trading the only active piece). Key lesson: when the queen comes out early and gets pushed to the flank, stop trying to hold the position with the queen and instead prioritize rapid development and king safety. The queen on a5 was a spectator from move 3 onward."
+    },
+    {
+      "date": "2026.06.10",
+      "result": "1-0",
+      "user_color": "black",
+      "user_elo": "722",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "bad_development_order",
+          "severity": "major"
+        },
+        {
+          "category": "opening",
+          "phase": "middlegame",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major",
+          "pattern_tag": "early_queen_sidelined"
+        },
+        {
+          "category": "endgame",
+          "phase": "endgame",
+          "specific_type": "failed_king_activation",
+          "severity": "major"
+        },
+        {
+          "category": "defense",
+          "phase": "endgame",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Queen's Pawn Game",
+        "eco_code": "D00",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "a3"
+      },
+      "opening_notes": "Queen's Pawn Game (D00): White played a passive setup (e3, a3, h3) that gave Black easy equality. Black's bishop maneuver (Bf5-Be7-Bd6) wasted three tempos on one piece before it was traded off with Bxf4. The bishop could have stayed on f5 or been developed more efficiently. Key lesson: when the opponent plays passive moves in the opening, the priority is efficient development \u2014 one move per piece \u2014 rather than maneuvering. Also: fear of a threat (Ng3) that never materialized drove the unnecessary Bd6 maneuver; address threats when they appear, not in advance."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "1-0",
+      "user_color": "black",
+      "user_elo": 716,
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "bad_development_order",
+          "severity": "major",
+          "pattern_tag": "bishop_repeated_moves"
+        },
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "major"
+        },
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "missing_defensive_resource",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Four Knights Game: Italian Variation",
+        "eco_code": "C50",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "h3"
+      },
+      "opening_notes": "Black played the Four Knights Italian (C50), staying in theory through move 4 (Nf6). The light-squared bishop (Bc5) moved three times in the first 15 moves (Bc5\u2192Bb4\u2192Ba3), burning tempo. Bb4 was played to attack the Nc3, but after c3 kicked the bishop it retreated to a3 where it was offside and left e5 undefended. When facing Na4 or c3, moving the bishop to safety is necessary \u2014 but the initial Bb4 plan should be reconsidered given how easily White can kick it."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "0-1",
+      "user_color": "black",
+      "user_elo": 725,
+      "patterns": [
+        {
+          "category": "positional",
+          "phase": "endgame",
+          "specific_type": "piece_coordination_failure",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Giuoco Pianissimo, Normal",
+        "eco_code": "C50",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "h3"
+      },
+      "opening_notes": "Jake played the Italian Giuoco Pianissimo (C50), staying in theory through move 4 (Bc5). White deviated with h3, a slow prophylactic move. Jake responded well: castled early, pushed d5 to challenge the center, and recaptured with the knight (Nxd5). Key middlegame idea: Nf4 jumped into f4 to attack g2 and d3 simultaneously, setting up a bishop combination that won a full bishop. Jake also correctly counted 3 attackers vs 2 defenders on d3 before committing to Bxd3 \u2014 good exchange calculation."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "735",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "fork_execution",
+          "severity": "minor"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "simplification_when_ahead",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: McConnell Defense",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qf6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "d4"
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "727",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major"
+        },
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "missing_defensive_resource",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
+        "eco_code": "C57",
+        "last_book_move_number": 5,
+        "last_book_color": "white",
+        "last_book_san": "Nxf7",
+        "deviated_by": "black",
+        "deviation_move_number": 5,
+        "deviation_san": "Bxf2+"
+      },
+      "opening_notes": "Jake played the Fried Liver Attack (Ng5/Nxf7) but walked into the Traxler Counterattack when Black responded with Bxf2+. The Traxler is a known trap against this line \u2014 Black sacrifices material for dangerous piece activity. Jake was not prepared for the defensive challenges after Kf1, and the counterplay gradually overwhelmed his material advantage."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "737",
+      "patterns": [
+        {
+          "category": "endgame",
+          "phase": "endgame",
+          "specific_type": "slow_rook_vs_knight_conversion",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Ponziani Opening: Jaenisch Counterattack",
+        "eco_code": "C44",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "exd5"
+      },
+      "opening_notes": "Jake played the Jaenisch Counterattack (d5) in the Ponziani. White deviated at move 5 with exd5 instead of the main lines. Jake handled the resulting position well, winning material in the middlegame with active knight play and converting cleanly in the endgame."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "draw",
+      "user_color": "white",
+      "user_elo": "740",
+      "patterns": [
+        {
+          "category": "endgame",
+          "phase": "endgame",
+          "specific_type": "stalemate_save",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Mieses-Kotroc Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qxd5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      },
+      "opening_notes": "Jake deviated from the Scandinavian main line at move 3 with Nc3 instead of the standard responses. The opening led to a complex middlegame where Black (rated 881) outplayed Jake materially. The draw resulted from a stalemate blunder by the opponent in a queen endgame."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "748",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line",
+        "eco_code": "C58",
+        "last_book_move_number": 6,
+        "last_book_color": "white",
+        "last_book_san": "Bb5+",
+        "deviated_by": "black",
+        "deviation_move_number": 6,
+        "deviation_san": "c6"
+      },
+      "opening_notes": "Jake played the Two Knights and followed the Polerio Bishop Check line through move 6 (Bb5+). Black deviated with c6 and the position opened up sharply. Jake built a large material advantage from move 14 onward and converted cleanly with checkmate on move 31."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "739",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "missed_fork",
+          "severity": "blunder"
+        },
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "English Opening: The Whale",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "c4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nf6"
+      },
+      "opening_notes": "Jake played 3...Nxe4 grabbing the e-pawn but did not calculate White's response: 4.Nxe5 Bd6 5.Qe2 pinning the knight on e4. After 5...Nc5, White played 6.Nc6+ \u2014 a fork checking the king and attacking the queen on d8. Jake resigned immediately. This is a known opening trap: grabbing the e-pawn with ...Nxe4 without first playing ...d5 or ...d6 to support it leads to this pin-and-fork sequence."
+    },
+    {
+      "date": "2026-06-10",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "747",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Giuoco Piano",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Nc3"
+      },
+      "opening_notes": "Jake reached the Giuoco Piano and followed theory through move 3 (Bc5). White deviated with Nc3. Jake chose an aggressive plan: castling queenside and launching a kingside pawn storm (g5, g4). This created a decisive attack before any endgame was reached. The queenside castle + kingside storm is a plan worth returning to in similar Italian positions."
+    },
+    {
+      "date": "2026-06-11",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "753",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "discovered_check_fork",
+          "severity": "minor"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "correct_king_hunt_execution",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Petrov's Defense: Damiano Variation",
+        "eco_code": "C42",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nxe4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Qe2"
+      },
+      "opening_notes": "Jake deviated at move 4 with Qe2, setting up the Qe2/Nc6+ discovered check and queen fork trap in the Petrov Defense. This is the same pattern used against him in the fidelarnub game earlier the same day \u2014 he recognized it and applied it immediately from the White side. After Nc6+ Qe7 Nxe7 Bxe7 Bxg5, White won a queen and knight for two minor pieces, reaching +9 by move 8."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-10T14:43:12.533833",
-    "total_games": 11,
+    "computed_at": "2026-06-12T01:16:20.318812",
+    "total_games": 23,
     "weakness_summary": [
+      {
+        "category": "opening",
+        "specific_type": "wrong_opening_plan",
+        "total_count": 7,
+        "recent_count": 1,
+        "prior_count": 6,
+        "trend": "improving"
+      },
+      {
+        "category": "opening",
+        "specific_type": "bad_development_order",
+        "total_count": 5,
+        "recent_count": 0,
+        "prior_count": 5,
+        "trend": "improving"
+      },
+      {
+        "category": "defense",
+        "specific_type": "failed_to_spot_threat",
+        "total_count": 4,
+        "recent_count": 0,
+        "prior_count": 4,
+        "trend": "improving"
+      },
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
@@ -294,40 +672,24 @@
         "trend": "improving"
       },
       {
-        "category": "opening",
-        "specific_type": "bad_development_order",
-        "total_count": 3,
+        "category": "positional",
+        "specific_type": "piece_coordination_failure",
+        "total_count": 2,
         "recent_count": 0,
-        "prior_count": 3,
+        "prior_count": 2,
         "trend": "improving"
       },
       {
-        "category": "opening",
-        "specific_type": "wrong_opening_plan",
-        "total_count": 3,
-        "recent_count": 1,
+        "category": "defense",
+        "specific_type": "missing_defensive_resource",
+        "total_count": 2,
+        "recent_count": 0,
         "prior_count": 2,
         "trend": "improving"
       },
       {
         "category": "positional",
         "specific_type": "weak_pawn_structure",
-        "total_count": 1,
-        "recent_count": 0,
-        "prior_count": 1,
-        "trend": "improving"
-      },
-      {
-        "category": "positional",
-        "specific_type": "piece_coordination_failure",
-        "total_count": 1,
-        "recent_count": 0,
-        "prior_count": 1,
-        "trend": "improving"
-      },
-      {
-        "category": "defense",
-        "specific_type": "failed_to_spot_threat",
         "total_count": 1,
         "recent_count": 0,
         "prior_count": 1,
@@ -348,53 +710,137 @@
         "recent_count": 0,
         "prior_count": 1,
         "trend": "improving"
+      },
+      {
+        "category": "exchange",
+        "specific_type": "poor_piece_trade",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "endgame",
+        "specific_type": "failed_king_activation",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "fork_execution",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "positional",
+        "specific_type": "simplification_when_ahead",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "endgame",
+        "specific_type": "slow_rook_vs_knight_conversion",
+        "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "endgame",
+        "specific_type": "stalemate_save",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "missed_fork",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "discovered_check_fork",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "positional",
+        "specific_type": "correct_king_hunt_execution",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 4,
-        "recent": 0,
-        "prior": 4,
-        "trend": "improving"
+        "total": 7,
+        "recent": 2,
+        "prior": 5,
+        "trend": "worsening"
       },
       "positional": {
-        "total": 3,
-        "recent": 0,
-        "prior": 3,
-        "trend": "improving"
-      },
-      "opening": {
         "total": 6,
         "recent": 1,
         "prior": 5,
         "trend": "improving"
       },
+      "opening": {
+        "total": 12,
+        "recent": 1,
+        "prior": 11,
+        "trend": "improving"
+      },
       "defense": {
+        "total": 6,
+        "recent": 0,
+        "prior": 6,
+        "trend": "improving"
+      },
+      "exchange": {
         "total": 1,
         "recent": 0,
         "prior": 1,
         "trend": "improving"
+      },
+      "endgame": {
+        "total": 3,
+        "recent": 1,
+        "prior": 2,
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 10,
+      "games_tracked": 22,
       "most_common_openings": [
+        [
+          "English Opening: The Whale",
+          2
+        ],
+        [
+          "Four Knights Game: Italian Variation",
+          2
+        ],
         [
           "Italian Game: Evans Gambit, McDonnell Defense",
           1
-        ],
-        [
-          "Sicilian Defense: Smith-Morra Gambit",
-          1
-        ],
-        [
-          "Philidor Defense",
-          1
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 40
+      "avg_theory_depth_moves": 3.3,
+      "user_deviated_first_pct": 36
     }
   }
 }
