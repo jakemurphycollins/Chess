@@ -744,11 +744,33 @@
         "deviation_san": "Bc4"
       },
       "opening_notes": "Jake deviated from Pirc theory at move 5 with Bc4 \u2014 standard responses are Be2 or the Austrian Attack (f4). Despite this, the d5 space-gaining push and Ba4-Nd7-Re8 pin (active from move 12 through move 19) became the backbone of the winning plan. The bishop on a4 pinned the knight on d7 against the rook on e8 for 6 moves, setting up Bxe8 and the eventual Rb8 back-rank pin that forced resignation."
+    },
+    {
+      "date": "2026-06-12",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "748",
+      "patterns": [
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "missing_defensive_resource",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "C60",
+        "name": "Ruy Lopez: Spanish Countergambit",
+        "last_book_move": 3,
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_san": "d3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-12T19:22:01.899565",
-    "total_games": 27,
+    "computed_at": "2026-06-12T19:27:51.981884",
+    "total_games": 28,
     "weakness_summary": [
       {
         "category": "opening",
@@ -783,16 +805,16 @@
         "trend": "improving"
       },
       {
-        "category": "positional",
-        "specific_type": "piece_coordination_failure",
-        "total_count": 2,
-        "recent_count": 0,
-        "prior_count": 2,
-        "trend": "improving"
-      },
-      {
         "category": "defense",
         "specific_type": "missing_defensive_resource",
+        "total_count": 3,
+        "recent_count": 1,
+        "prior_count": 2,
+        "trend": "worsening"
+      },
+      {
+        "category": "positional",
+        "specific_type": "piece_coordination_failure",
         "total_count": 2,
         "recent_count": 0,
         "prior_count": 2,
@@ -882,17 +904,17 @@
         "category": "tactical",
         "specific_type": "discovered_check_fork",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "positional",
         "specific_type": "correct_king_hunt_execution",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "exchange",
@@ -922,15 +944,15 @@
     "category_trends": {
       "tactical": {
         "total": 8,
-        "recent": 2,
-        "prior": 6,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 7,
+        "trend": "improving"
       },
       "positional": {
         "total": 7,
-        "recent": 2,
-        "prior": 5,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 6,
+        "trend": "improving"
       },
       "opening": {
         "total": 14,
@@ -939,8 +961,8 @@
         "trend": "improving"
       },
       "defense": {
-        "total": 6,
-        "recent": 0,
+        "total": 7,
+        "recent": 1,
         "prior": 6,
         "trend": "improving"
       },
