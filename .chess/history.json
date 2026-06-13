@@ -811,18 +811,47 @@
         "deviated_by": "black",
         "deviation_san": "Nc6"
       }
+    },
+    {
+      "date": "2026-06-13",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "754",
+      "patterns": [
+        {
+          "category": "exchange",
+          "phase": "opening",
+          "specific_type": "bad_trade",
+          "severity": "major"
+        },
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "C54",
+        "name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+        "last_book_move": 5,
+        "last_book_san": "d3",
+        "deviated_by": "black",
+        "deviation_san": "O-O"
+      },
+      "opening_notes": "Jake played 6...Bxf2+ as an unsound sacrifice \u2014 gave up the bishop for the f2-pawn without sufficient compensation. The plan requires White king to be permanently displaced but White consolidated back with Ke1/Kd1. In the Giuoco Pianissimo with c3/d3, the Bxf2+ sacrifice is not justified; Black should continue normally with ...d5 to open the center."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-13T13:16:00.336531",
-    "total_games": 31,
+    "computed_at": "2026-06-13T13:16:01.591682",
+    "total_games": 32,
     "weakness_summary": [
       {
         "category": "opening",
         "specific_type": "wrong_opening_plan",
         "total_count": 9,
-        "recent_count": 1,
-        "prior_count": 8,
+        "recent_count": 0,
+        "prior_count": 9,
         "trend": "improving"
       },
       {
@@ -836,10 +865,10 @@
       {
         "category": "defense",
         "specific_type": "failed_to_spot_threat",
-        "total_count": 4,
-        "recent_count": 0,
+        "total_count": 5,
+        "recent_count": 1,
         "prior_count": 4,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "tactical",
@@ -872,6 +901,14 @@
         "recent_count": 0,
         "prior_count": 2,
         "trend": "improving"
+      },
+      {
+        "category": "exchange",
+        "specific_type": "bad_trade",
+        "total_count": 2,
+        "recent_count": 1,
+        "prior_count": 1,
+        "trend": "worsening"
       },
       {
         "category": "positional",
@@ -963,14 +1000,6 @@
       },
       {
         "category": "exchange",
-        "specific_type": "bad_trade",
-        "total_count": 1,
-        "recent_count": 0,
-        "prior_count": 1,
-        "trend": "improving"
-      },
-      {
-        "category": "exchange",
         "specific_type": "wrong_recapture",
         "total_count": 1,
         "recent_count": 0,
@@ -981,9 +1010,9 @@
         "category": "positional",
         "specific_type": "back_rank_pin_execution",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
@@ -995,27 +1024,27 @@
       },
       "positional": {
         "total": 7,
-        "recent": 1,
-        "prior": 6,
-        "trend": "stable"
+        "recent": 0,
+        "prior": 7,
+        "trend": "improving"
       },
       "opening": {
         "total": 14,
-        "recent": 1,
-        "prior": 13,
+        "recent": 0,
+        "prior": 14,
         "trend": "improving"
       },
       "defense": {
-        "total": 7,
-        "recent": 1,
+        "total": 8,
+        "recent": 2,
         "prior": 6,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "exchange": {
-        "total": 3,
-        "recent": 0,
+        "total": 4,
+        "recent": 1,
         "prior": 3,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "endgame": {
         "total": 3,
