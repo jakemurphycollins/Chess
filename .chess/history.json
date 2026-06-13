@@ -840,11 +840,26 @@
         "deviation_san": "O-O"
       },
       "opening_notes": "Jake played 6...Bxf2+ as an unsound sacrifice \u2014 gave up the bishop for the f2-pawn without sufficient compensation. The plan requires White king to be permanently displaced but White consolidated back with Ke1/Kd1. In the Giuoco Pianissimo with c3/d3, the Bxf2+ sacrifice is not justified; Black should continue normally with ...d5 to open the center."
+    },
+    {
+      "date": "2026-06-13",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "764",
+      "patterns": [],
+      "opening_info": {
+        "eco": "B06",
+        "name": "Modern Defense: Two Knights Variation",
+        "last_book_move": 4,
+        "last_book_san": "Nc3",
+        "deviated_by": "black",
+        "deviation_san": "Bg4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-13T13:16:01.591682",
-    "total_games": 32,
+    "computed_at": "2026-06-13T13:16:02.702707",
+    "total_games": 33,
     "weakness_summary": [
       {
         "category": "opening",
@@ -882,9 +897,9 @@
         "category": "defense",
         "specific_type": "missing_defensive_resource",
         "total_count": 3,
-        "recent_count": 1,
-        "prior_count": 2,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 3,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -1036,9 +1051,9 @@
       },
       "defense": {
         "total": 8,
-        "recent": 2,
-        "prior": 6,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 7,
+        "trend": "stable"
       },
       "exchange": {
         "total": 4,
