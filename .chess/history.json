@@ -796,11 +796,26 @@
         "deviated_by": "white",
         "deviation_san": "Bxc6"
       }
+    },
+    {
+      "date": "2026-06-12",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "381",
+      "patterns": [],
+      "opening_info": {
+        "eco": "C20",
+        "name": "King's Pawn Game: Wayward Queen Attack",
+        "last_book_move": 2,
+        "last_book_san": "Qh5",
+        "deviated_by": "black",
+        "deviation_san": "Nc6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-12T19:28:08.989287",
-    "total_games": 30,
+    "computed_at": "2026-06-13T13:16:00.336531",
+    "total_games": 31,
     "weakness_summary": [
       {
         "category": "opening",
