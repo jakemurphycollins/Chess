@@ -1013,11 +1013,26 @@
         "deviation_san": "f5"
       },
       "opening_notes": "3...f5 in the Italian is the Rousseau Gambit \u2014 considered dubious. It weakens the kingside and the e5 pawn, giving White easy development and attacking chances. Against a solid White setup, Black lacks the compensation needed."
+    },
+    {
+      "date": "2026-06-14",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "746",
+      "patterns": [],
+      "opening_info": {
+        "eco": "A45",
+        "name": "Trompowsky Attack",
+        "last_book_move": 1,
+        "last_book_san": "Nf6",
+        "deviated_by": "black",
+        "deviation_san": "d5"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:31.279998",
-    "total_games": 41,
+    "computed_at": "2026-06-15T21:11:32.376607",
+    "total_games": 42,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1031,9 +1046,9 @@
         "category": "defense",
         "specific_type": "failed_to_spot_threat",
         "total_count": 6,
-        "recent_count": 1,
-        "prior_count": 5,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 6,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -1217,9 +1232,9 @@
       },
       "defense": {
         "total": 9,
-        "recent": 1,
-        "prior": 8,
-        "trend": "stable"
+        "recent": 0,
+        "prior": 9,
+        "trend": "improving"
       },
       "exchange": {
         "total": 6,
