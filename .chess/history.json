@@ -975,11 +975,26 @@
         "deviation_san": "O-O"
       },
       "opening_notes": "Jake played 9. Bxf7+? giving up the bishop just to force a queen exchange on f7. After Qxf7 Qxf7+ Kxf7, White has traded off both queens but is down a bishop for no compensation. There was no attack to justify the sacrifice."
+    },
+    {
+      "date": "2026-06-14",
+      "result": "draw",
+      "user_color": "white",
+      "user_elo": "740",
+      "patterns": [],
+      "opening_info": {
+        "eco": "C57",
+        "name": "Italian Game: Two Knights Defense, Fritz Variation",
+        "last_book_move": 5,
+        "last_book_san": "Nd4",
+        "deviated_by": "white",
+        "deviation_san": "d6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:29.050381",
-    "total_games": 39,
+    "computed_at": "2026-06-15T21:11:30.142542",
+    "total_games": 40,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1153,9 +1168,9 @@
         "category": "time",
         "specific_type": "clock_mismanagement",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
@@ -1197,9 +1212,9 @@
       },
       "time": {
         "total": 1,
-        "recent": 1,
-        "prior": 0,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 1,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [],
