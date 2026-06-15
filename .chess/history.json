@@ -870,11 +870,33 @@
         "deviated_by": "white",
         "deviation_san": "Bb3"
       }
+    },
+    {
+      "date": "2026-06-14",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "373",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "middlegame",
+          "specific_type": "clock_mismanagement",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "C47",
+        "name": "Four Knights Game: Scotch Variation",
+        "last_book_move": 3,
+        "last_book_san": "Nf6",
+        "deviated_by": "black",
+        "deviation_san": "d6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:22.853051",
-    "total_games": 34,
+    "computed_at": "2026-06-15T21:11:24.516504",
+    "total_games": 35,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1043,6 +1065,14 @@
         "recent_count": 0,
         "prior_count": 1,
         "trend": "improving"
+      },
+      {
+        "category": "time",
+        "specific_type": "clock_mismanagement",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
@@ -1081,6 +1111,12 @@
         "recent": 0,
         "prior": 3,
         "trend": "improving"
+      },
+      "time": {
+        "total": 1,
+        "recent": 1,
+        "prior": 0,
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [],
