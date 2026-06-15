@@ -855,11 +855,26 @@
         "deviated_by": "black",
         "deviation_san": "Bg4"
       }
+    },
+    {
+      "date": "2026-06-14",
+      "result": "draw",
+      "user_color": "white",
+      "user_elo": "764",
+      "patterns": [],
+      "opening_info": {
+        "eco": "C54",
+        "name": "Italian Game: Classical Variation, with d5",
+        "last_book_move": 5,
+        "last_book_san": "d3",
+        "deviated_by": "white",
+        "deviation_san": "Bb3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-13T13:16:02.702707",
-    "total_games": 33,
+    "computed_at": "2026-06-15T21:11:22.853051",
+    "total_games": 34,
     "weakness_summary": [
       {
         "category": "opening",
