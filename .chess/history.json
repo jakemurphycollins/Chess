@@ -907,11 +907,33 @@
         "deviated_by": "white",
         "deviation_san": "Nc3"
       }
+    },
+    {
+      "date": "2026-06-14",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "756",
+      "patterns": [
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "C44",
+        "name": "Ponziani Opening",
+        "last_book_move": 2,
+        "last_book_san": "Nf6",
+        "deviated_by": "black",
+        "deviation_san": "d5"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:25.711712",
-    "total_games": 36,
+    "computed_at": "2026-06-15T21:11:26.866678",
+    "total_games": 37,
     "weakness_summary": [
       {
         "category": "opening",
@@ -922,20 +944,20 @@
         "trend": "improving"
       },
       {
+        "category": "defense",
+        "specific_type": "failed_to_spot_threat",
+        "total_count": 6,
+        "recent_count": 1,
+        "prior_count": 5,
+        "trend": "worsening"
+      },
+      {
         "category": "opening",
         "specific_type": "bad_development_order",
         "total_count": 5,
         "recent_count": 0,
         "prior_count": 5,
         "trend": "improving"
-      },
-      {
-        "category": "defense",
-        "specific_type": "failed_to_spot_threat",
-        "total_count": 5,
-        "recent_count": 1,
-        "prior_count": 4,
-        "trend": "worsening"
       },
       {
         "category": "tactical",
@@ -973,9 +995,9 @@
         "category": "exchange",
         "specific_type": "bad_trade",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -1110,16 +1132,16 @@
         "trend": "improving"
       },
       "defense": {
-        "total": 8,
+        "total": 9,
         "recent": 1,
-        "prior": 7,
+        "prior": 8,
         "trend": "stable"
       },
       "exchange": {
         "total": 4,
-        "recent": 1,
-        "prior": 3,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 4,
+        "trend": "improving"
       },
       "endgame": {
         "total": 3,
