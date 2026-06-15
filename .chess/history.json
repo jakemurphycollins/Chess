@@ -929,11 +929,34 @@
         "deviated_by": "black",
         "deviation_san": "d5"
       }
+    },
+    {
+      "date": "2026-06-14",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "748",
+      "patterns": [
+        {
+          "category": "exchange",
+          "phase": "opening",
+          "specific_type": "wrong_recapture",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "A45",
+        "name": "Indian Defense",
+        "last_book_move": 1,
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_san": "Qd3"
+      },
+      "opening_notes": "After 5. dxc5, Jake played 5...Bxc5 instead of 5...Nxc5, allowing 6. Qb5+ which forks the king and the bishop on c5, winning the bishop for free. Recapturing with the knight avoids this fork entirely."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:26.866678",
-    "total_games": 37,
+    "computed_at": "2026-06-15T21:11:27.888953",
+    "total_games": 38,
     "weakness_summary": [
       {
         "category": "opening",
@@ -998,6 +1021,14 @@
         "recent_count": 0,
         "prior_count": 2,
         "trend": "improving"
+      },
+      {
+        "category": "exchange",
+        "specific_type": "wrong_recapture",
+        "total_count": 2,
+        "recent_count": 1,
+        "prior_count": 1,
+        "trend": "worsening"
       },
       {
         "category": "positional",
@@ -1088,14 +1119,6 @@
         "trend": "improving"
       },
       {
-        "category": "exchange",
-        "specific_type": "wrong_recapture",
-        "total_count": 1,
-        "recent_count": 0,
-        "prior_count": 1,
-        "trend": "improving"
-      },
-      {
         "category": "positional",
         "specific_type": "back_rank_pin_execution",
         "total_count": 1,
@@ -1138,10 +1161,10 @@
         "trend": "stable"
       },
       "exchange": {
-        "total": 4,
-        "recent": 0,
+        "total": 5,
+        "recent": 1,
         "prior": 4,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "endgame": {
         "total": 3,
