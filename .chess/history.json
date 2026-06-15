@@ -1028,11 +1028,26 @@
         "deviated_by": "black",
         "deviation_san": "d5"
       }
+    },
+    {
+      "date": "2026-06-14",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "754",
+      "patterns": [],
+      "opening_info": {
+        "eco": "C00",
+        "name": "Rat Defense: Small Center Defense",
+        "last_book_move": 2,
+        "last_book_san": "d6",
+        "deviated_by": "white",
+        "deviation_san": "Nc3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:32.376607",
-    "total_games": 42,
+    "computed_at": "2026-06-15T21:11:33.528049",
+    "total_games": 43,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1102,9 +1117,9 @@
         "category": "exchange",
         "specific_type": "wrong_recapture",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -1238,8 +1253,8 @@
       },
       "exchange": {
         "total": 6,
-        "recent": 2,
-        "prior": 4,
+        "recent": 1,
+        "prior": 5,
         "trend": "worsening"
       },
       "endgame": {
