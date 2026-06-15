@@ -1043,11 +1043,33 @@
         "deviated_by": "white",
         "deviation_san": "Nc3"
       }
+    },
+    {
+      "date": "2026-06-15",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "373",
+      "patterns": [
+        {
+          "category": "exchange",
+          "phase": "middlegame",
+          "specific_type": "bad_trade",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "A03",
+        "name": "Bird Opening: Dutch Variation",
+        "last_book_move": 1,
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_san": "Nf3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:33.528049",
-    "total_games": 43,
+    "computed_at": "2026-06-15T21:11:34.672848",
+    "total_games": 44,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1074,6 +1096,14 @@
         "trend": "improving"
       },
       {
+        "category": "exchange",
+        "specific_type": "bad_trade",
+        "total_count": 4,
+        "recent_count": 1,
+        "prior_count": 3,
+        "trend": "worsening"
+      },
+      {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 3,
@@ -1088,14 +1118,6 @@
         "recent_count": 0,
         "prior_count": 3,
         "trend": "improving"
-      },
-      {
-        "category": "exchange",
-        "specific_type": "bad_trade",
-        "total_count": 3,
-        "recent_count": 1,
-        "prior_count": 2,
-        "trend": "worsening"
       },
       {
         "category": "positional",
@@ -1252,9 +1274,9 @@
         "trend": "improving"
       },
       "exchange": {
-        "total": 6,
+        "total": 7,
         "recent": 1,
-        "prior": 5,
+        "prior": 6,
         "trend": "worsening"
       },
       "endgame": {
