@@ -990,19 +990,42 @@
         "deviated_by": "white",
         "deviation_san": "d6"
       }
+    },
+    {
+      "date": "2026-06-14",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "732",
+      "patterns": [
+        {
+          "category": "opening",
+          "phase": "opening",
+          "specific_type": "wrong_opening_plan",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "C50",
+        "name": "Italian Game: Rousseau Gambit",
+        "last_book_move": 2,
+        "last_book_san": "Nc6",
+        "deviated_by": "black",
+        "deviation_san": "f5"
+      },
+      "opening_notes": "3...f5 in the Italian is the Rousseau Gambit \u2014 considered dubious. It weakens the kingside and the e5 pawn, giving White easy development and attacking chances. Against a solid White setup, Black lacks the compensation needed."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:30.142542",
-    "total_games": 40,
+    "computed_at": "2026-06-15T21:11:31.279998",
+    "total_games": 41,
     "weakness_summary": [
       {
         "category": "opening",
         "specific_type": "wrong_opening_plan",
-        "total_count": 9,
-        "recent_count": 0,
+        "total_count": 10,
+        "recent_count": 1,
         "prior_count": 9,
-        "trend": "improving"
+        "trend": "stable"
       },
       {
         "category": "defense",
@@ -1187,8 +1210,8 @@
         "trend": "improving"
       },
       "opening": {
-        "total": 14,
-        "recent": 0,
+        "total": 15,
+        "recent": 1,
         "prior": 14,
         "trend": "improving"
       },
