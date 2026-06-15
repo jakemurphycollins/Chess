@@ -952,11 +952,34 @@
         "deviation_san": "Qd3"
       },
       "opening_notes": "After 5. dxc5, Jake played 5...Bxc5 instead of 5...Nxc5, allowing 6. Qb5+ which forks the king and the bishop on c5, winning the bishop for free. Recapturing with the knight avoids this fork entirely."
+    },
+    {
+      "date": "2026-06-14",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "742",
+      "patterns": [
+        {
+          "category": "exchange",
+          "phase": "opening",
+          "specific_type": "bad_trade",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "eco": "C50",
+        "name": "Italian Game: Anti-Fried Liver Defense",
+        "last_book_move": 3,
+        "last_book_san": "Bc4",
+        "deviated_by": "white",
+        "deviation_san": "O-O"
+      },
+      "opening_notes": "Jake played 9. Bxf7+? giving up the bishop just to force a queen exchange on f7. After Qxf7 Qxf7+ Kxf7, White has traded off both queens but is down a bishop for no compensation. There was no attack to justify the sacrifice."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:27.888953",
-    "total_games": 38,
+    "computed_at": "2026-06-15T21:11:29.050381",
+    "total_games": 39,
     "weakness_summary": [
       {
         "category": "opening",
@@ -999,6 +1022,14 @@
         "trend": "improving"
       },
       {
+        "category": "exchange",
+        "specific_type": "bad_trade",
+        "total_count": 3,
+        "recent_count": 1,
+        "prior_count": 2,
+        "trend": "worsening"
+      },
+      {
         "category": "positional",
         "specific_type": "piece_coordination_failure",
         "total_count": 2,
@@ -1009,14 +1040,6 @@
       {
         "category": "tactical",
         "specific_type": "missed_fork",
-        "total_count": 2,
-        "recent_count": 0,
-        "prior_count": 2,
-        "trend": "improving"
-      },
-      {
-        "category": "exchange",
-        "specific_type": "bad_trade",
         "total_count": 2,
         "recent_count": 0,
         "prior_count": 2,
@@ -1161,8 +1184,8 @@
         "trend": "stable"
       },
       "exchange": {
-        "total": 5,
-        "recent": 1,
+        "total": 6,
+        "recent": 2,
         "prior": 4,
         "trend": "worsening"
       },
