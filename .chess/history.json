@@ -1065,11 +1065,26 @@
         "deviated_by": "white",
         "deviation_san": "Nf3"
       }
+    },
+    {
+      "date": "2026-06-15",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "759",
+      "patterns": [],
+      "opening_info": {
+        "eco": "C50",
+        "name": "Italian Game: Giuoco Pianissimo",
+        "last_book_move": 5,
+        "last_book_san": "O-O",
+        "deviated_by": "black",
+        "deviation_san": "d6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:34.672848",
-    "total_games": 44,
+    "computed_at": "2026-06-15T21:11:36.024125",
+    "total_games": 45,
     "weakness_summary": [
       {
         "category": "opening",
