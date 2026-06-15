@@ -892,11 +892,26 @@
         "deviated_by": "black",
         "deviation_san": "d6"
       }
+    },
+    {
+      "date": "2026-06-14",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "381",
+      "patterns": [],
+      "opening_info": {
+        "eco": "B01",
+        "name": "Scandinavian Defense: Mieses-Kotroc Variation",
+        "last_book_move": 2,
+        "last_book_san": "Qxd5",
+        "deviated_by": "white",
+        "deviation_san": "Nc3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:24.516504",
-    "total_games": 35,
+    "computed_at": "2026-06-15T21:11:25.711712",
+    "total_games": 36,
     "weakness_summary": [
       {
         "category": "opening",
