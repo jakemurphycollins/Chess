@@ -1080,19 +1080,44 @@
         "deviated_by": "black",
         "deviation_san": "d6"
       }
+    },
+    {
+      "date": "2026.06.15",
+      "result": "1-0",
+      "user_color": "white",
+      "user_elo": "759",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "queen_sacrifice_for_material_gain",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Petrov's Defense",
+        "eco_code": "C42",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "Nxe5",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Bc5"
+      },
+      "opening_notes": "In the Petrov Defense (C42), Black deviated with 3...Bc5 instead of the standard 3...d6. After 4.Bc4 O-O 5.d4 Nxe4, White correctly played 6.dxc5 winning Black's bishop outright. Jake was in book through move 3 (Nxe5) and capitalised on Black's opening mistake. The key tactical lesson from this game: the queen sacrifice 17.Qxf8+ works because after 17...Rxf8 Black's queen on e5 is undefended and is immediately taken by 18.Bxe5 \u2014 always look for what the opponent must do after a forcing move."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-15T21:11:36.024125",
-    "total_games": 45,
+    "computed_at": "2026-06-16T00:15:08.650143",
+    "total_games": 46,
     "weakness_summary": [
       {
         "category": "opening",
         "specific_type": "wrong_opening_plan",
         "total_count": 10,
-        "recent_count": 1,
-        "prior_count": 9,
-        "trend": "stable"
+        "recent_count": 0,
+        "prior_count": 10,
+        "trend": "improving"
       },
       {
         "category": "defense",
@@ -1261,14 +1286,22 @@
         "recent_count": 0,
         "prior_count": 1,
         "trend": "improving"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "queen_sacrifice_for_material_gain",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 8,
-        "recent": 0,
+        "total": 9,
+        "recent": 1,
         "prior": 8,
-        "trend": "improving"
+        "trend": "stable"
       },
       "positional": {
         "total": 7,
@@ -1278,8 +1311,8 @@
       },
       "opening": {
         "total": 15,
-        "recent": 1,
-        "prior": 14,
+        "recent": 0,
+        "prior": 15,
         "trend": "improving"
       },
       "defense": {
@@ -1309,7 +1342,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 26,
+      "games_tracked": 27,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1325,7 +1358,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 35
+      "user_deviated_first_pct": 33
     }
   }
 }
