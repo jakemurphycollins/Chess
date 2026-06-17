@@ -1230,11 +1230,29 @@
         "deviation_san": "Nf6"
       },
       "opening_notes": "King's Pawn Game: Mengarini's Opening (C20). Jake (Black) deviated immediately on move 2 with 2...Nf6; the game left known theory very early."
+    },
+    {
+      "date": "2026-06-15",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "749",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Scotch Game",
+        "eco_code": "C45",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "Nxd4",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "Qe7"
+      },
+      "opening_notes": "Scotch Game (C45). Black (Jake) deviated on move 4 with 4...Qe7, leading to an early queen trade and a long rook-and-minor-piece middlegame/endgame eventually converted into a win."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-17T01:36:07.094318",
-    "total_games": 51,
+    "computed_at": "2026-06-17T01:36:08.246803",
+    "total_games": 52,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1256,8 +1274,8 @@
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 6,
-        "recent_count": 3,
-        "prior_count": 3,
+        "recent_count": 2,
+        "prior_count": 4,
         "trend": "worsening"
       },
       {
@@ -1424,8 +1442,8 @@
     "category_trends": {
       "tactical": {
         "total": 12,
-        "recent": 3,
-        "prior": 9,
+        "recent": 2,
+        "prior": 10,
         "trend": "worsening"
       },
       "positional": {
@@ -1467,7 +1485,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 32,
+      "games_tracked": 33,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1482,8 +1500,8 @@
           2
         ]
       ],
-      "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 41
+      "avg_theory_depth_moves": 3.5,
+      "user_deviated_first_pct": 42
     }
   }
 }
