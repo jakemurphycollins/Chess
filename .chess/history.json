@@ -1105,11 +1105,36 @@
         "deviation_san": "Bc5"
       },
       "opening_notes": "In the Petrov Defense (C42), Black deviated with 3...Bc5 instead of the standard 3...d6. After 4.Bc4 O-O 5.d4 Nxe4, White correctly played 6.dxc5 winning Black's bishop outright. Jake was in book through move 3 (Nxe5) and capitalised on Black's opening mistake. The key tactical lesson from this game: the queen sacrifice 17.Qxf8+ works because after 17...Rxf8 Black's queen on e5 is undefended and is immediately taken by 18.Bxe5 \u2014 always look for what the opponent must do after a forcing move."
+    },
+    {
+      "date": "2026-06-15",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "750",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Rapport-Jobava System",
+        "eco_code": "D01",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "Bf4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Bf5"
+      },
+      "opening_notes": "Rapport-Jobava System (D01). Jake deviated from book with 3...Bf5 in response to White's Bf4, an immediate developing move outside main theory."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-16T00:15:08.650143",
-    "total_games": 46,
+    "computed_at": "2026-06-17T01:36:02.559142",
+    "total_games": 47,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1136,20 +1161,20 @@
         "trend": "improving"
       },
       {
-        "category": "exchange",
-        "specific_type": "bad_trade",
+        "category": "tactical",
+        "specific_type": "hanging_piece",
         "total_count": 4,
         "recent_count": 1,
         "prior_count": 3,
         "trend": "worsening"
       },
       {
-        "category": "tactical",
-        "specific_type": "hanging_piece",
-        "total_count": 3,
-        "recent_count": 0,
+        "category": "exchange",
+        "specific_type": "bad_trade",
+        "total_count": 4,
+        "recent_count": 1,
         "prior_count": 3,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "defense",
@@ -1298,10 +1323,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 9,
-        "recent": 1,
+        "total": 10,
+        "recent": 2,
         "prior": 8,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "positional": {
         "total": 7,
@@ -1342,7 +1367,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 27,
+      "games_tracked": 28,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1358,7 +1383,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 33
+      "user_deviated_first_pct": 36
     }
   }
 }
