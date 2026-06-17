@@ -1180,11 +1180,36 @@
         "deviation_san": "Nc6"
       },
       "opening_notes": "French Defense: Tarrasch, Open System, S\u00fcchting Line (C07). Black deviated early with 4...Nc6; Jake (White) followed book through move 4."
+    },
+    {
+      "date": "2026-06-15",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "749",
+      "patterns": [
+        {
+          "category": "defense",
+          "phase": "opening",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation",
+        "eco_code": "C58",
+        "last_book_move_number": 6,
+        "last_book_color": "white",
+        "last_book_san": "d3",
+        "deviated_by": "black",
+        "deviation_move_number": 6,
+        "deviation_san": "Nxd5"
+      },
+      "opening_notes": "Italian Game: Two Knights Defense, Polerio/Kieseritzky Variation (C58). Jake (Black) deviated on move 6 with 6...Nxd5, walking into a well-known trap pattern around f7 that ended in a quick mate."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-17T01:36:04.911727",
-    "total_games": 49,
+    "computed_at": "2026-06-17T01:36:06.017077",
+    "total_games": 50,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1195,20 +1220,20 @@
         "trend": "improving"
       },
       {
+        "category": "defense",
+        "specific_type": "failed_to_spot_threat",
+        "total_count": 7,
+        "recent_count": 1,
+        "prior_count": 6,
+        "trend": "worsening"
+      },
+      {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 6,
         "recent_count": 3,
         "prior_count": 3,
         "trend": "worsening"
-      },
-      {
-        "category": "defense",
-        "specific_type": "failed_to_spot_threat",
-        "total_count": 6,
-        "recent_count": 0,
-        "prior_count": 6,
-        "trend": "improving"
       },
       {
         "category": "opening",
@@ -1391,10 +1416,10 @@
         "trend": "improving"
       },
       "defense": {
-        "total": 9,
-        "recent": 0,
+        "total": 10,
+        "recent": 1,
         "prior": 9,
-        "trend": "improving"
+        "trend": "stable"
       },
       "exchange": {
         "total": 7,
@@ -1417,7 +1442,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 30,
+      "games_tracked": 31,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1432,8 +1457,8 @@
           2
         ]
       ],
-      "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 37
+      "avg_theory_depth_moves": 3.5,
+      "user_deviated_first_pct": 39
     }
   }
 }
