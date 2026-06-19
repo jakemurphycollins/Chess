@@ -1744,11 +1744,28 @@
         "deviation_move_number": 5,
         "deviation_san": "Ng4"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "445",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Mar\u00f3czy Defense",
+        "eco_code": "B07",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "d6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "dxe5"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:01.609787",
-    "total_games": 77,
+    "computed_at": "2026-06-19T14:53:02.681220",
+    "total_games": 78,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1997,7 +2014,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 56,
+      "games_tracked": 57,
       "most_common_openings": [
         [
           "Petrov's Defense: Damiano Variation",
@@ -2013,7 +2030,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 54
+      "user_deviated_first_pct": 53
     }
   }
 }
