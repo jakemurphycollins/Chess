@@ -2182,11 +2182,28 @@
         "deviation_move_number": 6,
         "deviation_san": "b3"
       }
+    },
+    {
+      "date": "2026-06-19",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "461",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Philidor Defense",
+        "eco_code": "C41",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Bg4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:24.330176",
-    "total_games": 98,
+    "computed_at": "2026-06-19T14:53:25.417380",
+    "total_games": 99,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2280,9 +2297,9 @@
         "category": "endgame",
         "specific_type": "failed_conversion",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -2430,9 +2447,9 @@
       },
       "endgame": {
         "total": 6,
-        "recent": 1,
-        "prior": 5,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 6,
+        "trend": "improving"
       },
       "time": {
         "total": 3,
@@ -2443,7 +2460,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 77,
+      "games_tracked": 78,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
