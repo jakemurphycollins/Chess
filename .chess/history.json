@@ -1972,18 +1972,35 @@
         "deviation_move_number": 2,
         "deviation_san": "Nc6"
       }
+    },
+    {
+      "date": "2026-06-18",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "445",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Elephant Gambit",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nxe5"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:12.345355",
-    "total_games": 87,
+    "computed_at": "2026-06-19T14:53:13.404198",
+    "total_games": 88,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 18,
-        "recent_count": 4,
-        "prior_count": 14,
+        "recent_count": 3,
+        "prior_count": 15,
         "trend": "worsening"
       },
       {
@@ -2182,8 +2199,8 @@
     "category_trends": {
       "tactical": {
         "total": 25,
-        "recent": 4,
-        "prior": 21,
+        "recent": 3,
+        "prior": 22,
         "trend": "worsening"
       },
       "positional": {
@@ -2225,7 +2242,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 66,
+      "games_tracked": 67,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
@@ -2240,8 +2257,8 @@
           2
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 56
+      "avg_theory_depth_moves": 3.1,
+      "user_deviated_first_pct": 57
     }
   }
 }
