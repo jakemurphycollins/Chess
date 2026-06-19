@@ -1850,17 +1850,41 @@
         "deviation_move_number": 2,
         "deviation_san": "Nf6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "453",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Knight Attack, Normal Variation",
+        "eco_code": "C57",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "exd5"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:07.020213",
-    "total_games": 82,
+    "computed_at": "2026-06-19T14:53:08.161594",
+    "total_games": 83,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 14,
-        "recent_count": 3,
+        "total_count": 15,
+        "recent_count": 4,
         "prior_count": 11,
         "trend": "worsening"
       },
@@ -2059,8 +2083,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 21,
-        "recent": 3,
+        "total": 22,
+        "recent": 4,
         "prior": 18,
         "trend": "worsening"
       },
@@ -2103,7 +2127,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 61,
+      "games_tracked": 62,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
@@ -2119,7 +2143,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 52
+      "user_deviated_first_pct": 53
     }
   }
 }
