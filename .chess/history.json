@@ -2165,11 +2165,28 @@
         "deviation_move_number": 3,
         "deviation_san": "Nc3"
       }
+    },
+    {
+      "date": "2026-06-19",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "453",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Polerio Defense",
+        "eco_code": "C58",
+        "last_book_move_number": 5,
+        "last_book_color": "black",
+        "last_book_san": "Na5",
+        "deviated_by": "white",
+        "deviation_move_number": 6,
+        "deviation_san": "b3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:23.206352",
-    "total_games": 97,
+    "computed_at": "2026-06-19T14:53:24.330176",
+    "total_games": 98,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2426,7 +2443,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 76,
+      "games_tracked": 77,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -2441,8 +2458,8 @@
           3
         ]
       ],
-      "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 59
+      "avg_theory_depth_moves": 3.2,
+      "user_deviated_first_pct": 58
     }
   }
 }
