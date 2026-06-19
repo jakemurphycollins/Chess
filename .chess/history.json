@@ -1761,19 +1761,50 @@
         "deviation_move_number": 3,
         "deviation_san": "dxe5"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "437",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder",
+          "pattern_tag": "queen_undeveloped_d8"
+        },
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Ruy Lopez: Berlin Defense",
+        "eco_code": "C65",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Bxc6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:02.681220",
-    "total_games": 78,
+    "computed_at": "2026-06-19T14:53:03.717013",
+    "total_games": 79,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 11,
-        "recent_count": 0,
+        "total_count": 13,
+        "recent_count": 2,
         "prior_count": 11,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -1970,10 +2001,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 18,
-        "recent": 0,
+        "total": 20,
+        "recent": 2,
         "prior": 18,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "positional": {
         "total": 8,
@@ -2014,7 +2045,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 57,
+      "games_tracked": 58,
       "most_common_openings": [
         [
           "Petrov's Defense: Damiano Variation",
@@ -2030,7 +2061,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 53
+      "user_deviated_first_pct": 52
     }
   }
 }
