@@ -1719,11 +1719,36 @@
         "deviation_move_number": 2,
         "deviation_san": "Nc6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "437",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "middlegame",
+          "specific_type": "clock_mismanagement",
+          "severity": "blunder",
+          "pattern_tag": "time_forfeit_in_complex_position"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+        "eco_code": "C54",
+        "last_book_move_number": 5,
+        "last_book_color": "white",
+        "last_book_san": "d3",
+        "deviated_by": "black",
+        "deviation_move_number": 5,
+        "deviation_san": "Ng4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:00.506189",
-    "total_games": 76,
+    "computed_at": "2026-06-19T14:53:01.609787",
+    "total_games": 77,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1804,6 +1829,14 @@
         "recent_count": 0,
         "prior_count": 2,
         "trend": "improving"
+      },
+      {
+        "category": "time",
+        "specific_type": "clock_mismanagement",
+        "total_count": 2,
+        "recent_count": 1,
+        "prior_count": 1,
+        "trend": "worsening"
       },
       {
         "category": "positional",
@@ -1894,14 +1927,6 @@
         "trend": "improving"
       },
       {
-        "category": "time",
-        "specific_type": "clock_mismanagement",
-        "total_count": 1,
-        "recent_count": 0,
-        "prior_count": 1,
-        "trend": "improving"
-      },
-      {
         "category": "tactical",
         "specific_type": "queen_sacrifice_for_material_gain",
         "total_count": 1,
@@ -1964,15 +1989,15 @@
         "trend": "improving"
       },
       "time": {
-        "total": 1,
-        "recent": 0,
+        "total": 2,
+        "recent": 1,
         "prior": 1,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 55,
+      "games_tracked": 56,
       "most_common_openings": [
         [
           "Petrov's Defense: Damiano Variation",
@@ -1988,7 +2013,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 55
+      "user_deviated_first_pct": 54
     }
   }
 }
