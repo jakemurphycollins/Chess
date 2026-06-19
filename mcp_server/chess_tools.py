@@ -89,6 +89,30 @@ def _parse_tc_seconds(tc: Optional[str]) -> Optional[int]:
     return int(base) if base.isdigit() else None
 
 
+def _classify_time_control(tc: Optional[str]) -> Optional[str]:
+    """Classify a PGN TimeControl string into bullet/blitz/rapid/classical.
+
+    Uses the chess.com/Lichess convention of estimated game length:
+    base seconds + 40 * increment seconds.
+    """
+    if not tc:
+        return None
+    parts = tc.split("+")
+    base = parts[0]
+    if not base.isdigit():
+        return None
+    base_seconds = int(base)
+    increment = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else 0
+    estimated = base_seconds + 40 * increment
+    if estimated < 180:
+        return "bullet"
+    if estimated < 600:
+        return "blitz"
+    if estimated < 1500:
+        return "rapid"
+    return "classical"
+
+
 def _walk_moves(game: chess.pgn.Game):
     """Walk mainline moves safely, stopping at the first illegal move.
     Returns (moves_list, san_list)."""
@@ -124,6 +148,7 @@ def parse_game(pgn: str) -> dict:
         "total_full_moves": (len(moves) + 1) // 2,
         "time_control": tc,
         "time_control_seconds": _parse_tc_seconds(tc),
+        "time_control_category": _classify_time_control(tc),
         "opening": h.get("Opening") or h.get("ECO"),
         "site": h.get("Site"),
         "date": h.get("Date"),
@@ -726,6 +751,7 @@ def save_game_summary(
     user_elo: str,
     opening_info: Optional[dict] = None,
     opening_notes: Optional[str] = None,
+    time_control: Optional[str] = None,
 ) -> dict:
     """Append a game summary to .chess/history.json for multi-game tracking.
 
@@ -737,6 +763,9 @@ def save_game_summary(
     opening_notes: freeform string capturing opening-specific coaching insights
       discussed during the session (e.g. correct retreats, opening plan corrections).
       Always pass this if any opening theory was discussed.
+    time_control: the raw TimeControl PGN header string (e.g. "600", "900+10").
+      Pass the value from parse_game's "time_control" field when available — it is
+      used to derive a bullet/blitz/rapid/classical breakdown in the player profile.
     After saving, recomputes and caches the player_profile block in history.json.
     """
     path = os.path.join(os.getcwd(), ".chess", "history.json")
@@ -755,6 +784,8 @@ def save_game_summary(
         "user_elo": user_elo,
         "patterns": patterns,
         "opening_info": opening_info,
+        "time_control": time_control,
+        "time_control_category": _classify_time_control(time_control),
     }
     if opening_notes:
         entry["opening_notes"] = opening_notes
@@ -830,9 +861,13 @@ def _compute_player_profile(games: list) -> dict:
     ct_prior: dict = defaultdict(int)
     tag_games: dict = defaultdict(set)
     tag_meta: dict = {}
+    tc_games: dict = defaultdict(int)
+    tc_pattern_counts: dict = defaultdict(lambda: defaultdict(int))
 
     for i, game in enumerate(games):
         in_recent = i >= (total_games - n_recent)
+        tc_category = game.get("time_control_category") or "unknown"
+        tc_games[tc_category] += 1
         for p in game.get("patterns", []):
             if not isinstance(p, dict):
                 continue
@@ -853,6 +888,7 @@ def _compute_player_profile(games: list) -> dict:
                 tag_games[tag].add(i)
                 if tag not in tag_meta:
                     tag_meta[tag] = {"category": cat, "severity": sev}
+            tc_pattern_counts[tc_category][key] += 1
 
     weakness_summary = sorted(
         [
@@ -926,6 +962,25 @@ def _compute_player_profile(games: list) -> dict:
             ),
         }
 
+    time_control_breakdown = {
+        tc_cat: {
+            "games": tc_games[tc_cat],
+            "top_weaknesses": sorted(
+                [
+                    {
+                        "category": k[0],
+                        "specific_type": k[1],
+                        "count": cnt,
+                    }
+                    for k, cnt in tc_pattern_counts[tc_cat].items()
+                ],
+                key=lambda x: x["count"],
+                reverse=True,
+            )[:3],
+        }
+        for tc_cat in tc_games
+    }
+
     return {
         "computed_at": datetime.datetime.utcnow().isoformat(),
         "total_games": total_games,
@@ -933,6 +988,7 @@ def _compute_player_profile(games: list) -> dict:
         "category_trends": category_trends,
         "high_confidence_patterns": high_confidence,
         "opening_stats": opening_stats,
+        "time_control_breakdown": time_control_breakdown,
     }
 
 

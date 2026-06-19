@@ -41,6 +41,7 @@ If `total_games` is 0 or the result is empty, skip the history section entirely.
 If history exists:
 - Surface the top 1–2 weaknesses from `weakness_summary` (prefer trend `"worsening"` or high `total_count`): "Looking at your history, your most common issue has been [specific_type] in the [category] category — let's keep an eye out for it."
 - If `opening_stats` exists, note avg theory depth in one sentence: "You've been averaging book through move [N] across your games."
+- If `time_control_breakdown` shows a clear weakness concentrated in one speed category (e.g. most blunders are in `bullet`) and this game is in that category, mention it in one sentence. Otherwise skip it — don't read out the full breakdown.
 - Internally note any `high_confidence_patterns` — you will reference these in Step 5 if they appear.
 - Keep the history mention to one casual sentence. Do not read out the full list.
 
@@ -158,6 +159,8 @@ If the user agrees, identify 1–5 patterns from this session using the taxonomy
 Always pass `opening_info=<the dict returned by get_opening_info in Step 1>` — this is required for opening knowledge tracking across games. Never pass None unless get_opening_info failed entirely.
 
 Always pass `opening_notes=<string>` if any opening theory was discussed during the session — specific moves, correct retreats, opening plan corrections, or positional ideas in the opening. Write it as a concise reference note in plain English (2–4 sentences max). Omit only if the opening was never discussed.
+
+Always pass `time_control=<the "time_control" string from parse_game's Step 1 output>` — this lets history track bullet/blitz/rapid/classical separately. Pass it through as-is (e.g. `"600"`, `"900+10"`); never reformat or guess it.
 
 Each pattern dict must have:
 - `category`: one of `tactical` / `positional` / `time` / `opening` / `endgame` / `defense` / `exchange`
