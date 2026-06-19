@@ -1702,11 +1702,28 @@
         "deviation_move_number": 3,
         "deviation_san": "e5"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "445",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Wayward Queen Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Qh5",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:59.423989",
-    "total_games": 75,
+    "computed_at": "2026-06-19T14:53:00.506189",
+    "total_games": 76,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1955,7 +1972,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 54,
+      "games_tracked": 55,
       "most_common_openings": [
         [
           "Petrov's Defense: Damiano Variation",
@@ -1971,7 +1988,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 54
+      "user_deviated_first_pct": 55
     }
   }
 }
