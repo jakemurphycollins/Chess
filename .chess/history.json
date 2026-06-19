@@ -1874,18 +1874,42 @@
         "deviation_move_number": 5,
         "deviation_san": "exd5"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "725",
+      "patterns": [
+        {
+          "category": "defense",
+          "phase": "middlegame",
+          "specific_type": "failed_to_spot_threat",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Rat Defense: Small Center Defense",
+        "eco_code": "C00",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "d6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nf3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:08.161594",
-    "total_games": 83,
+    "computed_at": "2026-06-19T14:53:09.221785",
+    "total_games": 84,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 15,
-        "recent_count": 4,
-        "prior_count": 11,
+        "recent_count": 2,
+        "prior_count": 13,
         "trend": "worsening"
       },
       {
@@ -1899,10 +1923,10 @@
       {
         "category": "defense",
         "specific_type": "failed_to_spot_threat",
-        "total_count": 7,
-        "recent_count": 0,
+        "total_count": 8,
+        "recent_count": 1,
         "prior_count": 7,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -2084,8 +2108,8 @@
     "category_trends": {
       "tactical": {
         "total": 22,
-        "recent": 4,
-        "prior": 18,
+        "recent": 2,
+        "prior": 20,
         "trend": "worsening"
       },
       "positional": {
@@ -2101,10 +2125,10 @@
         "trend": "improving"
       },
       "defense": {
-        "total": 11,
-        "recent": 0,
+        "total": 12,
+        "recent": 1,
         "prior": 11,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "exchange": {
         "total": 7,
@@ -2127,7 +2151,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 62,
+      "games_tracked": 63,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
@@ -2143,7 +2167,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 53
+      "user_deviated_first_pct": 54
     }
   }
 }
