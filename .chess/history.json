@@ -1401,11 +1401,28 @@
         "deviation_move_number": 2,
         "deviation_san": "Nc6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "758",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Four Knights Game: Scotch Variation Accepted",
+        "eco_code": "C47",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "exd4",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "Nxd4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:41.139613",
-    "total_games": 59,
+    "computed_at": "2026-06-19T14:52:42.231037",
+    "total_games": 60,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1467,9 +1484,9 @@
         "category": "positional",
         "specific_type": "overextension",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "tactical",
@@ -1617,9 +1634,9 @@
       },
       "positional": {
         "total": 8,
-        "recent": 1,
-        "prior": 7,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 8,
+        "trend": "improving"
       },
       "opening": {
         "total": 15,
@@ -1654,7 +1671,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 38,
+      "games_tracked": 39,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1670,7 +1687,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 47
+      "user_deviated_first_pct": 46
     }
   }
 }
