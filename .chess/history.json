@@ -1442,11 +1442,28 @@
         "deviation_move_number": 3,
         "deviation_san": "Nxe4"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "758",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Anti-Fried Liver Defense",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "h6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "O-O"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:43.320852",
-    "total_games": 61,
+    "computed_at": "2026-06-19T14:52:44.368976",
+    "total_games": 62,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1644,9 +1661,9 @@
         "category": "endgame",
         "specific_type": "failed_conversion",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
@@ -1682,9 +1699,9 @@
       },
       "endgame": {
         "total": 4,
-        "recent": 1,
-        "prior": 3,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 4,
+        "trend": "improving"
       },
       "time": {
         "total": 1,
@@ -1695,7 +1712,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 40,
+      "games_tracked": 41,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1711,7 +1728,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 48
+      "user_deviated_first_pct": 49
     }
   }
 }
