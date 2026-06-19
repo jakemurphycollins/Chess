@@ -1651,11 +1651,28 @@
         "deviation_move_number": 3,
         "deviation_san": "Bd6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "421",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Knight Opening",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Nf3",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "b6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:56.231246",
-    "total_games": 72,
+    "computed_at": "2026-06-19T14:52:57.266563",
+    "total_games": 73,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1863,7 +1880,7 @@
         "total": 18,
         "recent": 1,
         "prior": 17,
-        "trend": "improving"
+        "trend": "stable"
       },
       "positional": {
         "total": 8,
@@ -1904,7 +1921,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 51,
+      "games_tracked": 52,
       "most_common_openings": [
         [
           "Italian Game: Rousseau Gambit",
@@ -1919,8 +1936,8 @@
           2
         ]
       ],
-      "avg_theory_depth_moves": 3.3,
-      "user_deviated_first_pct": 53
+      "avg_theory_depth_moves": 3.2,
+      "user_deviated_first_pct": 52
     }
   }
 }
