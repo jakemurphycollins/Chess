@@ -1559,11 +1559,28 @@
         "deviation_move_number": 4,
         "deviation_san": "Ng5"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "404",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Valencian Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Qd8",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "d4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:50.441888",
-    "total_games": 67,
+    "computed_at": "2026-06-19T14:52:51.506712",
+    "total_games": 68,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1812,7 +1829,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 46,
+      "games_tracked": 47,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1828,7 +1845,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 50
+      "user_deviated_first_pct": 51
     }
   }
 }
