@@ -1923,17 +1923,42 @@
         "deviation_move_number": 2,
         "deviation_san": "h6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "445",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder",
+          "pattern_tag": "queen_check_walks_into_capture"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Wayward Queen Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Qh5",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:10.253771",
-    "total_games": 85,
+    "computed_at": "2026-06-19T14:53:11.291939",
+    "total_games": 86,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 16,
-        "recent_count": 2,
+        "total_count": 17,
+        "recent_count": 3,
         "prior_count": 14,
         "trend": "worsening"
       },
@@ -2132,8 +2157,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 23,
-        "recent": 2,
+        "total": 24,
+        "recent": 3,
         "prior": 21,
         "trend": "worsening"
       },
@@ -2176,7 +2201,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 64,
+      "games_tracked": 65,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
