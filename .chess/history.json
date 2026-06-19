@@ -1501,11 +1501,28 @@
         "deviation_move_number": 2,
         "deviation_san": "Nf6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "397",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Petrov's Defense: Damiano Variation",
+        "eco_code": "C42",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nxe4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Qe2"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:46.554026",
-    "total_games": 64,
+    "computed_at": "2026-06-19T14:52:48.181214",
+    "total_games": 65,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1754,7 +1771,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 43,
+      "games_tracked": 44,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1770,7 +1787,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 51
+      "user_deviated_first_pct": 52
     }
   }
 }
