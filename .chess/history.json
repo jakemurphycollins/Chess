@@ -1418,11 +1418,35 @@
         "deviation_move_number": 5,
         "deviation_san": "Nxd4"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "750",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Petrov's Defense: Italian Variation",
+        "eco_code": "C42",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "Nf3",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Nxe4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:42.231037",
-    "total_games": 60,
+    "computed_at": "2026-06-19T14:52:43.320852",
+    "total_games": 61,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1435,10 +1459,10 @@
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 7,
-        "recent_count": 0,
+        "total_count": 8,
+        "recent_count": 1,
         "prior_count": 7,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "defense",
@@ -1612,9 +1636,9 @@
         "category": "tactical",
         "specific_type": "discovered_attack_setup",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "endgame",
@@ -1627,9 +1651,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 14,
+        "total": 15,
         "recent": 1,
-        "prior": 13,
+        "prior": 14,
         "trend": "stable"
       },
       "positional": {
@@ -1671,7 +1695,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 39,
+      "games_tracked": 40,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1687,7 +1711,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 46
+      "user_deviated_first_pct": 48
     }
   }
 }
