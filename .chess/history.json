@@ -2148,11 +2148,28 @@
         "deviation_move_number": 2,
         "deviation_san": "Nc6"
       }
+    },
+    {
+      "date": "2026-06-19",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "445",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Mieses-Kotroc Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qxd5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:22.074014",
-    "total_games": 96,
+    "computed_at": "2026-06-19T14:53:23.206352",
+    "total_games": 97,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2358,9 +2375,9 @@
         "category": "endgame",
         "specific_type": "endgame_material_bleed",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
@@ -2396,8 +2413,8 @@
       },
       "endgame": {
         "total": 6,
-        "recent": 2,
-        "prior": 4,
+        "recent": 1,
+        "prior": 5,
         "trend": "worsening"
       },
       "time": {
@@ -2409,8 +2426,12 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 75,
+      "games_tracked": 76,
       "most_common_openings": [
+        [
+          "Scandinavian Defense: Mieses-Kotroc Variation",
+          3
+        ],
         [
           "Italian Game: Giuoco Piano",
           3
@@ -2418,13 +2439,9 @@
         [
           "Petrov's Defense: Damiano Variation",
           3
-        ],
-        [
-          "King's Pawn Game: Wayward Queen Attack",
-          3
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
+      "avg_theory_depth_moves": 3.1,
       "user_deviated_first_pct": 59
     }
   }
