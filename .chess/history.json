@@ -1989,11 +1989,28 @@
         "deviation_move_number": 3,
         "deviation_san": "Nxe5"
       }
+    },
+    {
+      "date": "2026-06-18",
+      "result": "draw",
+      "user_color": "white",
+      "user_elo": "445",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Mieses-Kotroc Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qxd5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:13.404198",
-    "total_games": 88,
+    "computed_at": "2026-06-19T14:53:14.493284",
+    "total_games": 89,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2015,9 +2032,9 @@
         "category": "defense",
         "specific_type": "failed_to_spot_threat",
         "total_count": 8,
-        "recent_count": 1,
-        "prior_count": 7,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 8,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -2217,9 +2234,9 @@
       },
       "defense": {
         "total": 12,
-        "recent": 1,
-        "prior": 11,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 12,
+        "trend": "improving"
       },
       "exchange": {
         "total": 7,
@@ -2242,7 +2259,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 67,
+      "games_tracked": 68,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
