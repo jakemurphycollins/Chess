@@ -1617,11 +1617,28 @@
         "deviation_move_number": 4,
         "deviation_san": "d3"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "733",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Center Game",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "f6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:54.026687",
-    "total_games": 70,
+    "computed_at": "2026-06-19T14:52:55.131569",
+    "total_games": 71,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1870,7 +1887,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 49,
+      "games_tracked": 50,
       "most_common_openings": [
         [
           "Italian Game: Rousseau Gambit",
@@ -1886,7 +1903,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.3,
-      "user_deviated_first_pct": 51
+      "user_deviated_first_pct": 52
     }
   }
 }
