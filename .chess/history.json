@@ -2498,11 +2498,39 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-19",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "451",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "middlegame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major",
+          "pattern_tag": "time_forfeit_in_complex_position"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Indian Defense: Omega Gambit",
+        "eco_code": "A45",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "e4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nxe4"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz",
+      "opening_notes": "2...Nxe4 grabbed the gambit pawn into a long, sharp tactical fight; material stayed roughly balanced but the clock ran out under heavy time pressure from move 23 onward, losing on time rather than on the board."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T20:41:36.655306",
-    "total_games": 103,
+    "computed_at": "2026-06-19T20:41:37.820777",
+    "total_games": 104,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2719,6 +2747,14 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "time",
+        "specific_type": "time_pressure_blunder",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
@@ -2759,13 +2795,20 @@
         "trend": "improving"
       },
       "time": {
-        "total": 3,
-        "recent": 0,
+        "total": 4,
+        "recent": 1,
         "prior": 3,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [
+      {
+        "pattern_tag": "time_forfeit_in_complex_position",
+        "category": "time",
+        "severity": "blunder",
+        "count": 3,
+        "threshold": 3
+      },
       {
         "pattern_tag": "queen_check_walks_into_capture",
         "category": "tactical",
@@ -2775,7 +2818,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 82,
+      "games_tracked": 83,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -2845,7 +2888,7 @@
         ]
       },
       "blitz": {
-        "games": 30,
+        "games": 31,
         "top_weaknesses": [
           {
             "category": "tactical",
