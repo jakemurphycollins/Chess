@@ -1792,17 +1792,41 @@
         "deviation_move_number": 4,
         "deviation_san": "Bxc6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "429",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "endgame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Fritz Variation",
+        "eco_code": "C57",
+        "last_book_move_number": 5,
+        "last_book_color": "black",
+        "last_book_san": "Nd4",
+        "deviated_by": "white",
+        "deviation_move_number": 6,
+        "deviation_san": "d6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:03.717013",
-    "total_games": 79,
+    "computed_at": "2026-06-19T14:53:04.820717",
+    "total_games": 80,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 13,
-        "recent_count": 2,
+        "total_count": 14,
+        "recent_count": 3,
         "prior_count": 11,
         "trend": "worsening"
       },
@@ -2001,8 +2025,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 20,
-        "recent": 2,
+        "total": 21,
+        "recent": 3,
         "prior": 18,
         "trend": "worsening"
       },
@@ -2045,7 +2069,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 58,
+      "games_tracked": 59,
       "most_common_openings": [
         [
           "Petrov's Defense: Damiano Variation",
@@ -2061,7 +2085,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 52
+      "user_deviated_first_pct": 53
     }
   }
 }
