@@ -1600,11 +1600,28 @@
         "deviation_move_number": 2,
         "deviation_san": "d4"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "742",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Rousseau Gambit",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "f5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "d3"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:52.566536",
-    "total_games": 69,
+    "computed_at": "2026-06-19T14:52:54.026687",
+    "total_games": 70,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1853,8 +1870,12 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 48,
+      "games_tracked": 49,
       "most_common_openings": [
+        [
+          "Italian Game: Rousseau Gambit",
+          2
+        ],
         [
           "English Opening: The Whale",
           2
@@ -1862,14 +1883,10 @@
         [
           "Italian Game: Two Knights Defense, Fried Liver Attack",
           2
-        ],
-        [
-          "Four Knights Game: Italian Variation",
-          2
         ]
       ],
       "avg_theory_depth_moves": 3.3,
-      "user_deviated_first_pct": 52
+      "user_deviated_first_pct": 51
     }
   }
 }
