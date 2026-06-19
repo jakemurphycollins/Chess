@@ -2479,11 +2479,30 @@
       "time_control": "300",
       "time_control_category": "blitz",
       "opening_notes": "6...Na5 sent the knight to the rim with no follow-up plan and it sat undefended until Qxa5 picked it off. Later, 13...Qe6+ walked the queen straight into the long-parked Ng5's attack square and was captured for free."
+    },
+    {
+      "date": "2026-06-19",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "460",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Caro-Kann Defense: Exchange Variation",
+        "eco_code": "B13",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "cxd5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T20:41:35.600332",
-    "total_games": 102,
+    "computed_at": "2026-06-19T20:41:36.655306",
+    "total_games": 103,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2756,7 +2775,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 81,
+      "games_tracked": 82,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -2772,7 +2791,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -2826,7 +2845,7 @@
         ]
       },
       "blitz": {
-        "games": 29,
+        "games": 30,
         "top_weaknesses": [
           {
             "category": "tactical",
