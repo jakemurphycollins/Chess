@@ -1316,11 +1316,37 @@
         "deviation_san": "Qf6"
       },
       "opening_notes": "Italian Game (C50). Black deviated immediately on move 3 with 3...Qf6; Jake (White) stayed in mainline theory through move 3. Jake pushed queenside pawns while leaving a knight hanging on f3, falling significantly behind in material before finding a tactic to win the queen back and close out the game."
+    },
+    {
+      "date": "2026-06-16",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": 748,
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "discovered_attack_setup",
+          "severity": "minor",
+          "pattern_tag": "file_clearing_check_combo"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scotch Game: Lolli Variation",
+        "eco_code": "C44",
+        "last_book_move_number": 5,
+        "last_book_color": "white",
+        "last_book_san": "Qxd4",
+        "deviated_by": "black",
+        "deviation_move_number": 5,
+        "deviation_san": "Nf6"
+      },
+      "opening_notes": "Theory followed through 5.Qxd4 (Lolli Variation of the Scotch). Black deviated immediately with 5...Nf6, a normal independent continuation rather than a mistake."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-17T01:36:11.374057",
-    "total_games": 55,
+    "computed_at": "2026-06-19T14:44:51.296911",
+    "total_games": 56,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1358,9 +1384,9 @@
         "category": "defense",
         "specific_type": "missing_defensive_resource",
         "total_count": 4,
-        "recent_count": 1,
-        "prior_count": 3,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 4,
+        "trend": "improving"
       },
       {
         "category": "exchange",
@@ -1505,14 +1531,22 @@
         "recent_count": 0,
         "prior_count": 1,
         "trend": "improving"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "discovered_attack_setup",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 13,
-        "recent": 1,
+        "total": 14,
+        "recent": 2,
         "prior": 12,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "positional": {
         "total": 8,
@@ -1528,9 +1562,9 @@
       },
       "defense": {
         "total": 11,
-        "recent": 1,
-        "prior": 10,
-        "trend": "stable"
+        "recent": 0,
+        "prior": 11,
+        "trend": "improving"
       },
       "exchange": {
         "total": 7,
@@ -1553,7 +1587,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 36,
+      "games_tracked": 37,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1568,8 +1602,8 @@
           2
         ]
       ],
-      "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 44
+      "avg_theory_depth_moves": 3.5,
+      "user_deviated_first_pct": 46
     }
   }
 }
