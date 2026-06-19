@@ -2416,19 +2416,47 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-19",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "461",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder",
+          "pattern_tag": "queen_left_undefended"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Gambit Accepted: Modern Defense",
+        "eco_code": "C36",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "exd5",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "Qxd5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz",
+      "opening_notes": "Recaptured the King's Gambit pawn with 4...Qxd5, which is playable but invites harassment \u2014 the queen drifted around for several moves and was eventually left undefended on d7 along the open d-file, where Rd1-d7 won it outright."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T20:41:33.196706",
-    "total_games": 100,
+    "computed_at": "2026-06-19T20:41:34.570094",
+    "total_games": 101,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 18,
-        "recent_count": 0,
+        "total_count": 19,
+        "recent_count": 1,
         "prior_count": 18,
-        "trend": "improving"
+        "trend": "stable"
       },
       {
         "category": "opening",
@@ -2474,9 +2502,9 @@
         "category": "time",
         "specific_type": "clock_mismanagement",
         "total_count": 3,
-        "recent_count": 1,
-        "prior_count": 2,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 3,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -2633,8 +2661,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 25,
-        "recent": 0,
+        "total": 26,
+        "recent": 1,
         "prior": 25,
         "trend": "improving"
       },
@@ -2670,14 +2698,14 @@
       },
       "time": {
         "total": 3,
-        "recent": 1,
-        "prior": 2,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 3,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 79,
+      "games_tracked": 80,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -2693,7 +2721,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -2747,12 +2775,12 @@
         ]
       },
       "blitz": {
-        "games": 27,
+        "games": 28,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 8
+            "count": 9
           },
           {
             "category": "time",
