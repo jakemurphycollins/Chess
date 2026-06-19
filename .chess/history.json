@@ -1367,11 +1367,28 @@
         "deviation_move_number": 1,
         "deviation_san": "e4"
       }
+    },
+    {
+      "date": "2026-06-16",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "748",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": null,
+        "eco_code": null,
+        "last_book_move_number": null,
+        "last_book_color": null,
+        "last_book_san": null,
+        "deviated_by": "white",
+        "deviation_move_number": 1,
+        "deviation_san": "e4"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:38.701281",
-    "total_games": 57,
+    "computed_at": "2026-06-19T14:52:39.836041",
+    "total_games": 58,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1385,9 +1402,9 @@
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 7,
-        "recent_count": 1,
-        "prior_count": 6,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 7,
+        "trend": "improving"
       },
       {
         "category": "defense",
@@ -1577,9 +1594,9 @@
     "category_trends": {
       "tactical": {
         "total": 14,
-        "recent": 2,
-        "prior": 12,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 13,
+        "trend": "stable"
       },
       "positional": {
         "total": 8,
