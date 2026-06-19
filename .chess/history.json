@@ -1948,17 +1948,41 @@
         "deviation_move_number": 2,
         "deviation_san": "Nc6"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "437",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Napoleon Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Qf3",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:11.291939",
-    "total_games": 86,
+    "computed_at": "2026-06-19T14:53:12.345355",
+    "total_games": 87,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 17,
-        "recent_count": 3,
+        "total_count": 18,
+        "recent_count": 4,
         "prior_count": 14,
         "trend": "worsening"
       },
@@ -2157,8 +2181,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 24,
-        "recent": 3,
+        "total": 25,
+        "recent": 4,
         "prior": 21,
         "trend": "worsening"
       },
@@ -2201,7 +2225,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 65,
+      "games_tracked": 66,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
@@ -2217,7 +2241,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 55
+      "user_deviated_first_pct": 56
     }
   }
 }
