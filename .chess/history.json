@@ -2123,11 +2123,36 @@
         "deviation_move_number": 6,
         "deviation_san": "Bg4"
       }
+    },
+    {
+      "date": "2026-06-19",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "437",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "clock_mismanagement",
+          "severity": "blunder",
+          "pattern_tag": "time_forfeit_in_complex_position"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Wayward Queen Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Qh5",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:20.947380",
-    "total_games": 95,
+    "computed_at": "2026-06-19T14:53:22.074014",
+    "total_games": 96,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2178,6 +2203,14 @@
         "trend": "improving"
       },
       {
+        "category": "time",
+        "specific_type": "clock_mismanagement",
+        "total_count": 3,
+        "recent_count": 1,
+        "prior_count": 2,
+        "trend": "worsening"
+      },
+      {
         "category": "positional",
         "specific_type": "piece_coordination_failure",
         "total_count": 2,
@@ -2204,14 +2237,6 @@
       {
         "category": "exchange",
         "specific_type": "wrong_recapture",
-        "total_count": 2,
-        "recent_count": 0,
-        "prior_count": 2,
-        "trend": "improving"
-      },
-      {
-        "category": "time",
-        "specific_type": "clock_mismanagement",
         "total_count": 2,
         "recent_count": 0,
         "prior_count": 2,
@@ -2376,15 +2401,15 @@
         "trend": "worsening"
       },
       "time": {
-        "total": 2,
-        "recent": 0,
+        "total": 3,
+        "recent": 1,
         "prior": 2,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 74,
+      "games_tracked": 75,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
@@ -2395,12 +2420,12 @@
           3
         ],
         [
-          "Italian Game: Rousseau Gambit",
-          2
+          "King's Pawn Game: Wayward Queen Attack",
+          3
         ]
       ],
       "avg_theory_depth_moves": 3.2,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     }
   }
 }
