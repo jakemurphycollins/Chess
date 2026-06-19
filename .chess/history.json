@@ -1833,11 +1833,28 @@
         "deviation_move_number": 4,
         "deviation_san": "O-O"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "445",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: MacLeod Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "e4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nf6"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:53:05.916382",
-    "total_games": 81,
+    "computed_at": "2026-06-19T14:53:07.020213",
+    "total_games": 82,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -1923,9 +1940,9 @@
         "category": "time",
         "specific_type": "clock_mismanagement",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -2079,14 +2096,14 @@
       },
       "time": {
         "total": 2,
-        "recent": 1,
-        "prior": 1,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 2,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 60,
+      "games_tracked": 61,
       "most_common_openings": [
         [
           "Italian Game: Giuoco Piano",
