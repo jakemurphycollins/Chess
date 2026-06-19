@@ -1459,11 +1459,28 @@
         "deviation_move_number": 4,
         "deviation_san": "O-O"
       }
+    },
+    {
+      "date": "2026-06-17",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "397",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Elephant Gambit: Paulsen Countergambit",
+        "eco_code": "C40",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "e4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Ne5"
+      }
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-19T14:52:44.368976",
-    "total_games": 62,
+    "computed_at": "2026-06-19T14:52:45.442987",
+    "total_games": 63,
     "weakness_summary": [
       {
         "category": "opening",
@@ -1712,7 +1729,7 @@
     },
     "high_confidence_patterns": [],
     "opening_stats": {
-      "games_tracked": 41,
+      "games_tracked": 42,
       "most_common_openings": [
         [
           "English Opening: The Whale",
@@ -1728,7 +1745,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.4,
-      "user_deviated_first_pct": 49
+      "user_deviated_first_pct": 50
     }
   }
 }
