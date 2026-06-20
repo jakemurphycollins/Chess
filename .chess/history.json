@@ -2653,11 +2653,38 @@
       "time_control": "300",
       "time_control_category": "blitz",
       "opening_notes": "Opponent again played 1...a6 (St. George Defense) and White answered with a sound, normal 2.d4 \u2014 no opening problems. The game turned in the middlegame when White played 18.Ba3, walking the bishop onto a square that, together with the rook on a1, was forked by 18...Nc2; White could only save one piece and lost the rook for the knight on 19...Nxa1, which proved decisive."
+    },
+    {
+      "date": "2026-06-20",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "763",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "missed_hanging_piece_capture",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Ruy Lopez: Berlin Defense",
+        "eco_code": "C65",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Bxc6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "In the Berlin Ruy Lopez, White played 12.Ne5, which vacated f3 and opened the h5-d1 diagonal, leaving the queen on d1 capturable by the bishop on h5 for a winning bishop-for-queen trade (Bxd1). The user missed this and played 12...Qd6 instead; a move later White grabbed the loose bishop on h5, and the position evened back out through a queen-trade tactical sequence."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-20T16:34:47.852879",
-    "total_games": 109,
+    "computed_at": "2026-06-20T17:19:31.396537",
+    "total_games": 110,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2890,12 +2917,20 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "missed_hanging_piece_capture",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 30,
-        "recent": 3,
+        "total": 31,
+        "recent": 4,
         "prior": 27,
         "trend": "worsening"
       },
@@ -2953,7 +2988,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 88,
+      "games_tracked": 89,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3003,7 +3038,7 @@
         ]
       },
       "classical": {
-        "games": 16,
+        "games": 17,
         "top_weaknesses": [
           {
             "category": "tactical",
