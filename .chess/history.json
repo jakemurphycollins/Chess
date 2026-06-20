@@ -2572,19 +2572,39 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Black's 1...a6 (St. George Defense) wasn't intentional theory at this level \u2014 just an offbeat first move. White's 2.d4 was a sound, standard space-gaining response; no opening issues to flag."
+    },
+    {
+      "date": "2026-06-20",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "763",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "St. George Defense",
+        "eco_code": "B00",
+        "last_book_move_number": 1,
+        "last_book_color": "black",
+        "last_book_san": "a6",
+        "deviated_by": "white",
+        "deviation_move_number": 2,
+        "deviation_san": "d4"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Theory ended immediately after 1...a6 (St. George Defense) with a normal 2.d4 \u2014 nothing notable in the opening. The game was decided by an opponent blunder (6...Qh4+ 7...Qf6 walking the queen into 8.Nxf6+), not by anything the user did."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-20T16:29:29.254600",
-    "total_games": 106,
+    "computed_at": "2026-06-20T16:34:45.809798",
+    "total_games": 107,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 20,
-        "recent_count": 1,
-        "prior_count": 19,
-        "trend": "stable"
+        "recent_count": 0,
+        "prior_count": 20,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -2790,9 +2810,9 @@
         "category": "positional",
         "specific_type": "bad_development_order",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "time",
@@ -2814,15 +2834,15 @@
     "category_trends": {
       "tactical": {
         "total": 28,
-        "recent": 2,
-        "prior": 26,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 27,
+        "trend": "improving"
       },
       "positional": {
         "total": 9,
-        "recent": 1,
-        "prior": 8,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 9,
+        "trend": "improving"
       },
       "opening": {
         "total": 15,
@@ -2872,7 +2892,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 85,
+      "games_tracked": 86,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -2887,7 +2907,7 @@
           3
         ]
       ],
-      "avg_theory_depth_moves": 3.2,
+      "avg_theory_depth_moves": 3.1,
       "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
@@ -2922,7 +2942,7 @@
         ]
       },
       "classical": {
-        "games": 15,
+        "games": 16,
         "top_weaknesses": [
           {
             "category": "tactical",
