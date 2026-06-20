@@ -2680,11 +2680,50 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "In the Berlin Ruy Lopez, White played 12.Ne5, which vacated f3 and opened the h5-d1 diagonal, leaving the queen on d1 capturable by the bishop on h5 for a winning bishop-for-queen trade (Bxd1). The user missed this and played 12...Qd6 instead; a move later White grabbed the loose bishop on h5, and the position evened back out through a queen-trade tactical sequence."
+    },
+    {
+      "date": "2026-06-20",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "755",
+      "patterns": [
+        {
+          "category": "exchange",
+          "phase": "middlegame",
+          "specific_type": "poor_piece_trade",
+          "severity": "major"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "hope_chess_planning",
+          "severity": "major"
+        },
+        {
+          "category": "time",
+          "phase": "middlegame",
+          "specific_type": "long_think_easy_move",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Grob Opening: Spike, Hurst Attack",
+        "eco_code": "A00",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "c4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Nf6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "White opened with an offbeat Grob/Spike setup and the game left known theory by move 3 with no real consequence either way \u2014 the opening itself wasn't a factor in how this game went."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-20T17:19:31.396537",
-    "total_games": 110,
+    "computed_at": "2026-06-20T18:02:24.049035",
+    "total_games": 111,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2768,6 +2807,14 @@
       },
       {
         "category": "exchange",
+        "specific_type": "poor_piece_trade",
+        "total_count": 2,
+        "recent_count": 1,
+        "prior_count": 1,
+        "trend": "worsening"
+      },
+      {
+        "category": "exchange",
         "specific_type": "wrong_recapture",
         "total_count": 2,
         "recent_count": 0,
@@ -2801,14 +2848,6 @@
       {
         "category": "tactical",
         "specific_type": "missed_zwischenzug",
-        "total_count": 1,
-        "recent_count": 0,
-        "prior_count": 1,
-        "trend": "improving"
-      },
-      {
-        "category": "exchange",
-        "specific_type": "poor_piece_trade",
         "total_count": 1,
         "recent_count": 0,
         "prior_count": 1,
@@ -2914,13 +2953,29 @@
         "category": "tactical",
         "specific_type": "doubts_own_calculated_sacrifice",
         "total_count": 1,
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "missed_hanging_piece_capture",
+        "total_count": 1,
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
       },
       {
-        "category": "tactical",
-        "specific_type": "missed_hanging_piece_capture",
+        "category": "positional",
+        "specific_type": "hope_chess_planning",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "time",
+        "specific_type": "long_think_easy_move",
         "total_count": 1,
         "recent_count": 1,
         "prior_count": 0,
@@ -2930,15 +2985,15 @@
     "category_trends": {
       "tactical": {
         "total": 31,
-        "recent": 4,
-        "prior": 27,
+        "recent": 3,
+        "prior": 28,
         "trend": "worsening"
       },
       "positional": {
-        "total": 9,
-        "recent": 0,
+        "total": 10,
+        "recent": 1,
         "prior": 9,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "opening": {
         "total": 15,
@@ -2953,10 +3008,10 @@
         "trend": "improving"
       },
       "exchange": {
-        "total": 7,
-        "recent": 0,
+        "total": 8,
+        "recent": 1,
         "prior": 7,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "endgame": {
         "total": 6,
@@ -2965,8 +3020,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 5,
-        "recent": 1,
+        "total": 6,
+        "recent": 2,
         "prior": 4,
         "trend": "worsening"
       }
@@ -2988,7 +3043,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 89,
+      "games_tracked": 90,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3038,7 +3093,7 @@
         ]
       },
       "classical": {
-        "games": 17,
+        "games": 18,
         "top_weaknesses": [
           {
             "category": "tactical",
