@@ -2800,19 +2800,46 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Black declined the main line at move 6 with ...c6; the opening had no lasting consequence. The real issue was later: your queenside rook, knight, and bishop stayed completely undeveloped, so once Black started giving checks with the queen your king had no flight squares and you were forced into a draw by repetition despite being up about 8 points of material."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "756",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Pirc Defense",
+        "eco_code": "B00",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nd2"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "White's 3.Nd2 sidesteps main Pirc theory but wasn't a mistake on its own. The decisive moment was move 21, where the a1 rook had never been developed all game and Black's bishop simply walked in and captured it for free."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:42.637072",
-    "total_games": 114,
+    "computed_at": "2026-06-21T20:10:43.672481",
+    "total_games": 115,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 22,
-        "recent_count": 1,
+        "total_count": 23,
+        "recent_count": 2,
         "prior_count": 21,
-        "trend": "stable"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -3042,9 +3069,9 @@
         "category": "tactical",
         "specific_type": "missed_hanging_piece_capture",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -3065,9 +3092,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 32,
+        "total": 33,
         "recent": 2,
-        "prior": 30,
+        "prior": 31,
         "trend": "worsening"
       },
       "positional": {
@@ -3124,7 +3151,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 93,
+      "games_tracked": 94,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3140,7 +3167,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 60
+      "user_deviated_first_pct": 61
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3174,12 +3201,12 @@
         ]
       },
       "classical": {
-        "games": 20,
+        "games": 21,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 3
+            "count": 4
           },
           {
             "category": "defense",
