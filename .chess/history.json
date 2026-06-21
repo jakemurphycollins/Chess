@@ -2873,11 +2873,37 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "An unusual 2.Qd3 transposed into an offbeat setup; theory wasn't a factor here. The game was decided by king safety after the queens came off the board \u2014 White's rooks infiltrated the kingside files and picked off pawns with checks all the way to a forced mate."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "749",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "back_rank_weakness",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: McConnell Defense",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qf6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "d4"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:45.840272",
-    "total_games": 117,
+    "computed_at": "2026-06-21T20:10:46.910543",
+    "total_games": 118,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3134,14 +3160,22 @@
         "recent_count": 0,
         "prior_count": 1,
         "trend": "improving"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "back_rank_weakness",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 33,
-        "recent": 1,
+        "total": 34,
+        "recent": 2,
         "prior": 32,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "positional": {
         "total": 11,
@@ -3197,7 +3231,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 96,
+      "games_tracked": 97,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3213,7 +3247,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 61
+      "user_deviated_first_pct": 62
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3247,7 +3281,7 @@
         ]
       },
       "classical": {
-        "games": 23,
+        "games": 24,
         "top_weaknesses": [
           {
             "category": "tactical",
