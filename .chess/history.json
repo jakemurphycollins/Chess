@@ -2918,19 +2918,39 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "766",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "French Defense: Normal Variation",
+        "eco_code": "C00",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Qf6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Black's very early 2...Qf6 is an unusual, premature queen development that directly led to a queen-hanging sequence a few moves later \u2014 an opponent error that ended the game quickly, not anything you needed to find."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:47.953128",
-    "total_games": 119,
+    "computed_at": "2026-06-21T20:10:48.981351",
+    "total_games": 120,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 23,
-        "recent_count": 1,
-        "prior_count": 22,
-        "trend": "stable"
+        "recent_count": 0,
+        "prior_count": 23,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -3192,9 +3212,9 @@
     "category_trends": {
       "tactical": {
         "total": 34,
-        "recent": 2,
-        "prior": 32,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 33,
+        "trend": "improving"
       },
       "positional": {
         "total": 11,
@@ -3250,7 +3270,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 98,
+      "games_tracked": 99,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3300,7 +3320,7 @@
         ]
       },
       "classical": {
-        "games": 25,
+        "games": 26,
         "top_weaknesses": [
           {
             "category": "tactical",
