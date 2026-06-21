@@ -2899,11 +2899,30 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "758",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Giuoco Pianissimo, Normal",
+        "eco_code": "C50",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "h3"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:46.910543",
-    "total_games": 118,
+    "computed_at": "2026-06-21T20:10:47.953128",
+    "total_games": 119,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2957,9 +2976,9 @@
         "category": "positional",
         "specific_type": "piece_coordination_failure",
         "total_count": 3,
-        "recent_count": 1,
-        "prior_count": 2,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 3,
+        "trend": "improving"
       },
       {
         "category": "tactical",
@@ -3179,9 +3198,9 @@
       },
       "positional": {
         "total": 11,
-        "recent": 1,
-        "prior": 10,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 11,
+        "trend": "improving"
       },
       "opening": {
         "total": 15,
@@ -3231,23 +3250,23 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 97,
+      "games_tracked": 98,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
           4
         ],
         [
-          "Scandinavian Defense: Mieses-Kotroc Variation",
+          "Italian Game: Giuoco Pianissimo, Normal",
           3
         ],
         [
-          "Italian Game: Giuoco Piano",
+          "Scandinavian Defense: Mieses-Kotroc Variation",
           3
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 62
+      "user_deviated_first_pct": 61
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3281,7 +3300,7 @@
         ]
       },
       "classical": {
-        "games": 24,
+        "games": 25,
         "top_weaknesses": [
           {
             "category": "tactical",
