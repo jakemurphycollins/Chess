@@ -2827,11 +2827,30 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "White's 3.Nd2 sidesteps main Pirc theory but wasn't a mistake on its own. The decisive moment was move 21, where the a1 rook had never been developed all game and Black's bishop simply walked in and captured it for free."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "765",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Bishop's Opening",
+        "eco_code": "C23",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Bc4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:43.672481",
-    "total_games": 115,
+    "computed_at": "2026-06-21T20:10:44.745247",
+    "total_games": 116,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -2925,9 +2944,9 @@
         "category": "exchange",
         "specific_type": "poor_piece_trade",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "exchange",
@@ -3077,17 +3096,17 @@
         "category": "positional",
         "specific_type": "hope_chess_planning",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "time",
         "specific_type": "long_think_easy_move",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
@@ -3099,8 +3118,8 @@
       },
       "positional": {
         "total": 11,
-        "recent": 2,
-        "prior": 9,
+        "recent": 1,
+        "prior": 10,
         "trend": "worsening"
       },
       "opening": {
@@ -3117,9 +3136,9 @@
       },
       "exchange": {
         "total": 8,
-        "recent": 1,
-        "prior": 7,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 8,
+        "trend": "improving"
       },
       "endgame": {
         "total": 6,
@@ -3129,8 +3148,8 @@
       },
       "time": {
         "total": 7,
-        "recent": 2,
-        "prior": 5,
+        "recent": 1,
+        "prior": 6,
         "trend": "worsening"
       }
     },
@@ -3151,7 +3170,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 94,
+      "games_tracked": 95,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3201,7 +3220,7 @@
         ]
       },
       "classical": {
-        "games": 21,
+        "games": 22,
         "top_weaknesses": [
           {
             "category": "tactical",
