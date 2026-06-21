@@ -2984,11 +2984,31 @@
       "time_control": "300",
       "time_control_category": "blitz",
       "opening_notes": "White's 2.c3 transposed away from normal Indian Defense theory early; this wasn't a factor in the loss. The real issue: after 13.Qxh8+ your rook was simply left hanging on h8, and two moves later 15.Qxd8+ did the same to your queen, which had also been left unmoved and undefended \u2014 two consecutive major pieces lost for free while the king was scrambling."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "436",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Fried Liver Attack",
+        "eco_code": "C57",
+        "last_book_move_number": 6,
+        "last_book_color": "white",
+        "last_book_san": "Nxf7",
+        "deviated_by": "black",
+        "deviation_move_number": 6,
+        "deviation_san": "Kxf7"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz",
+      "opening_notes": "This was the Fried Liver Attack main line (6.Nxf7 Kxf7) \u2014 and you converted the attack cleanly all the way to mate, exactly the kind of position this line is designed to produce."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:51.107912",
-    "total_games": 122,
+    "computed_at": "2026-06-21T20:10:52.176758",
+    "total_games": 123,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3250,17 +3270,17 @@
         "category": "tactical",
         "specific_type": "back_rank_weakness",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
       "tactical": {
         "total": 35,
-        "recent": 2,
-        "prior": 33,
-        "trend": "worsening"
+        "recent": 1,
+        "prior": 34,
+        "trend": "improving"
       },
       "positional": {
         "total": 11,
@@ -3316,18 +3336,18 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 101,
+      "games_tracked": 102,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
           4
         ],
         [
-          "Italian Game: Giuoco Pianissimo, Normal",
+          "Italian Game: Two Knights Defense, Fried Liver Attack",
           3
         ],
         [
-          "Scandinavian Defense: Mieses-Kotroc Variation",
+          "Italian Game: Giuoco Pianissimo, Normal",
           3
         ]
       ],
@@ -3386,7 +3406,7 @@
         ]
       },
       "blitz": {
-        "games": 36,
+        "games": 37,
         "top_weaknesses": [
           {
             "category": "tactical",
