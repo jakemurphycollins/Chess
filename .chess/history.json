@@ -2938,11 +2938,30 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Black's very early 2...Qf6 is an unusual, premature queen development that directly led to a queen-hanging sequence a few moves later \u2014 an opponent error that ended the game quickly, not anything you needed to find."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "774",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Center Game: Paulsen Attack Variation",
+        "eco_code": "C22",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "Qe3",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "d6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:48.981351",
-    "total_games": 120,
+    "computed_at": "2026-06-21T20:10:50.012858",
+    "total_games": 121,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3270,7 +3289,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 99,
+      "games_tracked": 100,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3320,7 +3339,7 @@
         ]
       },
       "classical": {
-        "games": 26,
+        "games": 27,
         "top_weaknesses": [
           {
             "category": "tactical",
