@@ -3064,18 +3064,52 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Opponent deviated from Philidor theory at move 3 with 3...Nc6. You built a steady material advantage and converted it into a mating attack."
+    },
+    {
+      "date": "2026-06-22",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "780",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder",
+          "pattern_tag": "piece_placed_on_attacked_square"
+        },
+        {
+          "category": "defense",
+          "phase": "endgame",
+          "specific_type": "missing_defensive_resource",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Center Game: Normal Variation",
+        "eco_code": "C22",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nc6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Qd1"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Center Game theory held until White retreated early with 4.Qd1. The key moment was leaving your bishop hanging on e5 (move 17), which White captured for free; your king was then hunted down and mated in the endgame."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-22T17:35:12.865691",
-    "total_games": 126,
+    "computed_at": "2026-06-22T17:35:14.078390",
+    "total_games": 127,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 24,
+        "total_count": 25,
         "recent_count": 1,
-        "prior_count": 23,
+        "prior_count": 24,
         "trend": "stable"
       },
       {
@@ -3095,16 +3129,16 @@
         "trend": "improving"
       },
       {
-        "category": "opening",
-        "specific_type": "bad_development_order",
-        "total_count": 5,
-        "recent_count": 0,
-        "prior_count": 5,
-        "trend": "improving"
-      },
-      {
         "category": "defense",
         "specific_type": "missing_defensive_resource",
+        "total_count": 6,
+        "recent_count": 1,
+        "prior_count": 5,
+        "trend": "worsening"
+      },
+      {
+        "category": "opening",
+        "specific_type": "bad_development_order",
         "total_count": 5,
         "recent_count": 0,
         "prior_count": 5,
@@ -3337,9 +3371,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 35,
+        "total": 36,
         "recent": 1,
-        "prior": 34,
+        "prior": 35,
         "trend": "improving"
       },
       "positional": {
@@ -3355,10 +3389,10 @@
         "trend": "improving"
       },
       "defense": {
-        "total": 13,
-        "recent": 0,
+        "total": 14,
+        "recent": 1,
         "prior": 13,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "exchange": {
         "total": 8,
@@ -3396,7 +3430,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 105,
+      "games_tracked": 106,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3412,7 +3446,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 59
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3446,21 +3480,21 @@
         ]
       },
       "classical": {
-        "games": 29,
+        "games": 30,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 4
+            "count": 5
+          },
+          {
+            "category": "defense",
+            "specific_type": "missing_defensive_resource",
+            "count": 2
           },
           {
             "category": "defense",
             "specific_type": "failed_to_spot_threat",
-            "count": 1
-          },
-          {
-            "category": "endgame",
-            "specific_type": "endgame_material_bleed",
             "count": 1
           }
         ]
