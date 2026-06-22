@@ -3118,19 +3118,47 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Standard Scandinavian theory held briefly before your own 3.Nc3 deviation. You won material for free with a long knight maneuver (Nxc7-Nxa8) and converted to a mating attack."
+    },
+    {
+      "date": "2026-06-22",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "795",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder",
+          "pattern_tag": "piece_placed_on_attacked_square"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scotch Game",
+        "eco_code": "C44",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "d5"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Scotch Game theory held until your 3...d5. Your queen sat on an attacked square (d5) for several moves and was captured by a knight for only a knight in return \u2014 a costly trade you nonetheless recovered from to win by checkmate."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-22T17:35:15.282473",
-    "total_games": 128,
+    "computed_at": "2026-06-22T17:35:16.542243",
+    "total_games": 129,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 25,
-        "recent_count": 1,
+        "total_count": 26,
+        "recent_count": 2,
         "prior_count": 24,
-        "trend": "stable"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -3391,10 +3419,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 36,
-        "recent": 1,
+        "total": 37,
+        "recent": 2,
         "prior": 35,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "positional": {
         "total": 11,
@@ -3450,7 +3478,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 107,
+      "games_tracked": 108,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -3500,12 +3528,12 @@
         ]
       },
       "classical": {
-        "games": 31,
+        "games": 32,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 5
+            "count": 6
           },
           {
             "category": "defense",
