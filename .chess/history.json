@@ -3004,11 +3004,31 @@
       "time_control": "300",
       "time_control_category": "blitz",
       "opening_notes": "This was the Fried Liver Attack main line (6.Nxf7 Kxf7) \u2014 and you converted the attack cleanly all the way to mate, exactly the kind of position this line is designed to produce."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "781",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Queen's Gambit Declined: Marshall Defense",
+        "eco_code": "D06",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "c5"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "White deviated early with 3.c5, an aggressive pawn push that ceded central tension. The game turned tactical with repeated piece trades, and you came out comfortably ahead as Black."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-21T20:10:52.176758",
-    "total_games": 123,
+    "computed_at": "2026-06-22T17:35:10.185761",
+    "total_games": 124,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3336,7 +3356,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 102,
+      "games_tracked": 103,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3352,7 +3372,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 60
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3386,7 +3406,7 @@
         ]
       },
       "classical": {
-        "games": 27,
+        "games": 28,
         "top_weaknesses": [
           {
             "category": "tactical",
