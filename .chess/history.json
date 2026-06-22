@@ -3024,11 +3024,31 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "White deviated early with 3.c5, an aggressive pawn push that ceded central tension. The game turned tactical with repeated piece trades, and you came out comfortably ahead as Black."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "130",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Busch-Gass Gambit",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Bc4"
+      },
+      "time_control": "120+1",
+      "time_control_category": "bullet",
+      "opening_notes": "A very low-rated bullet game (130 vs 112) with wild mutual piece-grabbing on both sides from the opening onward; decided on time rather than position."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-22T17:35:10.185761",
-    "total_games": 124,
+    "computed_at": "2026-06-22T17:35:11.634736",
+    "total_games": 125,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3356,7 +3376,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 103,
+      "games_tracked": 104,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
@@ -3372,7 +3392,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 59
+      "user_deviated_first_pct": 60
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3444,6 +3464,10 @@
             "count": 2
           }
         ]
+      },
+      "bullet": {
+        "games": 1,
+        "top_weaknesses": []
       }
     }
   }
