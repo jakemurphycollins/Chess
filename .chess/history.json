@@ -3098,11 +3098,31 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Center Game theory held until White retreated early with 4.Qd1. The key moment was leaving your bishop hanging on e5 (move 17), which White captured for free; your king was then hunted down and mated in the endgame."
+    },
+    {
+      "date": "2026-06-22",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "788",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Mieses-Kotroc Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qxd5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Standard Scandinavian theory held briefly before your own 3.Nc3 deviation. You won material for free with a long knight maneuver (Nxc7-Nxa8) and converted to a mating attack."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-22T17:35:14.078390",
-    "total_games": 127,
+    "computed_at": "2026-06-22T17:35:15.282473",
+    "total_games": 128,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3430,8 +3450,12 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 106,
+      "games_tracked": 107,
       "most_common_openings": [
+        [
+          "Scandinavian Defense: Mieses-Kotroc Variation",
+          4
+        ],
         [
           "King's Pawn Game: Wayward Queen Attack",
           4
@@ -3439,14 +3463,10 @@
         [
           "Philidor Defense",
           3
-        ],
-        [
-          "Italian Game: Two Knights Defense, Fried Liver Attack",
-          3
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3480,7 +3500,7 @@
         ]
       },
       "classical": {
-        "games": 30,
+        "games": 31,
         "top_weaknesses": [
           {
             "category": "tactical",
