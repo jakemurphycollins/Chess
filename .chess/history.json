@@ -3044,11 +3044,31 @@
       "time_control": "120+1",
       "time_control_category": "bullet",
       "opening_notes": "A very low-rated bullet game (130 vs 112) with wild mutual piece-grabbing on both sides from the opening onward; decided on time rather than position."
+    },
+    {
+      "date": "2026-06-21",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "789",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Philidor Defense",
+        "eco_code": "C41",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Opponent deviated from Philidor theory at move 3 with 3...Nc6. You built a steady material advantage and converted it into a mating attack."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-22T17:35:11.634736",
-    "total_games": 125,
+    "computed_at": "2026-06-22T17:35:12.865691",
+    "total_games": 126,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3376,23 +3396,23 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 104,
+      "games_tracked": 105,
       "most_common_openings": [
         [
           "King's Pawn Game: Wayward Queen Attack",
           4
         ],
         [
-          "Italian Game: Two Knights Defense, Fried Liver Attack",
+          "Philidor Defense",
           3
         ],
         [
-          "Italian Game: Giuoco Pianissimo, Normal",
+          "Italian Game: Two Knights Defense, Fried Liver Attack",
           3
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 60
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3426,7 +3446,7 @@
         ]
       },
       "classical": {
-        "games": 28,
+        "games": 29,
         "top_weaknesses": [
           {
             "category": "tactical",
