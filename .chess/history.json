@@ -3146,11 +3146,56 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Scotch Game theory held until your 3...d5. Your queen sat on an attacked square (d5) for several moves and was captured by a knight for only a knight in return \u2014 a costly trade you nonetheless recovered from to win by checkmate."
+    },
+    {
+      "date": "2026-06-24",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "812",
+      "patterns": [
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "correct_outpost_recognition",
+          "severity": "minor"
+        },
+        {
+          "category": "positional",
+          "phase": "middlegame",
+          "specific_type": "king_safety_pawn_push",
+          "severity": "major"
+        },
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "missed_zwischenzug",
+          "severity": "minor"
+        },
+        {
+          "category": "endgame",
+          "phase": "endgame",
+          "specific_type": "clean_rook_endgame_conversion",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Hungarian Defense",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Be7",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "O-O"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Italian Game: Hungarian Defense, theory held through 3...Be7 before your own 4.O-O deviation. After 8.Qb3 Na5 9.Qa4 forced a tempo-losing queen maneuver, but you found 16.Qc6, correctly identifying it as a permanent outpost for the recapturing knight since Black's b-pawn had already passed b7 and the d-pawn was gone, allowing no future pawn challenge to that square."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-22T17:35:16.542243",
-    "total_games": 129,
+    "computed_at": "2026-06-25T17:26:40.734937",
+    "total_games": 130,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3241,6 +3286,14 @@
         "trend": "improving"
       },
       {
+        "category": "tactical",
+        "specific_type": "missed_zwischenzug",
+        "total_count": 2,
+        "recent_count": 1,
+        "prior_count": 1,
+        "trend": "worsening"
+      },
+      {
         "category": "exchange",
         "specific_type": "poor_piece_trade",
         "total_count": 2,
@@ -3267,14 +3320,6 @@
       {
         "category": "positional",
         "specific_type": "weak_pawn_structure",
-        "total_count": 1,
-        "recent_count": 0,
-        "prior_count": 1,
-        "trend": "improving"
-      },
-      {
-        "category": "tactical",
-        "specific_type": "missed_zwischenzug",
         "total_count": 1,
         "recent_count": 0,
         "prior_count": 1,
@@ -3415,20 +3460,44 @@
         "recent_count": 0,
         "prior_count": 1,
         "trend": "improving"
+      },
+      {
+        "category": "positional",
+        "specific_type": "correct_outpost_recognition",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "positional",
+        "specific_type": "king_safety_pawn_push",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "endgame",
+        "specific_type": "clean_rook_endgame_conversion",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 37,
-        "recent": 2,
+        "total": 38,
+        "recent": 3,
         "prior": 35,
         "trend": "worsening"
       },
       "positional": {
-        "total": 11,
-        "recent": 0,
+        "total": 13,
+        "recent": 2,
         "prior": 11,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "opening": {
         "total": 15,
@@ -3449,10 +3518,10 @@
         "trend": "improving"
       },
       "endgame": {
-        "total": 6,
-        "recent": 0,
+        "total": 7,
+        "recent": 1,
         "prior": 6,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "time": {
         "total": 7,
@@ -3478,7 +3547,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 108,
+      "games_tracked": 109,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -3494,7 +3563,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 59
+      "user_deviated_first_pct": 60
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3528,7 +3597,7 @@
         ]
       },
       "classical": {
-        "games": 32,
+        "games": 33,
         "top_weaknesses": [
           {
             "category": "tactical",
