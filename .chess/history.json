@@ -4184,11 +4184,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "115",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Knight Attack",
+        "eco_code": "C57",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "Ng5",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "Qe7"
+      },
+      "time_control": "60",
+      "time_control_category": "bullet"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:47.950477",
-    "total_games": 171,
+    "computed_at": "2026-06-25T17:42:49.033633",
+    "total_games": 172,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -4201,8 +4227,8 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 15,
-        "recent_count": 1,
+        "total_count": 16,
+        "recent_count": 2,
         "prior_count": 14,
         "trend": "worsening"
       },
@@ -4517,8 +4543,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 19,
-        "recent": 1,
+        "total": 20,
+        "recent": 2,
         "prior": 18,
         "trend": "worsening"
       }
@@ -4540,7 +4566,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 150,
+      "games_tracked": 151,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -4630,8 +4656,14 @@
         ]
       },
       "bullet": {
-        "games": 1,
-        "top_weaknesses": []
+        "games": 2,
+        "top_weaknesses": [
+          {
+            "category": "time",
+            "specific_type": "time_pressure_blunder",
+            "count": 1
+          }
+        ]
       }
     }
   }
