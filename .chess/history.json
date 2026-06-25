@@ -3753,18 +3753,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "436",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "Bc4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "b6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:27.482881",
-    "total_games": 154,
+    "computed_at": "2026-06-25T17:42:28.576030",
+    "total_games": 155,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 38,
-        "recent_count": 4,
-        "prior_count": 34,
+        "recent_count": 3,
+        "prior_count": 35,
         "trend": "worsening"
       },
       {
@@ -4051,8 +4070,8 @@
     "category_trends": {
       "tactical": {
         "total": 50,
-        "recent": 4,
-        "prior": 46,
+        "recent": 3,
+        "prior": 47,
         "trend": "worsening"
       },
       "positional": {
@@ -4109,7 +4128,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 133,
+      "games_tracked": 134,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4125,7 +4144,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 59
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -4179,7 +4198,7 @@
         ]
       },
       "blitz": {
-        "games": 48,
+        "games": 49,
         "top_weaknesses": [
           {
             "category": "tactical",
