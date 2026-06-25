@@ -4106,17 +4106,43 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "435",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Leonardis Variation",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "e4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "d5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:43.791205",
-    "total_games": 168,
+    "computed_at": "2026-06-25T17:42:45.640631",
+    "total_games": 169,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 44,
-        "recent_count": 2,
+        "total_count": 45,
+        "recent_count": 3,
         "prior_count": 42,
         "trend": "worsening"
       },
@@ -4124,8 +4150,8 @@
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 15,
-        "recent_count": 3,
-        "prior_count": 12,
+        "recent_count": 2,
+        "prior_count": 13,
         "trend": "worsening"
       },
       {
@@ -4403,8 +4429,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 56,
-        "recent": 2,
+        "total": 57,
+        "recent": 3,
         "prior": 54,
         "trend": "worsening"
       },
@@ -4440,8 +4466,8 @@
       },
       "time": {
         "total": 19,
-        "recent": 3,
-        "prior": 16,
+        "recent": 2,
+        "prior": 17,
         "trend": "worsening"
       }
     },
@@ -4462,7 +4488,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 147,
+      "games_tracked": 148,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -4532,12 +4558,12 @@
         ]
       },
       "blitz": {
-        "games": 62,
+        "games": 63,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 25
+            "count": 26
           },
           {
             "category": "time",
