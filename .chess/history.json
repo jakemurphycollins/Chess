@@ -3637,17 +3637,43 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "436",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Owen Defense",
+        "eco_code": "B00",
+        "last_book_move_number": 1,
+        "last_book_color": "black",
+        "last_book_san": "b6",
+        "deviated_by": "white",
+        "deviation_move_number": 2,
+        "deviation_san": "d4"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:22.944733",
-    "total_games": 150,
+    "computed_at": "2026-06-25T17:42:24.006866",
+    "total_games": 151,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 35,
-        "recent_count": 3,
+        "total_count": 36,
+        "recent_count": 4,
         "prior_count": 32,
         "trend": "worsening"
       },
@@ -3934,8 +3960,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 47,
-        "recent": 3,
+        "total": 48,
+        "recent": 4,
         "prior": 44,
         "trend": "worsening"
       },
@@ -3993,7 +4019,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 129,
+      "games_tracked": 130,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -4008,7 +4034,7 @@
           4
         ]
       ],
-      "avg_theory_depth_moves": 3.1,
+      "avg_theory_depth_moves": 3.0,
       "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
@@ -4063,12 +4089,12 @@
         ]
       },
       "blitz": {
-        "games": 44,
+        "games": 45,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 16
+            "count": 17
           },
           {
             "category": "time",
