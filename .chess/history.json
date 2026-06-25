@@ -4023,25 +4023,57 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-24",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "443",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Mieses-Kotroc Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qxd5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:40.151623",
-    "total_games": 165,
+    "computed_at": "2026-06-25T17:42:41.274773",
+    "total_games": 166,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 42,
-        "recent_count": 0,
+        "total_count": 43,
+        "recent_count": 1,
         "prior_count": 42,
         "trend": "improving"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 13,
-        "recent_count": 2,
+        "total_count": 14,
+        "recent_count": 3,
         "prior_count": 11,
         "trend": "worsening"
       },
@@ -4320,8 +4352,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 54,
-        "recent": 0,
+        "total": 55,
+        "recent": 1,
         "prior": 54,
         "trend": "improving"
       },
@@ -4356,8 +4388,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 17,
-        "recent": 2,
+        "total": 18,
+        "recent": 3,
         "prior": 15,
         "trend": "worsening"
       }
@@ -4379,14 +4411,14 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 144,
+      "games_tracked": 145,
       "most_common_openings": [
         [
-          "Philidor Defense",
-          5
+          "Scandinavian Defense: Mieses-Kotroc Variation",
+          6
         ],
         [
-          "Scandinavian Defense: Mieses-Kotroc Variation",
+          "Philidor Defense",
           5
         ],
         [
@@ -4395,7 +4427,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -4449,17 +4481,17 @@
         ]
       },
       "blitz": {
-        "games": 59,
+        "games": 60,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 23
+            "count": 24
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 13
+            "count": 14
           },
           {
             "category": "time",
