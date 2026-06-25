@@ -3914,11 +3914,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "435",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Ponziani Opening",
+        "eco_code": "C44",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "c3",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Bc5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:34.414998",
-    "total_games": 160,
+    "computed_at": "2026-06-25T17:42:35.565105",
+    "total_games": 161,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3932,8 +3951,8 @@
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 11,
-        "recent_count": 3,
-        "prior_count": 8,
+        "recent_count": 2,
+        "prior_count": 9,
         "trend": "worsening"
       },
       {
@@ -4248,8 +4267,8 @@
       },
       "time": {
         "total": 15,
-        "recent": 3,
-        "prior": 12,
+        "recent": 2,
+        "prior": 13,
         "trend": "worsening"
       }
     },
@@ -4270,7 +4289,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 139,
+      "games_tracked": 140,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4286,7 +4305,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -4340,7 +4359,7 @@
         ]
       },
       "blitz": {
-        "games": 54,
+        "games": 55,
         "top_weaknesses": [
           {
             "category": "tactical",
