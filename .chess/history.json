@@ -3534,19 +3534,51 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "452",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Queen's Pawn Game: Chigorin Variation",
+        "eco_code": "D02",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Nc6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "e3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:18.009709",
-    "total_games": 146,
+    "computed_at": "2026-06-25T17:42:19.148502",
+    "total_games": 147,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 32,
-        "recent_count": 0,
+        "total_count": 33,
+        "recent_count": 1,
         "prior_count": 32,
-        "trend": "improving"
+        "trend": "stable"
       },
       {
         "category": "opening",
@@ -3581,20 +3613,20 @@
         "trend": "improving"
       },
       {
+        "category": "time",
+        "specific_type": "time_pressure_blunder",
+        "total_count": 5,
+        "recent_count": 2,
+        "prior_count": 3,
+        "trend": "worsening"
+      },
+      {
         "category": "exchange",
         "specific_type": "bad_trade",
         "total_count": 4,
         "recent_count": 0,
         "prior_count": 4,
         "trend": "improving"
-      },
-      {
-        "category": "time",
-        "specific_type": "time_pressure_blunder",
-        "total_count": 4,
-        "recent_count": 1,
-        "prior_count": 3,
-        "trend": "worsening"
       },
       {
         "category": "positional",
@@ -3831,8 +3863,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 44,
-        "recent": 0,
+        "total": 45,
+        "recent": 1,
         "prior": 44,
         "trend": "improving"
       },
@@ -3867,8 +3899,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 8,
-        "recent": 1,
+        "total": 9,
+        "recent": 2,
         "prior": 7,
         "trend": "worsening"
       }
@@ -3890,7 +3922,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 125,
+      "games_tracked": 126,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -3960,17 +3992,17 @@
         ]
       },
       "blitz": {
-        "games": 42,
+        "games": 43,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 14
+            "count": 15
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 4
+            "count": 5
           },
           {
             "category": "time",
