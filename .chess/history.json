@@ -3933,26 +3933,45 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "443",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Caro-Kann Defense: Advance Variation, Short Variation",
+        "eco_code": "B12",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "Nf3",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "e6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:35.565105",
-    "total_games": 161,
+    "computed_at": "2026-06-25T17:42:36.824355",
+    "total_games": 162,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 42,
-        "recent_count": 4,
-        "prior_count": 38,
+        "recent_count": 3,
+        "prior_count": 39,
         "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 11,
-        "recent_count": 2,
-        "prior_count": 9,
+        "recent_count": 1,
+        "prior_count": 10,
         "trend": "worsening"
       },
       {
@@ -4231,8 +4250,8 @@
     "category_trends": {
       "tactical": {
         "total": 54,
-        "recent": 4,
-        "prior": 50,
+        "recent": 3,
+        "prior": 51,
         "trend": "worsening"
       },
       "positional": {
@@ -4267,8 +4286,8 @@
       },
       "time": {
         "total": 15,
-        "recent": 2,
-        "prior": 13,
+        "recent": 1,
+        "prior": 14,
         "trend": "worsening"
       }
     },
@@ -4289,7 +4308,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 140,
+      "games_tracked": 141,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4305,7 +4324,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 59
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -4359,7 +4378,7 @@
         ]
       },
       "blitz": {
-        "games": 55,
+        "games": 56,
         "top_weaknesses": [
           {
             "category": "tactical",
