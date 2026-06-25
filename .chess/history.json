@@ -4055,11 +4055,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-24",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "451",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Classical Variation, Giuoco Pianissimo",
+        "eco_code": "C54",
+        "last_book_move_number": 6,
+        "last_book_color": "black",
+        "last_book_san": "O-O",
+        "deviated_by": "white",
+        "deviation_move_number": 7,
+        "deviation_san": "Re1"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:41.274773",
-    "total_games": 166,
+    "computed_at": "2026-06-25T17:42:42.437411",
+    "total_games": 167,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -4411,7 +4430,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 145,
+      "games_tracked": 146,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -4481,7 +4500,7 @@
         ]
       },
       "blitz": {
-        "games": 60,
+        "games": 61,
         "top_weaknesses": [
           {
             "category": "tactical",
