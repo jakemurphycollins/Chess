@@ -3307,18 +3307,37 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-22",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "782",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Giuoco Pianissimo, Italian Four Knights Variation",
+        "eco_code": "C50",
+        "last_book_move_number": 5,
+        "last_book_color": "white",
+        "last_book_san": "d3",
+        "deviated_by": "black",
+        "deviation_move_number": 5,
+        "deviation_san": "O-O"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:41:27.719129",
-    "total_games": 135,
+    "computed_at": "2026-06-25T17:42:05.954817",
+    "total_games": 136,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 29,
-        "recent_count": 3,
-        "prior_count": 26,
+        "recent_count": 2,
+        "prior_count": 27,
         "trend": "worsening"
       },
       {
@@ -3605,8 +3624,8 @@
     "category_trends": {
       "tactical": {
         "total": 41,
-        "recent": 3,
-        "prior": 38,
+        "recent": 2,
+        "prior": 39,
         "trend": "worsening"
       },
       "positional": {
@@ -3663,7 +3682,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 114,
+      "games_tracked": 115,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -3713,7 +3732,7 @@
         ]
       },
       "classical": {
-        "games": 38,
+        "games": 39,
         "top_weaknesses": [
           {
             "category": "tactical",
