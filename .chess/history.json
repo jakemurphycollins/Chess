@@ -3442,11 +3442,25 @@
       },
       "time_control": "600",
       "time_control_category": "rapid"
+    },
+    {
+      "date": "2026-06-22",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "785",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Non-standard variant game",
+        "variant_warning": "custom_start_position_or_chess960"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Non-standard starting position (handicap/odds or Chess960) \u2014 opening theory analysis not applicable."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:12.211763",
-    "total_games": 141,
+    "computed_at": "2026-06-25T17:42:13.362183",
+    "total_games": 142,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3798,7 +3812,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 120,
+      "games_tracked": 121,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -3848,7 +3862,7 @@
         ]
       },
       "classical": {
-        "games": 41,
+        "games": 42,
         "top_weaknesses": [
           {
             "category": "tactical",
