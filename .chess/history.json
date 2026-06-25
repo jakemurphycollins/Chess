@@ -3721,17 +3721,49 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "428",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Philidor Defense",
+        "eco_code": "C41",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Bg4"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:26.311648",
-    "total_games": 153,
+    "computed_at": "2026-06-25T17:42:27.482881",
+    "total_games": 154,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 37,
-        "recent_count": 3,
+        "total_count": 38,
+        "recent_count": 4,
         "prior_count": 34,
         "trend": "worsening"
       },
@@ -3754,8 +3786,8 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 7,
-        "recent_count": 2,
+        "total_count": 8,
+        "recent_count": 3,
         "prior_count": 5,
         "trend": "worsening"
       },
@@ -4018,8 +4050,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 49,
-        "recent": 3,
+        "total": 50,
+        "recent": 4,
         "prior": 46,
         "trend": "worsening"
       },
@@ -4054,8 +4086,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 11,
-        "recent": 2,
+        "total": 12,
+        "recent": 3,
         "prior": 9,
         "trend": "worsening"
       }
@@ -4077,8 +4109,12 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 132,
+      "games_tracked": 133,
       "most_common_openings": [
+        [
+          "Philidor Defense",
+          5
+        ],
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
           5
@@ -4086,10 +4122,6 @@
         [
           "King's Pawn Game: Wayward Queen Attack",
           5
-        ],
-        [
-          "Philidor Defense",
-          4
         ]
       ],
       "avg_theory_depth_moves": 3.0,
@@ -4147,17 +4179,17 @@
         ]
       },
       "blitz": {
-        "games": 47,
+        "games": 48,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 18
+            "count": 19
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 7
+            "count": 8
           },
           {
             "category": "time",
