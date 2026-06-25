@@ -3281,17 +3281,43 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-22",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "772",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Philidor Defense: Exchange Variation",
+        "eco_code": "C41",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "exd4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Qxd4"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:41:26.608063",
-    "total_games": 134,
+    "computed_at": "2026-06-25T17:41:27.719129",
+    "total_games": 135,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 28,
-        "recent_count": 2,
+        "total_count": 29,
+        "recent_count": 3,
         "prior_count": 26,
         "trend": "worsening"
       },
@@ -3379,9 +3405,9 @@
         "category": "tactical",
         "specific_type": "missed_zwischenzug",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "exchange",
@@ -3555,39 +3581,39 @@
         "category": "positional",
         "specific_type": "correct_outpost_recognition",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "positional",
         "specific_type": "king_safety_pawn_push",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "endgame",
         "specific_type": "clean_rook_endgame_conversion",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 40,
+        "total": 41,
         "recent": 3,
-        "prior": 37,
+        "prior": 38,
         "trend": "worsening"
       },
       "positional": {
         "total": 13,
-        "recent": 2,
-        "prior": 11,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 13,
+        "trend": "improving"
       },
       "opening": {
         "total": 15,
@@ -3609,9 +3635,9 @@
       },
       "endgame": {
         "total": 7,
-        "recent": 1,
-        "prior": 6,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 7,
+        "trend": "improving"
       },
       "time": {
         "total": 7,
@@ -3637,7 +3663,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 113,
+      "games_tracked": 114,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -3687,12 +3713,12 @@
         ]
       },
       "classical": {
-        "games": 37,
+        "games": 38,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 8
+            "count": 9
           },
           {
             "category": "defense",
