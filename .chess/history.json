@@ -3888,17 +3888,43 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "427",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scotch Game",
+        "eco_code": "C44",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "d6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:33.232450",
-    "total_games": 159,
+    "computed_at": "2026-06-25T17:42:34.414998",
+    "total_games": 160,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 41,
-        "recent_count": 3,
+        "total_count": 42,
+        "recent_count": 4,
         "prior_count": 38,
         "trend": "worsening"
       },
@@ -4185,8 +4211,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 53,
-        "recent": 3,
+        "total": 54,
+        "recent": 4,
         "prior": 50,
         "trend": "worsening"
       },
@@ -4244,7 +4270,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 138,
+      "games_tracked": 139,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4314,12 +4340,12 @@
         ]
       },
       "blitz": {
-        "games": 53,
+        "games": 54,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 22
+            "count": 23
           },
           {
             "category": "time",
