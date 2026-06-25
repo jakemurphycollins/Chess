@@ -3830,18 +3830,58 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "427",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Bishop's Opening",
+        "eco_code": "C23",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Bc4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:30.926180",
-    "total_games": 157,
+    "computed_at": "2026-06-25T17:42:32.073667",
+    "total_games": 158,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 39,
+        "total_count": 40,
         "recent_count": 3,
-        "prior_count": 36,
+        "prior_count": 37,
+        "trend": "worsening"
+      },
+      {
+        "category": "time",
+        "specific_type": "time_pressure_blunder",
+        "total_count": 11,
+        "recent_count": 4,
+        "prior_count": 7,
         "trend": "worsening"
       },
       {
@@ -3851,14 +3891,6 @@
         "recent_count": 0,
         "prior_count": 10,
         "trend": "improving"
-      },
-      {
-        "category": "time",
-        "specific_type": "time_pressure_blunder",
-        "total_count": 10,
-        "recent_count": 4,
-        "prior_count": 6,
-        "trend": "worsening"
       },
       {
         "category": "defense",
@@ -4127,9 +4159,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 51,
+        "total": 52,
         "recent": 3,
-        "prior": 48,
+        "prior": 49,
         "trend": "worsening"
       },
       "positional": {
@@ -4163,9 +4195,9 @@
         "trend": "improving"
       },
       "time": {
-        "total": 14,
+        "total": 15,
         "recent": 4,
-        "prior": 10,
+        "prior": 11,
         "trend": "worsening"
       }
     },
@@ -4186,7 +4218,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 136,
+      "games_tracked": 137,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4256,17 +4288,17 @@
         ]
       },
       "blitz": {
-        "games": 51,
+        "games": 52,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 20
+            "count": 21
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 10
+            "count": 11
           },
           {
             "category": "time",
