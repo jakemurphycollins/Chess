@@ -3191,17 +3191,43 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Italian Game: Hungarian Defense, theory held through 3...Be7 before your own 4.O-O deviation. After 8.Qb3 Na5 9.Qa4 forced a tempo-losing queen maneuver, but you found 16.Qc6, correctly identifying it as a permanent outpost for the recapturing knight since Black's b-pawn had already passed b7 and the d-pawn was gone, allowing no future pawn challenge to that square."
+    },
+    {
+      "date": "2026-06-22",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "788",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Giuoco Piano",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Bc5",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:26:40.734937",
-    "total_games": 130,
+    "computed_at": "2026-06-25T17:41:23.076981",
+    "total_games": 131,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 26,
-        "recent_count": 2,
+        "total_count": 27,
+        "recent_count": 3,
         "prior_count": 24,
         "trend": "worsening"
       },
@@ -3488,8 +3514,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 38,
-        "recent": 3,
+        "total": 39,
+        "recent": 4,
         "prior": 35,
         "trend": "worsening"
       },
@@ -3547,23 +3573,23 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 109,
+      "games_tracked": 110,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
           4
         ],
         [
-          "King's Pawn Game: Wayward Queen Attack",
+          "Italian Game: Giuoco Piano",
           4
         ],
         [
-          "Philidor Defense",
-          3
+          "King's Pawn Game: Wayward Queen Attack",
+          4
         ]
       ],
       "avg_theory_depth_moves": 3.1,
-      "user_deviated_first_pct": 60
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -3597,12 +3623,12 @@
         ]
       },
       "classical": {
-        "games": 33,
+        "games": 34,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 6
+            "count": 7
           },
           {
             "category": "defense",
