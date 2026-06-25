@@ -3689,18 +3689,50 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "420",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Wayward Queen Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Qh5",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:25.143208",
-    "total_games": 152,
+    "computed_at": "2026-06-25T17:42:26.311648",
+    "total_games": 153,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 36,
+        "total_count": 37,
         "recent_count": 3,
-        "prior_count": 33,
+        "prior_count": 34,
         "trend": "worsening"
       },
       {
@@ -3720,20 +3752,20 @@
         "trend": "improving"
       },
       {
+        "category": "time",
+        "specific_type": "time_pressure_blunder",
+        "total_count": 7,
+        "recent_count": 2,
+        "prior_count": 5,
+        "trend": "worsening"
+      },
+      {
         "category": "defense",
         "specific_type": "missing_defensive_resource",
         "total_count": 6,
         "recent_count": 0,
         "prior_count": 6,
         "trend": "improving"
-      },
-      {
-        "category": "time",
-        "specific_type": "time_pressure_blunder",
-        "total_count": 6,
-        "recent_count": 1,
-        "prior_count": 5,
-        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -3986,9 +4018,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 48,
+        "total": 49,
         "recent": 3,
-        "prior": 45,
+        "prior": 46,
         "trend": "worsening"
       },
       "positional": {
@@ -4022,8 +4054,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 10,
-        "recent": 1,
+        "total": 11,
+        "recent": 2,
         "prior": 9,
         "trend": "worsening"
       }
@@ -4045,18 +4077,18 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 131,
+      "games_tracked": 132,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
           5
         ],
         [
-          "Philidor Defense",
-          4
+          "King's Pawn Game: Wayward Queen Attack",
+          5
         ],
         [
-          "Italian Game: Giuoco Piano",
+          "Philidor Defense",
           4
         ]
       ],
@@ -4115,17 +4147,17 @@
         ]
       },
       "blitz": {
-        "games": 46,
+        "games": 47,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 17
+            "count": 18
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 6
+            "count": 7
           },
           {
             "category": "time",
