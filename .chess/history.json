@@ -3592,11 +3592,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-23",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "794",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Philidor Defense",
+        "eco_code": "C41",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Bg4"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-06-25T17:42:20.695460",
-    "total_games": 148,
+    "computed_at": "2026-06-25T17:42:21.806246",
+    "total_games": 149,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -3948,18 +3967,18 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 127,
+      "games_tracked": 128,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
           5
         ],
         [
-          "Italian Game: Giuoco Piano",
+          "Philidor Defense",
           4
         ],
         [
-          "King's Pawn Game: Wayward Queen Attack",
+          "Italian Game: Giuoco Piano",
           4
         ]
       ],
@@ -3998,7 +4017,7 @@
         ]
       },
       "classical": {
-        "games": 43,
+        "games": 44,
         "top_weaknesses": [
           {
             "category": "tactical",
