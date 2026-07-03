@@ -4667,18 +4667,44 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-26",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "410",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Petrov's Defense",
+        "eco_code": "C42",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "Nxe5",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "g6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:23.206226",
-    "total_games": 189,
+    "computed_at": "2026-07-03T18:25:24.273635",
+    "total_games": 190,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 56,
+        "total_count": 57,
         "recent_count": 2,
-        "prior_count": 54,
+        "prior_count": 55,
         "trend": "worsening"
       },
       {
@@ -5004,9 +5030,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 73,
+        "total": 74,
         "recent": 2,
-        "prior": 71,
+        "prior": 72,
         "trend": "stable"
       },
       "positional": {
@@ -5063,7 +5089,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 168,
+      "games_tracked": 169,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5133,12 +5159,12 @@
         ]
       },
       "blitz": {
-        "games": 79,
+        "games": 80,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 36
+            "count": 37
           },
           {
             "category": "time",
