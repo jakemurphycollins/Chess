@@ -6253,26 +6253,45 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "456",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Four Knights Game: Italian Variation",
+        "eco_code": "C50",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "Ng5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:54.325887",
-    "total_games": 254,
+    "computed_at": "2026-07-03T18:31:55.382058",
+    "total_games": 255,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 89,
-        "recent_count": 1,
-        "prior_count": 88,
+        "recent_count": 0,
+        "prior_count": 89,
         "trend": "improving"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 37,
-        "recent_count": 4,
-        "prior_count": 33,
+        "recent_count": 3,
+        "prior_count": 34,
         "trend": "worsening"
       },
       {
@@ -6591,8 +6610,8 @@
     "category_trends": {
       "tactical": {
         "total": 106,
-        "recent": 1,
-        "prior": 105,
+        "recent": 0,
+        "prior": 106,
         "trend": "improving"
       },
       "positional": {
@@ -6627,8 +6646,8 @@
       },
       "time": {
         "total": 41,
-        "recent": 4,
-        "prior": 37,
+        "recent": 3,
+        "prior": 38,
         "trend": "worsening"
       }
     },
@@ -6649,7 +6668,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 233,
+      "games_tracked": 234,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6719,7 +6738,7 @@
         ]
       },
       "blitz": {
-        "games": 129,
+        "games": 130,
         "top_weaknesses": [
           {
             "category": "tactical",
