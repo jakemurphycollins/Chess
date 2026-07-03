@@ -5610,19 +5610,45 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "424",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Sicilian Defense: Franco-Sicilian Variation",
+        "eco_code": "B32",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nc6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "dxc5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:26:03.850436",
-    "total_games": 228,
+    "computed_at": "2026-07-03T18:26:04.926157",
+    "total_games": 229,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 79,
-        "recent_count": 2,
+        "total_count": 80,
+        "recent_count": 3,
         "prior_count": 77,
-        "trend": "stable"
+        "trend": "worsening"
       },
       {
         "category": "time",
@@ -5947,10 +5973,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 96,
-        "recent": 2,
+        "total": 97,
+        "recent": 3,
         "prior": 94,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "positional": {
         "total": 16,
@@ -6006,7 +6032,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 207,
+      "games_tracked": 208,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6022,7 +6048,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -6076,12 +6102,12 @@
         ]
       },
       "blitz": {
-        "games": 109,
+        "games": 110,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 54
+            "count": 55
           },
           {
             "category": "time",
