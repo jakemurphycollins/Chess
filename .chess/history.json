@@ -5282,18 +5282,44 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "426",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Queen's Pawn Game: Veresov Attack, Classical Defense",
+        "eco_code": "A46",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "Bg5",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:49.429347",
-    "total_games": 214,
+    "computed_at": "2026-07-03T18:25:50.419839",
+    "total_games": 215,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 74,
+        "total_count": 75,
         "recent_count": 4,
-        "prior_count": 70,
+        "prior_count": 71,
         "trend": "worsening"
       },
       {
@@ -5619,9 +5645,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 91,
+        "total": 92,
         "recent": 4,
-        "prior": 87,
+        "prior": 88,
         "trend": "worsening"
       },
       "positional": {
@@ -5678,7 +5704,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 193,
+      "games_tracked": 194,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5748,12 +5774,12 @@
         ]
       },
       "blitz": {
-        "games": 99,
+        "games": 100,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 50
+            "count": 51
           },
           {
             "category": "time",
