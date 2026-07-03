@@ -5783,11 +5783,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "463",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "Bc4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "b6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:34.708657",
-    "total_games": 235,
+    "computed_at": "2026-07-03T18:31:35.757772",
+    "total_games": 236,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -6179,18 +6198,18 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 214,
+      "games_tracked": 215,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
           7
         ],
         [
-          "Philidor Defense",
-          6
+          "Italian Game",
+          7
         ],
         [
-          "Italian Game: Anti-Fried Liver Defense",
+          "Philidor Defense",
           6
         ]
       ],
@@ -6249,7 +6268,7 @@
         ]
       },
       "blitz": {
-        "games": 116,
+        "games": 117,
         "top_weaknesses": [
           {
             "category": "tactical",
