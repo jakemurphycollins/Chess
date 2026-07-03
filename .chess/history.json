@@ -4790,18 +4790,39 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-26",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "802",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Coach/training game",
+        "variant_warning": "non_competitive_game"
+      },
+      "time_control": "-",
+      "time_control_category": null,
+      "opening_notes": "Coach or training game \u2014 opening theory analysis not applicable."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:28.636594",
-    "total_games": 194,
+    "computed_at": "2026-07-03T18:25:29.717792",
+    "total_games": 195,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 60,
+        "total_count": 61,
         "recent_count": 4,
-        "prior_count": 56,
+        "prior_count": 57,
         "trend": "worsening"
       },
       {
@@ -5127,9 +5148,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 77,
+        "total": 78,
         "recent": 4,
-        "prior": 73,
+        "prior": 74,
         "trend": "worsening"
       },
       "positional": {
@@ -5186,7 +5207,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 173,
+      "games_tracked": 174,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5202,11 +5223,11 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 57
     },
     "time_control_breakdown": {
       "unknown": {
-        "games": 56,
+        "games": 57,
         "top_weaknesses": [
           {
             "category": "opening",
@@ -5216,7 +5237,7 @@
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 7
+            "count": 8
           },
           {
             "category": "defense",
