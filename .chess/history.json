@@ -4467,17 +4467,43 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "402",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Gubinsky-Melts Defense",
+        "eco_code": "B01",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Qd6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "d4"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:05:50.153334",
-    "total_games": 181,
+    "computed_at": "2026-07-03T18:25:15.622958",
+    "total_games": 182,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 51,
-        "recent_count": 2,
+        "total_count": 52,
+        "recent_count": 3,
         "prior_count": 49,
         "trend": "worsening"
       },
@@ -4804,10 +4830,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 68,
-        "recent": 2,
+        "total": 69,
+        "recent": 3,
         "prior": 66,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "positional": {
         "total": 16,
@@ -4863,7 +4889,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 160,
+      "games_tracked": 161,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4879,7 +4905,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 57
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -4933,12 +4959,12 @@
         ]
       },
       "blitz": {
-        "games": 72,
+        "games": 73,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 32
+            "count": 33
           },
           {
             "category": "time",
