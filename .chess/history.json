@@ -4332,18 +4332,44 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "435",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Queen's Gambit Accepted",
+        "eco_code": "D23",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "dxc4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "e4"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:05:40.568396",
-    "total_games": 175,
+    "computed_at": "2026-07-03T18:05:42.170435",
+    "total_games": 176,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 48,
+        "total_count": 49,
         "recent_count": 2,
-        "prior_count": 46,
+        "prior_count": 47,
         "trend": "worsening"
       },
       {
@@ -4669,9 +4695,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 65,
+        "total": 66,
         "recent": 7,
-        "prior": 58,
+        "prior": 59,
         "trend": "worsening"
       },
       "positional": {
@@ -4728,7 +4754,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 154,
+      "games_tracked": 155,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4798,12 +4824,12 @@
         ]
       },
       "blitz": {
-        "games": 66,
+        "games": 67,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 29
+            "count": 30
           },
           {
             "category": "time",
