@@ -6687,11 +6687,30 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Training, bot, or engine game \u2014 opening theory analysis not applicable."
+    },
+    {
+      "date": "2026-07-02",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "819",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Scotch Game: Scotch Gambit, Advance Variation",
+        "eco_code": "C44",
+        "last_book_move_number": 5,
+        "last_book_color": "white",
+        "last_book_san": "e5",
+        "deviated_by": "black",
+        "deviation_move_number": 5,
+        "deviation_san": "Ne4"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:16.063181",
-    "total_games": 274,
+    "computed_at": "2026-07-03T18:32:17.239784",
+    "total_games": 275,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -7083,7 +7102,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 253,
+      "games_tracked": 254,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7133,7 +7152,7 @@
         ]
       },
       "classical": {
-        "games": 60,
+        "games": 61,
         "top_weaknesses": [
           {
             "category": "tactical",
