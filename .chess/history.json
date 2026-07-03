@@ -5437,11 +5437,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "433",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Napoleon Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Qf3",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:55.689267",
-    "total_games": 220,
+    "computed_at": "2026-07-03T18:25:56.701638",
+    "total_games": 221,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5833,7 +5852,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 199,
+      "games_tracked": 200,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5903,7 +5922,7 @@
         ]
       },
       "blitz": {
-        "games": 102,
+        "games": 103,
         "top_weaknesses": [
           {
             "category": "tactical",
