@@ -6336,17 +6336,43 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "472",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Center Game: Paulsen Attack Variation",
+        "eco_code": "C22",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "Qe3",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "d5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:58.468986",
-    "total_games": 258,
+    "computed_at": "2026-07-03T18:31:59.501910",
+    "total_games": 259,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 89,
-        "recent_count": 0,
+        "total_count": 90,
+        "recent_count": 1,
         "prior_count": 89,
         "trend": "improving"
       },
@@ -6354,8 +6380,8 @@
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 38,
-        "recent_count": 2,
-        "prior_count": 36,
+        "recent_count": 1,
+        "prior_count": 37,
         "trend": "worsening"
       },
       {
@@ -6673,8 +6699,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 106,
-        "recent": 0,
+        "total": 107,
+        "recent": 1,
         "prior": 106,
         "trend": "improving"
       },
@@ -6710,8 +6736,8 @@
       },
       "time": {
         "total": 42,
-        "recent": 2,
-        "prior": 40,
+        "recent": 1,
+        "prior": 41,
         "trend": "worsening"
       }
     },
@@ -6732,7 +6758,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 237,
+      "games_tracked": 238,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6802,12 +6828,12 @@
         ]
       },
       "blitz": {
-        "games": 133,
+        "games": 134,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 62
+            "count": 63
           },
           {
             "category": "time",
