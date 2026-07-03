@@ -4603,18 +4603,44 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-26",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "402",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Blackburne-Kosti\u0107 Gambit",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nd4",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "O-O"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:20.109344",
-    "total_games": 186,
+    "computed_at": "2026-07-03T18:25:21.191459",
+    "total_games": 187,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 55,
+        "total_count": 56,
         "recent_count": 4,
-        "prior_count": 51,
+        "prior_count": 52,
         "trend": "worsening"
       },
       {
@@ -4940,9 +4966,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 72,
+        "total": 73,
         "recent": 4,
-        "prior": 68,
+        "prior": 69,
         "trend": "worsening"
       },
       "positional": {
@@ -4999,7 +5025,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 165,
+      "games_tracked": 166,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5069,12 +5095,12 @@
         ]
       },
       "blitz": {
-        "games": 76,
+        "games": 77,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 35
+            "count": 36
           },
           {
             "category": "time",
