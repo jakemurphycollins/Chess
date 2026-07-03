@@ -6227,11 +6227,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "447",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Philidor Defense: Lion Variation",
+        "eco_code": "C41",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "e5",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "d5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:53.301350",
-    "total_games": 253,
+    "computed_at": "2026-07-03T18:31:54.325887",
+    "total_games": 254,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -6244,8 +6270,8 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 36,
-        "recent_count": 3,
+        "total_count": 37,
+        "recent_count": 4,
         "prior_count": 33,
         "trend": "worsening"
       },
@@ -6600,8 +6626,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 40,
-        "recent": 3,
+        "total": 41,
+        "recent": 4,
         "prior": 37,
         "trend": "worsening"
       }
@@ -6623,7 +6649,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 232,
+      "games_tracked": 233,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6693,7 +6719,7 @@
         ]
       },
       "blitz": {
-        "games": 128,
+        "games": 129,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -6703,7 +6729,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 29
+            "count": 30
           },
           {
             "category": "time",
