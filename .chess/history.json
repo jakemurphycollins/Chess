@@ -6362,11 +6362,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "464",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Fritz Variation",
+        "eco_code": "C57",
+        "last_book_move_number": 5,
+        "last_book_color": "black",
+        "last_book_san": "Nd4",
+        "deviated_by": "white",
+        "deviation_move_number": 6,
+        "deviation_san": "d6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:59.501910",
-    "total_games": 259,
+    "computed_at": "2026-07-03T18:32:00.581652",
+    "total_games": 260,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -6758,7 +6777,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 238,
+      "games_tracked": 239,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6828,7 +6847,7 @@
         ]
       },
       "blitz": {
-        "games": 134,
+        "games": 135,
         "top_weaknesses": [
           {
             "category": "tactical",
