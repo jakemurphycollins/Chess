@@ -4811,18 +4811,44 @@
       "time_control": "-",
       "time_control_category": null,
       "opening_notes": "Coach or training game \u2014 opening theory analysis not applicable."
+    },
+    {
+      "date": "2026-06-26",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "402",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Mieses Opening: Reversed Rat",
+        "eco_code": "A00",
+        "last_book_move_number": 1,
+        "last_book_color": "black",
+        "last_book_san": "e5",
+        "deviated_by": "white",
+        "deviation_move_number": 2,
+        "deviation_san": "h3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:29.717792",
-    "total_games": 195,
+    "computed_at": "2026-07-03T18:25:30.738705",
+    "total_games": 196,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 61,
+        "total_count": 62,
         "recent_count": 4,
-        "prior_count": 57,
+        "prior_count": 58,
         "trend": "worsening"
       },
       {
@@ -5148,9 +5174,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 78,
+        "total": 79,
         "recent": 4,
-        "prior": 74,
+        "prior": 75,
         "trend": "worsening"
       },
       "positional": {
@@ -5207,7 +5233,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 174,
+      "games_tracked": 175,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5277,12 +5303,12 @@
         ]
       },
       "blitz": {
-        "games": 80,
+        "games": 81,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 37
+            "count": 38
           },
           {
             "category": "time",
