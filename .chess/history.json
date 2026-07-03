@@ -6105,27 +6105,46 @@
       },
       "time_control": "120+1",
       "time_control_category": "bullet"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "148",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Napoleon Attack",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "Qf3",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "120+1",
+      "time_control_category": "bullet"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:48.093690",
-    "total_games": 248,
+    "computed_at": "2026-07-03T18:31:49.128093",
+    "total_games": 249,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 88,
-        "recent_count": 4,
-        "prior_count": 84,
+        "recent_count": 3,
+        "prior_count": 85,
         "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 33,
-        "recent_count": 1,
-        "prior_count": 32,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 33,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -6443,8 +6462,8 @@
     "category_trends": {
       "tactical": {
         "total": 105,
-        "recent": 4,
-        "prior": 101,
+        "recent": 3,
+        "prior": 102,
         "trend": "worsening"
       },
       "positional": {
@@ -6479,9 +6498,9 @@
       },
       "time": {
         "total": 37,
-        "recent": 1,
-        "prior": 36,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 37,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [
@@ -6501,7 +6520,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 227,
+      "games_tracked": 228,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6512,8 +6531,8 @@
           7
         ],
         [
-          "Philidor Defense",
-          6
+          "King's Pawn Game: Napoleon Attack",
+          7
         ]
       ],
       "avg_theory_depth_moves": 2.9,
@@ -6591,7 +6610,7 @@
         ]
       },
       "bullet": {
-        "games": 7,
+        "games": 8,
         "top_weaknesses": [
           {
             "category": "time",
