@@ -6008,26 +6008,52 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "455",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Mikenas Defense",
+        "eco_code": "A40",
+        "last_book_move_number": 1,
+        "last_book_color": "black",
+        "last_book_san": "Nc6",
+        "deviated_by": "white",
+        "deviation_move_number": 2,
+        "deviation_san": "d5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:43.967584",
-    "total_games": 244,
+    "computed_at": "2026-07-03T18:31:44.973825",
+    "total_games": 245,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 85,
+        "total_count": 86,
         "recent_count": 3,
-        "prior_count": 82,
+        "prior_count": 83,
         "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 33,
-        "recent_count": 4,
-        "prior_count": 29,
+        "recent_count": 3,
+        "prior_count": 30,
         "trend": "worsening"
       },
       {
@@ -6345,9 +6371,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 102,
+        "total": 103,
         "recent": 3,
-        "prior": 99,
+        "prior": 100,
         "trend": "worsening"
       },
       "positional": {
@@ -6382,8 +6408,8 @@
       },
       "time": {
         "total": 37,
-        "recent": 4,
-        "prior": 33,
+        "recent": 3,
+        "prior": 34,
         "trend": "worsening"
       }
     },
@@ -6404,7 +6430,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 223,
+      "games_tracked": 224,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6474,12 +6500,12 @@
         ]
       },
       "blitz": {
-        "games": 125,
+        "games": 126,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 60
+            "count": 61
           },
           {
             "category": "time",
