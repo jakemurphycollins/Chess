@@ -6706,17 +6706,38 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-07-02",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "819",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Training/bot game",
+        "variant_warning": "non_competitive_game"
+      },
+      "time_control": "-",
+      "time_control_category": null,
+      "opening_notes": "Training, bot, or engine game \u2014 opening theory analysis not applicable."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:17.239784",
-    "total_games": 275,
+    "computed_at": "2026-07-03T18:32:18.219651",
+    "total_games": 276,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 96,
-        "recent_count": 0,
+        "total_count": 97,
+        "recent_count": 1,
         "prior_count": 96,
         "trend": "improving"
       },
@@ -7043,8 +7064,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 113,
-        "recent": 0,
+        "total": 114,
+        "recent": 1,
         "prior": 113,
         "trend": "improving"
       },
@@ -7102,7 +7123,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 254,
+      "games_tracked": 255,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7122,7 +7143,7 @@
     },
     "time_control_breakdown": {
       "unknown": {
-        "games": 57,
+        "games": 58,
         "top_weaknesses": [
           {
             "category": "opening",
@@ -7132,7 +7153,7 @@
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 8
+            "count": 9
           },
           {
             "category": "defense",
