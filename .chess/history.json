@@ -5095,27 +5095,59 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "417",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Dresden Opening",
+        "eco_code": "C44",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "c4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Bc5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:42.160696",
-    "total_games": 207,
+    "computed_at": "2026-07-03T18:25:43.181035",
+    "total_games": 208,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 68,
+        "total_count": 69,
         "recent_count": 4,
-        "prior_count": 64,
+        "prior_count": 65,
         "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 19,
-        "recent_count": 0,
+        "total_count": 20,
+        "recent_count": 1,
         "prior_count": 19,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -5432,9 +5464,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 85,
+        "total": 86,
         "recent": 4,
-        "prior": 81,
+        "prior": 82,
         "trend": "worsening"
       },
       "positional": {
@@ -5468,10 +5500,10 @@
         "trend": "improving"
       },
       "time": {
-        "total": 23,
-        "recent": 0,
+        "total": 24,
+        "recent": 1,
         "prior": 23,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [
@@ -5491,7 +5523,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 186,
+      "games_tracked": 187,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5561,17 +5593,17 @@
         ]
       },
       "blitz": {
-        "games": 92,
+        "games": 93,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 44
+            "count": 45
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 18
+            "count": 19
           },
           {
             "category": "time",
