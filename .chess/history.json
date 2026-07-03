@@ -6433,17 +6433,43 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "457",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Hungarian Opening",
+        "eco_code": "A00",
+        "last_book_move_number": 1,
+        "last_book_color": "white",
+        "last_book_san": "g3",
+        "deviated_by": "black",
+        "deviation_move_number": 1,
+        "deviation_san": "e5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:03.146091",
-    "total_games": 262,
+    "computed_at": "2026-07-03T18:32:04.226334",
+    "total_games": 263,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 92,
-        "recent_count": 3,
+        "total_count": 93,
+        "recent_count": 4,
         "prior_count": 89,
         "trend": "worsening"
       },
@@ -6451,9 +6477,9 @@
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 38,
-        "recent_count": 1,
-        "prior_count": 37,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 38,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -6770,8 +6796,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 109,
-        "recent": 3,
+        "total": 110,
+        "recent": 4,
         "prior": 106,
         "trend": "worsening"
       },
@@ -6807,9 +6833,9 @@
       },
       "time": {
         "total": 42,
-        "recent": 1,
-        "prior": 41,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 42,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [
@@ -6829,7 +6855,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 241,
+      "games_tracked": 242,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6899,12 +6925,12 @@
         ]
       },
       "blitz": {
-        "games": 137,
+        "games": 138,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 65
+            "count": 66
           },
           {
             "category": "time",
