@@ -6807,18 +6807,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-07-03",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "827",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Petrov's Defense: Modern Attack",
+        "eco_code": "C43",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Nxd4"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:22.303402",
-    "total_games": 280,
+    "computed_at": "2026-07-03T18:32:23.343862",
+    "total_games": 281,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 97,
-        "recent_count": 1,
-        "prior_count": 96,
+        "recent_count": 0,
+        "prior_count": 97,
         "trend": "improving"
       },
       {
@@ -7145,8 +7164,8 @@
     "category_trends": {
       "tactical": {
         "total": 114,
-        "recent": 1,
-        "prior": 113,
+        "recent": 0,
+        "prior": 114,
         "trend": "improving"
       },
       "positional": {
@@ -7203,7 +7222,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 259,
+      "games_tracked": 260,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7253,7 +7272,7 @@
         ]
       },
       "classical": {
-        "games": 62,
+        "games": 63,
         "top_weaknesses": [
           {
             "category": "tactical",
