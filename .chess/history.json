@@ -5976,26 +5976,58 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "463",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Van't Kruijs Opening",
+        "eco_code": "A00",
+        "last_book_move_number": 1,
+        "last_book_color": "white",
+        "last_book_san": "e3",
+        "deviated_by": "black",
+        "deviation_move_number": 1,
+        "deviation_san": "e5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:42.930520",
-    "total_games": 243,
+    "computed_at": "2026-07-03T18:31:43.967584",
+    "total_games": 244,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 84,
-        "recent_count": 2,
+        "total_count": 85,
+        "recent_count": 3,
         "prior_count": 82,
-        "trend": "stable"
+        "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 32,
+        "total_count": 33,
         "recent_count": 4,
-        "prior_count": 28,
+        "prior_count": 29,
         "trend": "worsening"
       },
       {
@@ -6313,10 +6345,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 101,
-        "recent": 2,
+        "total": 102,
+        "recent": 3,
         "prior": 99,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "positional": {
         "total": 16,
@@ -6349,9 +6381,9 @@
         "trend": "improving"
       },
       "time": {
-        "total": 36,
+        "total": 37,
         "recent": 4,
-        "prior": 32,
+        "prior": 33,
         "trend": "worsening"
       }
     },
@@ -6372,7 +6404,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 222,
+      "games_tracked": 223,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6442,17 +6474,17 @@
         ]
       },
       "blitz": {
-        "games": 124,
+        "games": 125,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 59
+            "count": 60
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 28
+            "count": 29
           },
           {
             "category": "time",
