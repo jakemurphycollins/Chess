@@ -5308,27 +5308,46 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "434",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Modern Defense",
+        "eco_code": "B06",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Bg7",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nf3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:50.419839",
-    "total_games": 215,
+    "computed_at": "2026-07-03T18:25:51.421324",
+    "total_games": 216,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 75,
-        "recent_count": 4,
-        "prior_count": 71,
+        "recent_count": 3,
+        "prior_count": 72,
         "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 21,
-        "recent_count": 1,
-        "prior_count": 20,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 21,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -5646,8 +5665,8 @@
     "category_trends": {
       "tactical": {
         "total": 92,
-        "recent": 4,
-        "prior": 88,
+        "recent": 3,
+        "prior": 89,
         "trend": "worsening"
       },
       "positional": {
@@ -5682,9 +5701,9 @@
       },
       "time": {
         "total": 25,
-        "recent": 1,
-        "prior": 24,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 25,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [
@@ -5704,7 +5723,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 194,
+      "games_tracked": 195,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5774,7 +5793,7 @@
         ]
       },
       "blitz": {
-        "games": 100,
+        "games": 101,
         "top_weaknesses": [
           {
             "category": "tactical",
