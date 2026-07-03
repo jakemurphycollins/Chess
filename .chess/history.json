@@ -6459,18 +6459,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "466",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line",
+        "eco_code": "C57",
+        "last_book_move_number": 5,
+        "last_book_color": "white",
+        "last_book_san": "Nxf7",
+        "deviated_by": "black",
+        "deviation_move_number": 5,
+        "deviation_san": "Bxf2+"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:04.226334",
-    "total_games": 263,
+    "computed_at": "2026-07-03T18:32:05.558898",
+    "total_games": 264,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 93,
-        "recent_count": 4,
-        "prior_count": 89,
+        "recent_count": 3,
+        "prior_count": 90,
         "trend": "worsening"
       },
       {
@@ -6797,8 +6816,8 @@
     "category_trends": {
       "tactical": {
         "total": 110,
-        "recent": 4,
-        "prior": 106,
+        "recent": 3,
+        "prior": 107,
         "trend": "worsening"
       },
       "positional": {
@@ -6855,7 +6874,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 242,
+      "games_tracked": 243,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6925,7 +6944,7 @@
         ]
       },
       "blitz": {
-        "games": 138,
+        "games": 139,
         "top_weaknesses": [
           {
             "category": "tactical",
