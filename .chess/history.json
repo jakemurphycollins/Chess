@@ -5732,19 +5732,38 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "448",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Queen's Pawn Game: Symmetrical Variation",
+        "eco_code": "D02",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:32.624894",
-    "total_games": 233,
+    "computed_at": "2026-07-03T18:31:33.671755",
+    "total_games": 234,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 81,
-        "recent_count": 2,
-        "prior_count": 79,
-        "trend": "stable"
+        "recent_count": 1,
+        "prior_count": 80,
+        "trend": "improving"
       },
       {
         "category": "time",
@@ -6070,9 +6089,9 @@
     "category_trends": {
       "tactical": {
         "total": 98,
-        "recent": 2,
-        "prior": 96,
-        "trend": "stable"
+        "recent": 1,
+        "prior": 97,
+        "trend": "improving"
       },
       "positional": {
         "total": 16,
@@ -6128,7 +6147,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 212,
+      "games_tracked": 213,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6198,7 +6217,7 @@
         ]
       },
       "blitz": {
-        "games": 114,
+        "games": 115,
         "top_weaknesses": [
           {
             "category": "tactical",
