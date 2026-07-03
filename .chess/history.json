@@ -5584,11 +5584,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "432",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Queen's Pawn Game",
+        "eco_code": "D00",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Bb5+"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:26:02.835517",
-    "total_games": 227,
+    "computed_at": "2026-07-03T18:26:03.850436",
+    "total_games": 228,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5601,10 +5627,10 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 24,
-        "recent_count": 0,
+        "total_count": 25,
+        "recent_count": 1,
         "prior_count": 24,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -5957,10 +5983,10 @@
         "trend": "improving"
       },
       "time": {
-        "total": 28,
-        "recent": 0,
+        "total": 29,
+        "recent": 1,
         "prior": 28,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [
@@ -5980,7 +6006,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 206,
+      "games_tracked": 207,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5996,7 +6022,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 59
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -6050,7 +6076,7 @@
         ]
       },
       "blitz": {
-        "games": 108,
+        "games": 109,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -6060,7 +6086,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 20
+            "count": 21
           },
           {
             "category": "time",
