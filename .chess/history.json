@@ -5539,11 +5539,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "810",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Leonardis Variation",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "e4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "d5"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:26:00.721886",
-    "total_games": 225,
+    "computed_at": "2026-07-03T18:26:01.861714",
+    "total_games": 226,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5935,7 +5954,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 204,
+      "games_tracked": 205,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5951,7 +5970,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 59
     },
     "time_control_breakdown": {
       "unknown": {
@@ -5985,7 +6004,7 @@
         ]
       },
       "classical": {
-        "games": 52,
+        "games": 53,
         "top_weaknesses": [
           {
             "category": "tactical",
