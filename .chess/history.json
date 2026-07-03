@@ -6549,27 +6549,53 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-29",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "458",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Four Knights Game: Italian Variation",
+        "eco_code": "C50",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "Ng5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:08.810459",
-    "total_games": 267,
+    "computed_at": "2026-07-03T18:32:09.869211",
+    "total_games": 268,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 95,
-        "recent_count": 3,
-        "prior_count": 92,
-        "trend": "worsening"
+        "recent_count": 2,
+        "prior_count": 93,
+        "trend": "stable"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 38,
-        "recent_count": 0,
+        "total_count": 39,
+        "recent_count": 1,
         "prior_count": 38,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -6887,9 +6913,9 @@
     "category_trends": {
       "tactical": {
         "total": 112,
-        "recent": 3,
-        "prior": 109,
-        "trend": "worsening"
+        "recent": 2,
+        "prior": 110,
+        "trend": "stable"
       },
       "positional": {
         "total": 16,
@@ -6922,10 +6948,10 @@
         "trend": "improving"
       },
       "time": {
-        "total": 42,
-        "recent": 0,
+        "total": 43,
+        "recent": 1,
         "prior": 42,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [
@@ -6945,7 +6971,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 246,
+      "games_tracked": 247,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7015,7 +7041,7 @@
         ]
       },
       "blitz": {
-        "games": 139,
+        "games": 140,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -7025,7 +7051,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 31
+            "count": 32
           },
           {
             "category": "time",
