@@ -4551,17 +4551,43 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "402",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Mieses-Kotroc Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qxd5",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:17.891588",
-    "total_games": 184,
+    "computed_at": "2026-07-03T18:25:18.969697",
+    "total_games": 185,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 54,
-        "recent_count": 4,
+        "total_count": 55,
+        "recent_count": 5,
         "prior_count": 50,
         "trend": "worsening"
       },
@@ -4888,8 +4914,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 71,
-        "recent": 4,
+        "total": 72,
+        "recent": 5,
         "prior": 67,
         "trend": "worsening"
       },
@@ -4947,14 +4973,14 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 163,
+      "games_tracked": 164,
       "most_common_openings": [
         [
-          "Philidor Defense",
-          6
+          "Scandinavian Defense: Mieses-Kotroc Variation",
+          7
         ],
         [
-          "Scandinavian Defense: Mieses-Kotroc Variation",
+          "Philidor Defense",
           6
         ],
         [
@@ -5017,12 +5043,12 @@
         ]
       },
       "blitz": {
-        "games": 74,
+        "games": 75,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 34
+            "count": 35
           },
           {
             "category": "time",
