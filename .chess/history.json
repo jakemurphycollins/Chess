@@ -4377,11 +4377,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "435",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Indian Defense: Paleface Attack, Blackmar-Diemer Gambit Deferred",
+        "eco_code": "A45",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "e4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "b6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:05:43.761963",
-    "total_games": 177,
+    "computed_at": "2026-07-03T18:05:45.324564",
+    "total_games": 178,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -4451,17 +4470,17 @@
         "category": "positional",
         "specific_type": "overextension",
         "total_count": 3,
-        "recent_count": 1,
-        "prior_count": 2,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 3,
+        "trend": "improving"
       },
       {
         "category": "exchange",
         "specific_type": "poor_piece_trade",
         "total_count": 3,
-        "recent_count": 1,
-        "prior_count": 2,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 3,
+        "trend": "improving"
       },
       {
         "category": "tactical",
@@ -4507,9 +4526,9 @@
         "category": "positional",
         "specific_type": "bad_development_order",
         "total_count": 2,
-        "recent_count": 1,
-        "prior_count": 1,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 2,
+        "trend": "improving"
       },
       {
         "category": "tactical",
@@ -4675,17 +4694,17 @@
         "category": "tactical",
         "specific_type": "correct_pin_recognition",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "tactical",
         "specific_type": "missed_followup_after_pin_break",
         "total_count": 1,
-        "recent_count": 1,
-        "prior_count": 0,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 1,
+        "trend": "improving"
       },
       {
         "category": "positional",
@@ -4715,14 +4734,14 @@
     "category_trends": {
       "tactical": {
         "total": 66,
-        "recent": 7,
-        "prior": 59,
+        "recent": 5,
+        "prior": 61,
         "trend": "worsening"
       },
       "positional": {
         "total": 16,
-        "recent": 3,
-        "prior": 13,
+        "recent": 1,
+        "prior": 15,
         "trend": "worsening"
       },
       "opening": {
@@ -4739,9 +4758,9 @@
       },
       "exchange": {
         "total": 9,
-        "recent": 1,
-        "prior": 8,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 9,
+        "trend": "improving"
       },
       "endgame": {
         "total": 7,
@@ -4773,7 +4792,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 156,
+      "games_tracked": 157,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4843,7 +4862,7 @@
         ]
       },
       "blitz": {
-        "games": 68,
+        "games": 69,
         "top_weaknesses": [
           {
             "category": "tactical",
