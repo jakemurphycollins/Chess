@@ -4493,27 +4493,59 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "394",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "endgame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        },
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "English Opening: Anglo-Scandinavian Defense",
+        "eco_code": "A10",
+        "last_book_move_number": 1,
+        "last_book_color": "black",
+        "last_book_san": "d5",
+        "deviated_by": "white",
+        "deviation_move_number": 2,
+        "deviation_san": "Qa4+"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:15.622958",
-    "total_games": 182,
+    "computed_at": "2026-07-03T18:25:16.818532",
+    "total_games": 183,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 52,
-        "recent_count": 3,
+        "total_count": 53,
+        "recent_count": 4,
         "prior_count": 49,
         "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 16,
-        "recent_count": 0,
+        "total_count": 17,
+        "recent_count": 1,
         "prior_count": 16,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -4830,8 +4862,8 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 69,
-        "recent": 3,
+        "total": 70,
+        "recent": 4,
         "prior": 66,
         "trend": "worsening"
       },
@@ -4866,10 +4898,10 @@
         "trend": "improving"
       },
       "time": {
-        "total": 20,
-        "recent": 0,
+        "total": 21,
+        "recent": 1,
         "prior": 20,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [
@@ -4889,7 +4921,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 161,
+      "games_tracked": 162,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4905,7 +4937,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 57
     },
     "time_control_breakdown": {
       "unknown": {
@@ -4959,17 +4991,17 @@
         ]
       },
       "blitz": {
-        "games": 73,
+        "games": 74,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 33
+            "count": 34
           },
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 15
+            "count": 16
           },
           {
             "category": "time",
