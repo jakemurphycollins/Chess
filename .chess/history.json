@@ -6530,18 +6530,37 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "801",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Scotch Game",
+        "eco_code": "C44",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "d5"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:07.763177",
-    "total_games": 266,
+    "computed_at": "2026-07-03T18:32:08.810459",
+    "total_games": 267,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 95,
-        "recent_count": 4,
-        "prior_count": 91,
+        "recent_count": 3,
+        "prior_count": 92,
         "trend": "worsening"
       },
       {
@@ -6868,8 +6887,8 @@
     "category_trends": {
       "tactical": {
         "total": 112,
-        "recent": 4,
-        "prior": 108,
+        "recent": 3,
+        "prior": 109,
         "trend": "worsening"
       },
       "positional": {
@@ -6926,7 +6945,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 245,
+      "games_tracked": 246,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6976,7 +6995,7 @@
         ]
       },
       "classical": {
-        "games": 55,
+        "games": 56,
         "top_weaknesses": [
           {
             "category": "tactical",
