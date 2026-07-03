@@ -4863,27 +4863,53 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-26",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "386",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Englund Gambit Declined: Reversed French",
+        "eco_code": "A40",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:31.871919",
-    "total_games": 197,
+    "computed_at": "2026-07-03T18:25:32.933559",
+    "total_games": 198,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
         "total_count": 63,
-        "recent_count": 5,
-        "prior_count": 58,
+        "recent_count": 4,
+        "prior_count": 59,
         "trend": "worsening"
       },
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 18,
-        "recent_count": 0,
+        "total_count": 19,
+        "recent_count": 1,
         "prior_count": 18,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -5201,8 +5227,8 @@
     "category_trends": {
       "tactical": {
         "total": 80,
-        "recent": 5,
-        "prior": 75,
+        "recent": 4,
+        "prior": 76,
         "trend": "worsening"
       },
       "positional": {
@@ -5236,10 +5262,10 @@
         "trend": "improving"
       },
       "time": {
-        "total": 22,
-        "recent": 0,
+        "total": 23,
+        "recent": 1,
         "prior": 22,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [
@@ -5259,7 +5285,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 176,
+      "games_tracked": 177,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5275,7 +5301,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 57
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -5329,7 +5355,7 @@
         ]
       },
       "blitz": {
-        "games": 82,
+        "games": 83,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -5339,7 +5365,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 17
+            "count": 18
           },
           {
             "category": "time",
