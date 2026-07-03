@@ -5924,19 +5924,45 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "464",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Van't Kruijs Opening",
+        "eco_code": "A00",
+        "last_book_move_number": 1,
+        "last_book_color": "white",
+        "last_book_san": "e3",
+        "deviated_by": "black",
+        "deviation_move_number": 1,
+        "deviation_san": "e5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:40.885098",
-    "total_games": 241,
+    "computed_at": "2026-07-03T18:31:41.890516",
+    "total_games": 242,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 83,
-        "recent_count": 1,
+        "total_count": 84,
+        "recent_count": 2,
         "prior_count": 82,
-        "trend": "improving"
+        "trend": "stable"
       },
       {
         "category": "time",
@@ -6261,10 +6287,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 100,
-        "recent": 1,
+        "total": 101,
+        "recent": 2,
         "prior": 99,
-        "trend": "improving"
+        "trend": "stable"
       },
       "positional": {
         "total": 16,
@@ -6320,7 +6346,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 220,
+      "games_tracked": 221,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6390,12 +6416,12 @@
         ]
       },
       "blitz": {
-        "games": 122,
+        "games": 123,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 58
+            "count": 59
           },
           {
             "category": "time",
