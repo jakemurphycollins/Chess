@@ -5950,11 +5950,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "471",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Scandinavian Defense: Modern Variation",
+        "eco_code": "B01",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:41.890516",
-    "total_games": 242,
+    "computed_at": "2026-07-03T18:31:42.930520",
+    "total_games": 243,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5967,8 +5993,8 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 31,
-        "recent_count": 3,
+        "total_count": 32,
+        "recent_count": 4,
         "prior_count": 28,
         "trend": "worsening"
       },
@@ -6323,8 +6349,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 35,
-        "recent": 3,
+        "total": 36,
+        "recent": 4,
         "prior": 32,
         "trend": "worsening"
       }
@@ -6346,7 +6372,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 221,
+      "games_tracked": 222,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6361,8 +6387,8 @@
           6
         ]
       ],
-      "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 57
+      "avg_theory_depth_moves": 2.9,
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -6416,7 +6442,7 @@
         ]
       },
       "blitz": {
-        "games": 123,
+        "games": 124,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -6426,7 +6452,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 27
+            "count": 28
           },
           {
             "category": "time",
