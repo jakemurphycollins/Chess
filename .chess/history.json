@@ -4525,18 +4525,44 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-25",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "804",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Center Game",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "f6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:16.818532",
-    "total_games": 183,
+    "computed_at": "2026-07-03T18:25:17.891588",
+    "total_games": 184,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 53,
+        "total_count": 54,
         "recent_count": 4,
-        "prior_count": 49,
+        "prior_count": 50,
         "trend": "worsening"
       },
       {
@@ -4862,9 +4888,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 70,
+        "total": 71,
         "recent": 4,
-        "prior": 66,
+        "prior": 67,
         "trend": "worsening"
       },
       "positional": {
@@ -4921,7 +4947,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 162,
+      "games_tracked": 163,
       "most_common_openings": [
         [
           "Philidor Defense",
@@ -4937,7 +4963,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 57
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -4971,12 +4997,12 @@
         ]
       },
       "classical": {
-        "games": 47,
+        "games": 48,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 12
+            "count": 13
           },
           {
             "category": "exchange",
