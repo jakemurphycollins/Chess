@@ -6755,11 +6755,37 @@
       "time_control": "?",
       "time_control_category": null,
       "opening_notes": "Training, bot, or engine game \u2014 opening theory analysis not applicable."
+    },
+    {
+      "date": "2026-07-02",
+      "result": "draw",
+      "user_color": "black",
+      "user_elo": "458",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: Leonardis Variation",
+        "eco_code": "C20",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "d3",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "Nf6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:20.238475",
-    "total_games": 278,
+    "computed_at": "2026-07-03T18:32:21.316047",
+    "total_games": 279,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -6772,10 +6798,10 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 40,
-        "recent_count": 0,
+        "total_count": 41,
+        "recent_count": 1,
         "prior_count": 40,
-        "trend": "improving"
+        "trend": "worsening"
       },
       {
         "category": "opening",
@@ -7128,10 +7154,10 @@
         "trend": "improving"
       },
       "time": {
-        "total": 44,
-        "recent": 0,
+        "total": 45,
+        "recent": 1,
         "prior": 44,
-        "trend": "improving"
+        "trend": "worsening"
       }
     },
     "high_confidence_patterns": [
@@ -7151,7 +7177,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 257,
+      "games_tracked": 258,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7221,7 +7247,7 @@
         ]
       },
       "blitz": {
-        "games": 142,
+        "games": 143,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -7231,7 +7257,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 33
+            "count": 34
           },
           {
             "category": "time",
