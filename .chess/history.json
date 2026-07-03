@@ -5821,11 +5821,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "479",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Vienna Game: Vienna Gambit",
+        "eco_code": "C29",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "f4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Nc6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:36.732226",
-    "total_games": 237,
+    "computed_at": "2026-07-03T18:31:37.795191",
+    "total_games": 238,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5839,8 +5858,8 @@
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 28,
-        "recent_count": 2,
-        "prior_count": 26,
+        "recent_count": 1,
+        "prior_count": 27,
         "trend": "worsening"
       },
       {
@@ -6195,8 +6214,8 @@
       },
       "time": {
         "total": 32,
-        "recent": 2,
-        "prior": 30,
+        "recent": 1,
+        "prior": 31,
         "trend": "worsening"
       }
     },
@@ -6217,7 +6236,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 216,
+      "games_tracked": 217,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6287,7 +6306,7 @@
         ]
       },
       "blitz": {
-        "games": 118,
+        "games": 119,
         "top_weaknesses": [
           {
             "category": "tactical",
