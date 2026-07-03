@@ -4693,17 +4693,43 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-26",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "795",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "opening",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Ruy Lopez: Berlin Defense",
+        "eco_code": "C65",
+        "last_book_move_number": 3,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 4,
+        "deviation_san": "Bxc6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:24.273635",
-    "total_games": 190,
+    "computed_at": "2026-07-03T18:25:25.338057",
+    "total_games": 191,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 57,
-        "recent_count": 2,
+        "total_count": 58,
+        "recent_count": 3,
         "prior_count": 55,
         "trend": "worsening"
       },
@@ -4711,9 +4737,9 @@
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 18,
-        "recent_count": 1,
-        "prior_count": 17,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 18,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -5030,10 +5056,10 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 74,
-        "recent": 2,
+        "total": 75,
+        "recent": 3,
         "prior": 72,
-        "trend": "stable"
+        "trend": "worsening"
       },
       "positional": {
         "total": 16,
@@ -5067,9 +5093,9 @@
       },
       "time": {
         "total": 22,
-        "recent": 1,
-        "prior": 21,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 22,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [
@@ -5089,7 +5115,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 169,
+      "games_tracked": 170,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5105,7 +5131,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 59
+      "user_deviated_first_pct": 58
     },
     "time_control_breakdown": {
       "unknown": {
@@ -5139,12 +5165,12 @@
         ]
       },
       "classical": {
-        "games": 48,
+        "games": 49,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 13
+            "count": 14
           },
           {
             "category": "exchange",
