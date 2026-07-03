@@ -5076,11 +5076,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "black",
+      "user_elo": "425",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Center Game: Berger Variation",
+        "eco_code": "C22",
+        "last_book_move_number": 4,
+        "last_book_color": "black",
+        "last_book_san": "Nf6",
+        "deviated_by": "white",
+        "deviation_move_number": 5,
+        "deviation_san": "Nc3"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:41.137673",
-    "total_games": 206,
+    "computed_at": "2026-07-03T18:25:42.160696",
+    "total_games": 207,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5472,7 +5491,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 185,
+      "games_tracked": 186,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5542,7 +5561,7 @@
         ]
       },
       "blitz": {
-        "games": 91,
+        "games": 92,
         "top_weaknesses": [
           {
             "category": "tactical",
