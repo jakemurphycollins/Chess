@@ -6781,11 +6781,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-07-02",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "450",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Scotch Gambit, Janowski Defense",
+        "eco_code": "C56",
+        "last_book_move_number": 5,
+        "last_book_color": "black",
+        "last_book_san": "d6",
+        "deviated_by": "white",
+        "deviation_move_number": 6,
+        "deviation_san": "Nxd4"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:21.316047",
-    "total_games": 279,
+    "computed_at": "2026-07-03T18:32:22.303402",
+    "total_games": 280,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -6798,8 +6824,8 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 41,
-        "recent_count": 1,
+        "total_count": 42,
+        "recent_count": 2,
         "prior_count": 40,
         "trend": "worsening"
       },
@@ -7154,8 +7180,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 45,
-        "recent": 1,
+        "total": 46,
+        "recent": 2,
         "prior": 44,
         "trend": "worsening"
       }
@@ -7177,7 +7203,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 258,
+      "games_tracked": 259,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7247,7 +7273,7 @@
         ]
       },
       "blitz": {
-        "games": 143,
+        "games": 144,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -7257,7 +7283,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 34
+            "count": 35
           },
           {
             "category": "time",
