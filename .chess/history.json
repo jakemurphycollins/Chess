@@ -5898,11 +5898,37 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "white",
+      "user_elo": "472",
+      "patterns": [
+        {
+          "category": "time",
+          "phase": "endgame",
+          "specific_type": "time_pressure_blunder",
+          "severity": "major"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Philidor Defense: Nimzowitsch Variation",
+        "eco_code": "C41",
+        "last_book_move_number": 4,
+        "last_book_color": "white",
+        "last_book_san": "dxe5",
+        "deviated_by": "black",
+        "deviation_move_number": 4,
+        "deviation_san": "dxe5"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:39.803352",
-    "total_games": 240,
+    "computed_at": "2026-07-03T18:31:40.885098",
+    "total_games": 241,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5915,8 +5941,8 @@
       {
         "category": "time",
         "specific_type": "time_pressure_blunder",
-        "total_count": 30,
-        "recent_count": 2,
+        "total_count": 31,
+        "recent_count": 3,
         "prior_count": 28,
         "trend": "worsening"
       },
@@ -6271,8 +6297,8 @@
         "trend": "improving"
       },
       "time": {
-        "total": 34,
-        "recent": 2,
+        "total": 35,
+        "recent": 3,
         "prior": 32,
         "trend": "worsening"
       }
@@ -6294,7 +6320,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 219,
+      "games_tracked": 220,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6310,7 +6336,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 58
+      "user_deviated_first_pct": 57
     },
     "time_control_breakdown": {
       "unknown": {
@@ -6364,7 +6390,7 @@
         ]
       },
       "blitz": {
-        "games": 121,
+        "games": 122,
         "top_weaknesses": [
           {
             "category": "tactical",
@@ -6374,7 +6400,7 @@
           {
             "category": "time",
             "specific_type": "time_pressure_blunder",
-            "count": 26
+            "count": 27
           },
           {
             "category": "time",
