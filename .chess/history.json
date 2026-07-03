@@ -5513,18 +5513,44 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "448",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "King's Pawn Game: McConnell Defense",
+        "eco_code": "C40",
+        "last_book_move_number": 2,
+        "last_book_color": "black",
+        "last_book_san": "Qf6",
+        "deviated_by": "white",
+        "deviation_move_number": 3,
+        "deviation_san": "d4"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:59.695979",
-    "total_games": 224,
+    "computed_at": "2026-07-03T18:26:00.721886",
+    "total_games": 225,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 77,
+        "total_count": 78,
         "recent_count": 1,
-        "prior_count": 76,
+        "prior_count": 77,
         "trend": "improving"
       },
       {
@@ -5850,9 +5876,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 94,
+        "total": 95,
         "recent": 1,
-        "prior": 93,
+        "prior": 94,
         "trend": "improving"
       },
       "positional": {
@@ -5909,7 +5935,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 203,
+      "games_tracked": 204,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5979,12 +6005,12 @@
         ]
       },
       "blitz": {
-        "games": 106,
+        "games": 107,
         "top_weaknesses": [
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 52
+            "count": 53
           },
           {
             "category": "time",
