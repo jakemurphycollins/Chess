@@ -5211,11 +5211,30 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-27",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "450",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Sicilian Defense: Smith-Morra Gambit",
+        "eco_code": "B21",
+        "last_book_move_number": 2,
+        "last_book_color": "white",
+        "last_book_san": "d4",
+        "deviated_by": "black",
+        "deviation_move_number": 2,
+        "deviation_san": "d6"
+      },
+      "time_control": "300",
+      "time_control_category": "blitz"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:25:46.355570",
-    "total_games": 211,
+    "computed_at": "2026-07-03T18:25:47.386305",
+    "total_games": 212,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -5607,7 +5626,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 190,
+      "games_tracked": 191,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -5677,7 +5696,7 @@
         ]
       },
       "blitz": {
-        "games": 96,
+        "games": 97,
         "top_weaknesses": [
           {
             "category": "tactical",
