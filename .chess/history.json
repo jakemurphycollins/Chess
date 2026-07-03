@@ -6060,18 +6060,44 @@
       },
       "time_control": "300",
       "time_control_category": "blitz"
+    },
+    {
+      "date": "2026-06-28",
+      "result": "loss",
+      "user_color": "black",
+      "user_elo": "146",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "hanging_piece",
+          "severity": "blunder"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation",
+        "eco_code": "C58",
+        "last_book_move_number": 6,
+        "last_book_color": "white",
+        "last_book_san": "d3",
+        "deviated_by": "black",
+        "deviation_move_number": 6,
+        "deviation_san": "Nxc4"
+      },
+      "time_control": "120+1",
+      "time_control_category": "bullet"
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:31:46.037226",
-    "total_games": 246,
+    "computed_at": "2026-07-03T18:31:47.109235",
+    "total_games": 247,
     "weakness_summary": [
       {
         "category": "tactical",
         "specific_type": "hanging_piece",
-        "total_count": 87,
+        "total_count": 88,
         "recent_count": 4,
-        "prior_count": 83,
+        "prior_count": 84,
         "trend": "worsening"
       },
       {
@@ -6397,9 +6423,9 @@
     ],
     "category_trends": {
       "tactical": {
-        "total": 104,
+        "total": 105,
         "recent": 4,
-        "prior": 100,
+        "prior": 101,
         "trend": "worsening"
       },
       "positional": {
@@ -6456,7 +6482,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 225,
+      "games_tracked": 226,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -6546,7 +6572,7 @@
         ]
       },
       "bullet": {
-        "games": 5,
+        "games": 6,
         "top_weaknesses": [
           {
             "category": "time",
@@ -6556,7 +6582,7 @@
           {
             "category": "tactical",
             "specific_type": "hanging_piece",
-            "count": 1
+            "count": 2
           }
         ]
       }
