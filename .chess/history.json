@@ -6645,11 +6645,25 @@
       },
       "time_control": "1800",
       "time_control_category": "classical"
+    },
+    {
+      "date": "2026-07-01",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "809",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Training/bot game",
+        "variant_warning": "non_competitive_game"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Training, bot, or engine game \u2014 opening theory analysis not applicable."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T18:32:13.102910",
-    "total_games": 271,
+    "computed_at": "2026-07-03T18:32:14.124679",
+    "total_games": 272,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -7041,7 +7055,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 250,
+      "games_tracked": 251,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7091,7 +7105,7 @@
         ]
       },
       "classical": {
-        "games": 57,
+        "games": 58,
         "top_weaknesses": [
           {
             "category": "tactical",
