@@ -6871,11 +6871,56 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Petrov's Defense: Modern Attack (C43). White deviated at move 4 with Nxd4 \u2014 the main line is 4.e5. User correctly responded with 4...Nxe4 on general principles (opponent made a mistake, take material and play sensibly) without knowing the specific Petrov theory. User was unaware this was the Petrov, thinking it was QGA \u2014 worth studying the Petrov from the Black side since they're already familiar with White's ideas."
+    },
+    {
+      "date": "2026-07-04",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "835",
+      "patterns": [
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "missed_fork",
+          "severity": "major"
+        },
+        {
+          "category": "endgame",
+          "phase": "endgame",
+          "specific_type": "passed_pawn_technique",
+          "severity": "minor"
+        },
+        {
+          "category": "endgame",
+          "phase": "endgame",
+          "specific_type": "pawn_race_calculation",
+          "severity": "minor"
+        },
+        {
+          "category": "tactical",
+          "phase": "middlegame",
+          "specific_type": "queen_trap_execution",
+          "severity": "minor"
+        }
+      ],
+      "opening_info": {
+        "opening_name": "Italian Game",
+        "eco_code": "C50",
+        "last_book_move_number": 3,
+        "last_book_color": "white",
+        "last_book_san": "Bc4",
+        "deviated_by": "black",
+        "deviation_move_number": 3,
+        "deviation_san": "Nh6"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "Italian Game (C50). Black deviated immediately with 3...Nh6 \u2014 a passive, misplaced knight. White responded well: d4, d5 pushing the knight away, Bb5+ forcing c6, then dxc6/Bxc6+/Qxc6+ winning a pawn and shattering Black's queenside pawn structure. Strong exploitation of an early deviation."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-03T19:49:07.871347",
-    "total_games": 282,
+    "computed_at": "2026-07-04T21:24:31.331921",
+    "total_games": 283,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -6926,6 +6971,14 @@
         "trend": "improving"
       },
       {
+        "category": "tactical",
+        "specific_type": "missed_fork",
+        "total_count": 4,
+        "recent_count": 1,
+        "prior_count": 3,
+        "trend": "worsening"
+      },
+      {
         "category": "exchange",
         "specific_type": "bad_trade",
         "total_count": 4,
@@ -6952,14 +7005,6 @@
       {
         "category": "exchange",
         "specific_type": "poor_piece_trade",
-        "total_count": 3,
-        "recent_count": 0,
-        "prior_count": 3,
-        "trend": "improving"
-      },
-      {
-        "category": "tactical",
-        "specific_type": "missed_fork",
         "total_count": 3,
         "recent_count": 0,
         "prior_count": 3,
@@ -7236,14 +7281,38 @@
         "recent_count": 1,
         "prior_count": 0,
         "trend": "worsening"
+      },
+      {
+        "category": "endgame",
+        "specific_type": "passed_pawn_technique",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "endgame",
+        "specific_type": "pawn_race_calculation",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
+      },
+      {
+        "category": "tactical",
+        "specific_type": "queen_trap_execution",
+        "total_count": 1,
+        "recent_count": 1,
+        "prior_count": 0,
+        "trend": "worsening"
       }
     ],
     "category_trends": {
       "tactical": {
-        "total": 115,
-        "recent": 1,
+        "total": 117,
+        "recent": 3,
         "prior": 114,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "positional": {
         "total": 16,
@@ -7270,10 +7339,10 @@
         "trend": "worsening"
       },
       "endgame": {
-        "total": 7,
-        "recent": 0,
+        "total": 9,
+        "recent": 2,
         "prior": 7,
-        "trend": "improving"
+        "trend": "worsening"
       },
       "time": {
         "total": 46,
@@ -7299,7 +7368,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 261,
+      "games_tracked": 262,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7307,7 +7376,7 @@
         ],
         [
           "Italian Game",
-          7
+          8
         ],
         [
           "King's Pawn Game: Napoleon Attack",
@@ -7315,7 +7384,7 @@
         ]
       ],
       "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 57
+      "user_deviated_first_pct": 56
     },
     "time_control_breakdown": {
       "unknown": {
@@ -7349,7 +7418,7 @@
         ]
       },
       "classical": {
-        "games": 64,
+        "games": 65,
         "top_weaknesses": [
           {
             "category": "tactical",
