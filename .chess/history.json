@@ -6961,11 +6961,31 @@
       "time_control": "1800",
       "time_control_category": "classical",
       "opening_notes": "Polerio Defense, Bishop Check Line (C58). White deviated at move 8 with Ba4 (passive) instead of the main line Bd3, which supports the knight retreating to e4 after h6. Without Bd3, e4 is undefended and White's knight had to go back to f3, ceding central control. User correctly exploited this with h6/Ba6/e4, pressuring d3 and ultimately winning a free piece on move 11 (Qxd4 \u2014 knight on d4 undefended because d3 pawn blocked the queen)."
+    },
+    {
+      "date": "2026-07-06",
+      "result": "win",
+      "user_color": "white",
+      "user_elo": "853",
+      "patterns": [],
+      "opening_info": {
+        "opening_name": "Italian Game: Two Knights Defense, Fried Liver Attack",
+        "eco_code": "C57",
+        "last_book_move_number": 6,
+        "last_book_color": "white",
+        "last_book_san": "Nxf7",
+        "deviated_by": "black",
+        "deviation_move_number": 6,
+        "deviation_san": "Kxf7"
+      },
+      "time_control": "1800",
+      "time_control_category": "classical",
+      "opening_notes": "White followed the main-line Fried Liver Attack (Two Knights Defense, C57) through 6.Nxf7 Kxf7 7.Qf3+, correct book theory for the sacrifice. Black then blundered by recapturing 8...Qxd5??, hanging the queen to 9.Qxd5."
     }
   ],
   "player_profile": {
-    "computed_at": "2026-07-05T19:26:27.903478",
-    "total_games": 284,
+    "computed_at": "2026-07-06T22:22:13.504811",
+    "total_games": 285,
     "weakness_summary": [
       {
         "category": "tactical",
@@ -6979,9 +6999,9 @@
         "category": "time",
         "specific_type": "time_pressure_blunder",
         "total_count": 42,
-        "recent_count": 1,
-        "prior_count": 41,
-        "trend": "worsening"
+        "recent_count": 0,
+        "prior_count": 42,
+        "trend": "improving"
       },
       {
         "category": "opening",
@@ -7407,9 +7427,9 @@
       },
       "time": {
         "total": 46,
-        "recent": 1,
-        "prior": 45,
-        "trend": "worsening"
+        "recent": 0,
+        "prior": 46,
+        "trend": "improving"
       }
     },
     "high_confidence_patterns": [
@@ -7429,7 +7449,7 @@
       }
     ],
     "opening_stats": {
-      "games_tracked": 263,
+      "games_tracked": 264,
       "most_common_openings": [
         [
           "Scandinavian Defense: Mieses-Kotroc Variation",
@@ -7440,12 +7460,12 @@
           8
         ],
         [
-          "King's Pawn Game: Napoleon Attack",
+          "Italian Game: Two Knights Defense, Fried Liver Attack",
           7
         ]
       ],
-      "avg_theory_depth_moves": 3.0,
-      "user_deviated_first_pct": 57
+      "avg_theory_depth_moves": 3.1,
+      "user_deviated_first_pct": 56
     },
     "time_control_breakdown": {
       "unknown": {
@@ -7479,7 +7499,7 @@
         ]
       },
       "classical": {
-        "games": 66,
+        "games": 67,
         "top_weaknesses": [
           {
             "category": "tactical",
